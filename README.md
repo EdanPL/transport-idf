@@ -11,6 +11,14 @@
 
 Connectée au flux officiel **API PRIM d'Île-de-France Mobilités**, la plateforme associe un moteur de graphes en mémoire (**Dijkstra multi-profils, transposé et multi-sources, BFS, Haversine**) à une interface au design **Liquid Glass** (géométrie stricte, cartographie interactive Leaflet.js et analytique Chart.js).
 
+## Démo en ligne
+
+L'application est déployée en production et accessible directement depuis un navigateur web ou installable en tant que Progressive Web App (PWA) sur iOS et Android :
+
+* **URL de l'application :** https://transport-idf.onrender.com
+
+*Note : L'hébergement reposant sur une instance cloud gratuite, le premier chargement peut nécessiter environ 30 secondes si le service était en veille.*
+
 ---
 
 ## Sommaire
@@ -21,7 +29,9 @@ Connectée au flux officiel **API PRIM d'Île-de-France Mobilités**, la platefo
 4. [Endpoints API REST](#endpoints-api-rest)
 5. [Structure du Projet](#structure-du-projet)
 6. [Installation & Lancement](#installation--lancement)
-7. [Tests Unitaires](#tests-unitaires)
+7. [Architecture Cloud et Déploiement](#architecture-cloud-et-déploiement)
+8. [Tests Unitaires](#tests-unitaires)
+
 
 ---
 
@@ -185,6 +195,29 @@ mvn spring-boot:run
 ```
 
 L'application est ensuite accessible sur **`http://localhost:8080`**.
+
+---
+
+## Architecture Cloud et Déploiement
+
+L'application repose sur une architecture conteneurisée découplée pour la production :
+
+* **Serveur applicatif (Render) :** Conteneur Docker exécutant l'API REST Spring Boot (Java 21) et servant les ressources statiques de la PWA (interface Liquid Glass).
+* **Base de données (Neon) :** Instance PostgreSQL serverless hébergeant la topologie du réseau RER (249 gares, tronçons et temps de parcours) ainsi que l'historique des perturbations.
+* **Cache distribué (Upstash) :** Instance Redis managée (connexion sécurisée TLS) mettant en cache les flux temps réel issus de l'API PRIM Île-de-France Mobilités afin de réduire la latence et de respecter les quotas d'appels.
+
+### Variables d'environnement requises en production
+
+Pour déployer le conteneur sur n'importe quel hébergeur compatible Docker, les variables suivantes doivent être configurées :
+
+| Variable | Description | Exemple de format |
+| :--- | :--- | :--- |
+| `DB_URL` | Chaîne de connexion JDBC vers PostgreSQL | `jdbc:postgresql://<host>/neondb?sslmode=require` |
+| `DB_USERNAME` | Utilisateur de la base PostgreSQL | `neondb_owner` |
+| `DB_PASSWORD` | Mot de passe de la base PostgreSQL | `********` |
+| `REDIS_URL` | URL complète de connexion Redis (TLS) | `rediss://default:<password>@<host>:6379` |
+| `IDFM_API_KEY` | Clé d'authentification API PRIM IDFM | `********` |
+| `TRAFFIC_MODE` | Mode de fonctionnement du moteur (`REALTIME` ou `SIMULATION`) | `REALTIME` |
 
 ---
 
