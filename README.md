@@ -123,7 +123,7 @@ Tous les calculs sont exécutés en mémoire dans `GraphService.java` sur une li
 | `GET` | `/api/routes/radar` | Analyse Radar : scores RER A–E, foyers et propagation BFS |
 | `GET` | `/api/routes/shield?from={A}&to={B}` | Analyse Bouclier : Plans A/B/C, résilience et stress-test |
 | `GET` | `/api/routes/shield/certificate?from={A}&to={B}&passengerName={N}&organization={O}` | Relevé de retard horodaté avec empreinte SHA-256 |
-| `GET` | `/api/stations` & `/api/sections` | Référentiel des gares et état temps réel des tronçons |
+| `GET` | `/api/stations` | Référentiel des 242 gares RER et état du réseau |
 | `POST` | `/api/disruptions` / `DELETE /api/disruptions` | Injection et réinitialisation d'incidents (mode Simulation) |
 | `GET` / `POST` | `/api/traffic/mode` | Lecture et bascule `REALTIME` / `SIMULATION` |
 
@@ -140,9 +140,9 @@ src/
 │   │   │   └── model/          # Entités JPA : Station, NetworkSection, LiveDisruption
 │   │   ├── repository/         # Repositories Spring Data JPA
 │   │   ├── service/            # GraphService, IdfmTrafficSyncService, DisruptionService
-│   │   └── web/controller/     # RouteController, NetworkController, TrafficModeController
+│   │   └── web/controller/     # RouteController, TrafficModeController
 │   └── resources/
-│       ├── application.properties
+│       ├── application.yaml
 │       └── static/
 │           ├── index.html      # Carte & Direct + Dashboard Power BI + Simulateur
 │           ├── trajet.html     # Mode 1 : Trajet Sur-Mesure & OLED
@@ -174,18 +174,24 @@ docker run --name transit-postgres -e POSTGRES_DB=transit_db -e POSTGRES_USER=po
 docker run --name transit-redis -p 6379:6379 -d redis:7
 ```
 
-### 2. Configurer `src/main/resources/application.properties`
+### 2. Configurer `src/main/resources/application.yaml`
 
-Renseignez vos accès PostgreSQL, Redis ainsi que votre clé API PRIM IDFM (idéalement via variable d'environnement `IDFM_API_KEY`) :
+Renseignez vos accès PostgreSQL, Redis ainsi que votre clé API PRIM IDFM (idéalement via des variables d'environnement) :
 
-```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/transit_db
-spring.datasource.username=postgres
-spring.datasource.password=postgres
-spring.data.redis.host=localhost
-spring.data.redis.port=6379
+```yaml
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/transit_db}
+    username: ${DB_USERNAME:transit_user}
+    password: ${DB_PASSWORD:transit_password}
+  data:
+    redis:
+      url: ${REDIS_URL:redis://localhost:6379}
 
-idfm.api.key=${IDFM_API_KEY:}
+transit:
+  traffic:
+    idfm:
+      api-key: ${IDFM_API_KEY:}
 ```
 
 ### 3. Lancer l'application
