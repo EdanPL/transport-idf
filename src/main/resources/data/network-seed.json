@@ -1,0 +1,4902 @@
+{
+  "stations": [
+    {
+      "id": "ABLON",
+      "name": "Ablon",
+      "latitude": 48.725535,
+      "longitude": 2.419565
+    },
+    {
+      "id": "ACHERES_GRAND_CORMIER",
+      "name": "Achères-Grand-Cormier",
+      "latitude": 48.955402,
+      "longitude": 2.093522
+    },
+    {
+      "id": "ACHERES_VILLE",
+      "name": "Achères-Ville",
+      "latitude": 48.970665,
+      "longitude": 2.077732
+    },
+    {
+      "id": "ANTONY",
+      "name": "Antony",
+      "latitude": 48.754947,
+      "longitude": 2.300987
+    },
+    {
+      "id": "ARCUEIL_CACHAN",
+      "name": "Arcueil - Cachan",
+      "latitude": 48.798893,
+      "longitude": 2.328137
+    },
+    {
+      "id": "ARPAJON",
+      "name": "Arpajon",
+      "latitude": 48.586008,
+      "longitude": 2.24107
+    },
+    {
+      "id": "ATHIS_MONS",
+      "name": "Athis-Mons",
+      "latitude": 48.712629,
+      "longitude": 2.403633
+    },
+    {
+      "id": "AUBER",
+      "name": "Auber",
+      "latitude": 48.872157,
+      "longitude": 2.329927
+    },
+    {
+      "id": "AULNAY_SOUS_BOIS",
+      "name": "Aulnay-sous-Bois",
+      "latitude": 48.932196,
+      "longitude": 2.495513
+    },
+    {
+      "id": "AVENUE_FOCH",
+      "name": "Avenue Foch",
+      "latitude": 48.86983,
+      "longitude": 2.274808
+    },
+    {
+      "id": "AVENUE_HENRI_MARTIN",
+      "name": "Avenue Henri Martin",
+      "latitude": 48.865462,
+      "longitude": 2.272159
+    },
+    {
+      "id": "AVENUE_DU_PRESIDENT_KENNEDY",
+      "name": "Avenue du Président Kennedy",
+      "latitude": 48.853648,
+      "longitude": 2.279487
+    },
+    {
+      "id": "AEROPORT_CHARLES_DE_GAULLE_1",
+      "name": "Aéroport Charles De Gaulle 1",
+      "latitude": 49.009756,
+      "longitude": 2.561233
+    },
+    {
+      "id": "AEROPORT_CHARLES_DE_GAULLE_2_TGV",
+      "name": "Aéroport Charles De Gaulle 2-TGV",
+      "latitude": 49.004687,
+      "longitude": 2.570589
+    },
+    {
+      "id": "BAGNEUX",
+      "name": "Bagneux",
+      "latitude": 48.793336,
+      "longitude": 2.322202
+    },
+    {
+      "id": "BALLANCOURT",
+      "name": "Ballancourt",
+      "latitude": 48.531502,
+      "longitude": 2.370518
+    },
+    {
+      "id": "BIBLIOTHEQUE_FRANCOIS_MITTERRAND",
+      "name": "Bibliothèque François Mitterrand",
+      "latitude": 48.828881,
+      "longitude": 2.377697
+    },
+    {
+      "id": "BOIGNEVILLE",
+      "name": "Boigneville",
+      "latitude": 48.341664,
+      "longitude": 2.378815
+    },
+    {
+      "id": "BOISSISE_LE_ROI",
+      "name": "Boissise-le-Roi",
+      "latitude": 48.529747,
+      "longitude": 2.572074
+    },
+    {
+      "id": "BOISSY_SAINT_LEGER",
+      "name": "Boissy-Saint-Léger",
+      "latitude": 48.752186,
+      "longitude": 2.50456
+    },
+    {
+      "id": "BONDY",
+      "name": "Bondy",
+      "latitude": 48.893952,
+      "longitude": 2.480206
+    },
+    {
+      "id": "BOULAINVILLIERS",
+      "name": "Boulainvilliers",
+      "latitude": 48.856972,
+      "longitude": 2.274793
+    },
+    {
+      "id": "BOURAY",
+      "name": "Bouray",
+      "latitude": 48.53289,
+      "longitude": 2.290083
+    },
+    {
+      "id": "BOURG_LA_REINE",
+      "name": "Bourg-la-Reine",
+      "latitude": 48.780314,
+      "longitude": 2.312308
+    },
+    {
+      "id": "BOUSSY_SAINT_ANTOINE",
+      "name": "Boussy-Saint-Antoine",
+      "latitude": 48.681017,
+      "longitude": 2.533131
+    },
+    {
+      "id": "BOUTIGNY",
+      "name": "Boutigny",
+      "latitude": 48.434491,
+      "longitude": 2.376673
+    },
+    {
+      "id": "BREUILLET",
+      "name": "Breuillet",
+      "latitude": 48.577508,
+      "longitude": 2.192063
+    },
+    {
+      "id": "BREUILLET_VILLAGE",
+      "name": "Breuillet-Village",
+      "latitude": 48.564329,
+      "longitude": 2.170377
+    },
+    {
+      "id": "BRUNOY",
+      "name": "Brunoy",
+      "latitude": 48.699107,
+      "longitude": 2.506677
+    },
+    {
+      "id": "BRY_SUR_MARNE",
+      "name": "Bry-sur-Marne",
+      "latitude": 48.845193,
+      "longitude": 2.525616
+    },
+    {
+      "id": "BRETIGNY",
+      "name": "Brétigny",
+      "latitude": 48.606745,
+      "longitude": 2.30206
+    },
+    {
+      "id": "BUNO_GIRONVILLE",
+      "name": "Buno-Gironville",
+      "latitude": 48.371383,
+      "longitude": 2.38721
+    },
+    {
+      "id": "BURES_SUR_YVETTE",
+      "name": "Bures-sur-Yvette",
+      "latitude": 48.696253,
+      "longitude": 2.164378
+    },
+    {
+      "id": "BUSSY_SAINT_GEORGES",
+      "name": "Bussy-Saint-Georges",
+      "latitude": 48.836536,
+      "longitude": 2.708982
+    },
+    {
+      "id": "CERGY_LE_HAUT",
+      "name": "Cergy Le Haut",
+      "latitude": 49.047876,
+      "longitude": 2.011
+    },
+    {
+      "id": "CERGY_PREFECTURE",
+      "name": "Cergy-Préfecture",
+      "latitude": 49.036464,
+      "longitude": 2.079535
+    },
+    {
+      "id": "CERGY_SAINT_CHRISTOPHE",
+      "name": "Cergy-Saint-Christophe",
+      "latitude": 49.049647,
+      "longitude": 2.034294
+    },
+    {
+      "id": "CERNAY",
+      "name": "Cernay",
+      "latitude": 48.985005,
+      "longitude": 2.257474
+    },
+    {
+      "id": "CESSON",
+      "name": "Cesson",
+      "latitude": 48.564949,
+      "longitude": 2.594552
+    },
+    {
+      "id": "CHAMARANDE",
+      "name": "Chamarande",
+      "latitude": 48.514246,
+      "longitude": 2.215518
+    },
+    {
+      "id": "CHAMP_DE_MARS",
+      "name": "Champ de Mars",
+      "latitude": 48.856457,
+      "longitude": 2.289804
+    },
+    {
+      "id": "CHAMPIGNY",
+      "name": "Champigny",
+      "latitude": 48.806985,
+      "longitude": 2.510307
+    },
+    {
+      "id": "CHANTILLY_GOUVIEUX",
+      "name": "Chantilly-Gouvieux",
+      "latitude": 49.187087,
+      "longitude": 2.459549
+    },
+    {
+      "id": "CHARLES_DE_GAULLE_ETOILE",
+      "name": "Charles De Gaulle-Étoile",
+      "latitude": 48.874204,
+      "longitude": 2.294773
+    },
+    {
+      "id": "CHAVILLE_VELIZY",
+      "name": "Chaville-Vélizy",
+      "latitude": 48.799729,
+      "longitude": 2.183684
+    },
+    {
+      "id": "CHELLES_GOURNAY",
+      "name": "Chelles-Gournay",
+      "latitude": 48.874144,
+      "longitude": 2.583331
+    },
+    {
+      "id": "CHEMIN_D_ANTONY",
+      "name": "Chemin d'Antony",
+      "latitude": 48.747942,
+      "longitude": 2.312711
+    },
+    {
+      "id": "CHOISY_LE_ROI",
+      "name": "Choisy-le-Roi",
+      "latitude": 48.763787,
+      "longitude": 2.411387
+    },
+    {
+      "id": "CHATELET_LES_HALLES",
+      "name": "Châtelet-Les Halles",
+      "latitude": 48.861822,
+      "longitude": 2.347013
+    },
+    {
+      "id": "CHATOU_CROISSY",
+      "name": "Châtou-Croissy",
+      "latitude": 48.885211,
+      "longitude": 2.155903
+    },
+    {
+      "id": "CITE_UNIVERSITAIRE",
+      "name": "Cité Universitaire",
+      "latitude": 48.82109,
+      "longitude": 2.338978
+    },
+    {
+      "id": "COMBS_LA_VILLE_QUINCY",
+      "name": "Combs-la-Ville - Quincy",
+      "latitude": 48.667902,
+      "longitude": 2.547548
+    },
+    {
+      "id": "CONFLANS_FIN_D_OISE",
+      "name": "Conflans-Fin-d'Oise",
+      "latitude": 48.990333,
+      "longitude": 2.073947
+    },
+    {
+      "id": "CORBEIL_ESSONNES",
+      "name": "Corbeil-Essonnes",
+      "latitude": 48.613428,
+      "longitude": 2.472934
+    },
+    {
+      "id": "COURCELLE_SUR_YVETTE",
+      "name": "Courcelle-sur-Yvette",
+      "latitude": 48.701218,
+      "longitude": 2.097976
+    },
+    {
+      "id": "CREIL",
+      "name": "Creil",
+      "latitude": 49.263944,
+      "longitude": 2.468914
+    },
+    {
+      "id": "CRETEIL_POMPADOUR",
+      "name": "Créteil Pompadour",
+      "latitude": 48.771266,
+      "longitude": 2.435306
+    },
+    {
+      "id": "DENFERT_ROCHEREAU",
+      "name": "Denfert-Rochereau",
+      "latitude": 48.833073,
+      "longitude": 2.333204
+    },
+    {
+      "id": "DOURDAN",
+      "name": "Dourdan",
+      "latitude": 48.533733,
+      "longitude": 2.008772
+    },
+    {
+      "id": "DOURDAN_LA_FORET",
+      "name": "Dourdan-la-Forêt",
+      "latitude": 48.535621,
+      "longitude": 1.995902
+    },
+    {
+      "id": "DRANCY",
+      "name": "Drancy",
+      "latitude": 48.932706,
+      "longitude": 2.454766
+    },
+    {
+      "id": "ERMONT_EAUBONNE",
+      "name": "Ermont-Eaubonne",
+      "latitude": 48.980646,
+      "longitude": 2.272085
+    },
+    {
+      "id": "ESSONNES_ROBINSON",
+      "name": "Essonnes-Robinson",
+      "latitude": 48.605556,
+      "longitude": 2.462456
+    },
+    {
+      "id": "FONTAINE_MICHALON",
+      "name": "Fontaine-Michalon",
+      "latitude": 48.743017,
+      "longitude": 2.295921
+    },
+    {
+      "id": "FONTENAY_AUX_ROSES",
+      "name": "Fontenay-aux-Roses",
+      "latitude": 48.787567,
+      "longitude": 2.292988
+    },
+    {
+      "id": "FONTENAY_SOUS_BOIS",
+      "name": "Fontenay-sous-Bois",
+      "latitude": 48.843794,
+      "longitude": 2.463501
+    },
+    {
+      "id": "FRANCONVILLE_LE_PLESSIS_BOUCHARD",
+      "name": "Franconville-Le Plessis-Bouchard",
+      "latitude": 48.993713,
+      "longitude": 2.234276
+    },
+    {
+      "id": "GAGNY",
+      "name": "Gagny",
+      "latitude": 48.883734,
+      "longitude": 2.525434
+    },
+    {
+      "id": "GARE_DE_LYON",
+      "name": "Gare de Lyon",
+      "latitude": 48.844139,
+      "longitude": 2.37326
+    },
+    {
+      "id": "GARE_DU_NORD",
+      "name": "Gare du Nord",
+      "latitude": 48.881759,
+      "longitude": 2.35757
+    },
+    {
+      "id": "GARGES_SARCELLES",
+      "name": "Garges-Sarcelles",
+      "latitude": 48.976748,
+      "longitude": 2.390594
+    },
+    {
+      "id": "GENNEVILLIERS",
+      "name": "Gennevilliers",
+      "latitude": 48.932896,
+      "longitude": 2.307943
+    },
+    {
+      "id": "GENTILLY",
+      "name": "Gentilly",
+      "latitude": 48.81523,
+      "longitude": 2.340891
+    },
+    {
+      "id": "GIF_SUR_YVETTE",
+      "name": "Gif-sur-Yvette",
+      "latitude": 48.698197,
+      "longitude": 2.136567
+    },
+    {
+      "id": "GOUSSAINVILLE",
+      "name": "Goussainville",
+      "latitude": 49.023162,
+      "longitude": 2.462169
+    },
+    {
+      "id": "GRAND_BOURG",
+      "name": "Grand-Bourg",
+      "latitude": 48.648489,
+      "longitude": 2.435331
+    },
+    {
+      "id": "GRETZ_ARMAINVILLIERS",
+      "name": "Gretz-Armainvilliers",
+      "latitude": 48.746452,
+      "longitude": 2.727229
+    },
+    {
+      "id": "GRIGNY_CENTRE",
+      "name": "Grigny-Centre",
+      "latitude": 48.654849,
+      "longitude": 2.396784
+    },
+    {
+      "id": "HAUSSMANN_SAINT_LAZARE",
+      "name": "Haussmann-Saint-Lazare",
+      "latitude": 48.875029,
+      "longitude": 2.326722
+    },
+    {
+      "id": "HOUILLES_CARRIERES_SUR_SEINE",
+      "name": "Houilles-Carrières-sur-Seine",
+      "latitude": 48.920379,
+      "longitude": 2.185353
+    },
+    {
+      "id": "INVALIDES",
+      "name": "Invalides",
+      "latitude": 48.862885,
+      "longitude": 2.312514
+    },
+    {
+      "id": "ISSY",
+      "name": "Issy",
+      "latitude": 48.819344,
+      "longitude": 2.257894
+    },
+    {
+      "id": "ISSY_VAL_DE_SEINE",
+      "name": "Issy-Val-de-Seine",
+      "latitude": 48.830595,
+      "longitude": 2.26407
+    },
+    {
+      "id": "IVRY_SUR_SEINE",
+      "name": "Ivry-sur-Seine",
+      "latitude": 48.813989,
+      "longitude": 2.391687
+    },
+    {
+      "id": "JAVEL",
+      "name": "Javel",
+      "latitude": 48.847157,
+      "longitude": 2.278036
+    },
+    {
+      "id": "JOINVILLE_LE_PONT",
+      "name": "Joinville-le-Pont",
+      "latitude": 48.821039,
+      "longitude": 2.463857
+    },
+    {
+      "id": "JUVISY",
+      "name": "Juvisy",
+      "latitude": 48.689765,
+      "longitude": 2.382846
+    },
+    {
+      "id": "LA_BORNE_BLANCHE",
+      "name": "La Borne Blanche",
+      "latitude": 49.12621,
+      "longitude": 2.507014
+    },
+    {
+      "id": "LA_COURNEUVE_AUBERVILLIERS",
+      "name": "La Courneuve-Aubervilliers",
+      "latitude": 48.924354,
+      "longitude": 2.386388
+    },
+    {
+      "id": "LA_CROIX_DE_BERNY_FRESNES",
+      "name": "La Croix-de-Berny-Fresnes",
+      "latitude": 48.761694,
+      "longitude": 2.304227
+    },
+    {
+      "id": "LA_DEFENSE",
+      "name": "La Défense",
+      "latitude": 48.891688,
+      "longitude": 2.238595
+    },
+    {
+      "id": "LA_FERTE_ALAIS",
+      "name": "La Ferté-Alais",
+      "latitude": 48.485514,
+      "longitude": 2.352194
+    },
+    {
+      "id": "LA_HACQUINIERE",
+      "name": "La Hacquinière",
+      "latitude": 48.695264,
+      "longitude": 2.151642
+    },
+    {
+      "id": "LA_NORVILLE",
+      "name": "La Norville",
+      "latitude": 48.591119,
+      "longitude": 2.266214
+    },
+    {
+      "id": "LA_PLAINE_STADE_DE_FRANCE",
+      "name": "La Plaine-Stade de France",
+      "latitude": 48.918008,
+      "longitude": 2.362471
+    },
+    {
+      "id": "LA_VARENNE_CHENNEVIERES",
+      "name": "La Varenne-Chennevières",
+      "latitude": 48.795384,
+      "longitude": 2.513423
+    },
+    {
+      "id": "LAPLACE",
+      "name": "Laplace",
+      "latitude": 48.808297,
+      "longitude": 2.334354
+    },
+    {
+      "id": "LARDY",
+      "name": "Lardy",
+      "latitude": 48.520404,
+      "longitude": 2.25474
+    },
+    {
+      "id": "LE_BLANC_MESNIL",
+      "name": "Le Blanc-Mesnil",
+      "latitude": 48.932305,
+      "longitude": 2.475674
+    },
+    {
+      "id": "LE_BOURGET",
+      "name": "Le Bourget",
+      "latitude": 48.93074,
+      "longitude": 2.425791
+    },
+    {
+      "id": "LE_BRAS_DE_FER",
+      "name": "Le Bras-de-Fer",
+      "latitude": 48.623332,
+      "longitude": 2.451409
+    },
+    {
+      "id": "LE_CHENAY_GAGNY",
+      "name": "Le Chénay-Gagny",
+      "latitude": 48.877158,
+      "longitude": 2.552882
+    },
+    {
+      "id": "LE_COUDRAY_MONTCEAUX",
+      "name": "Le Coudray-Montceaux",
+      "latitude": 48.566118,
+      "longitude": 2.492713
+    },
+    {
+      "id": "LE_GUICHET",
+      "name": "Le Guichet",
+      "latitude": 48.705404,
+      "longitude": 2.192735
+    },
+    {
+      "id": "LE_MEE",
+      "name": "Le Mée",
+      "latitude": 48.538775,
+      "longitude": 2.625522
+    },
+    {
+      "id": "LE_PARC_DE_SAINT_MAUR",
+      "name": "Le Parc de Saint-Maur",
+      "latitude": 48.805378,
+      "longitude": 2.48635
+    },
+    {
+      "id": "LE_PLESSIS_CHENET",
+      "name": "Le Plessis-Chenet",
+      "latitude": 48.573808,
+      "longitude": 2.479469
+    },
+    {
+      "id": "LE_RAINCY_VILLEMOMBLE_MONTFERMEIL",
+      "name": "Le Raincy-Villemomble-Montfermeil",
+      "latitude": 48.888866,
+      "longitude": 2.513158
+    },
+    {
+      "id": "LE_VERT_DE_MAISONS",
+      "name": "Le Vert de Maisons",
+      "latitude": 48.788467,
+      "longitude": 2.432244
+    },
+    {
+      "id": "LE_VESINET_CENTRE",
+      "name": "Le Vésinet-Centre",
+      "latitude": 48.890086,
+      "longitude": 2.134601
+    },
+    {
+      "id": "LE_VESINET_LE_PECQ",
+      "name": "Le Vésinet-Le Pecq",
+      "latitude": 48.897973,
+      "longitude": 2.122117
+    },
+    {
+      "id": "LES_ARDOINES",
+      "name": "Les Ardoines",
+      "latitude": 48.782226,
+      "longitude": 2.40959
+    },
+    {
+      "id": "LES_BACONNETS",
+      "name": "Les Baconnets",
+      "latitude": 48.739681,
+      "longitude": 2.287667
+    },
+    {
+      "id": "LES_BOULLEREAUX_CHAMPIGNY",
+      "name": "Les Boullereaux-Champigny",
+      "latitude": 48.824849,
+      "longitude": 2.511856
+    },
+    {
+      "id": "LES_GRESILLONS",
+      "name": "Les Grésillons",
+      "latitude": 48.920873,
+      "longitude": 2.313835
+    },
+    {
+      "id": "LES_NOUES",
+      "name": "Les Noues",
+      "latitude": 49.033183,
+      "longitude": 2.478033
+    },
+    {
+      "id": "LES_SAULES",
+      "name": "Les Saules",
+      "latitude": 48.745072,
+      "longitude": 2.417521
+    },
+    {
+      "id": "LES_YVRIS_NOISY_LE_GRAND",
+      "name": "Les Yvris-Noisy-le-Grand",
+      "latitude": 48.823152,
+      "longitude": 2.579837
+    },
+    {
+      "id": "LIEUSAINT_MOISSY",
+      "name": "Lieusaint-Moissy",
+      "latitude": 48.628376,
+      "longitude": 2.569584
+    },
+    {
+      "id": "LOGNES",
+      "name": "Lognes",
+      "latitude": 48.839219,
+      "longitude": 2.633211
+    },
+    {
+      "id": "LOUVRES",
+      "name": "Louvres",
+      "latitude": 49.049326,
+      "longitude": 2.501758
+    },
+    {
+      "id": "LOZERE",
+      "name": "Lozère",
+      "latitude": 48.705969,
+      "longitude": 2.212262
+    },
+    {
+      "id": "LUXEMBOURG",
+      "name": "Luxembourg",
+      "latitude": 48.845434,
+      "longitude": 2.339763
+    },
+    {
+      "id": "MAGENTA",
+      "name": "Magenta",
+      "latitude": 48.880775,
+      "longitude": 2.358733
+    },
+    {
+      "id": "MAISONS_ALFORT_ALFORTVILLE",
+      "name": "Maisons-Alfort-Alfortville",
+      "latitude": 48.802049,
+      "longitude": 2.426482
+    },
+    {
+      "id": "MAISONS_LAFFITTE",
+      "name": "Maisons-Laffitte",
+      "latitude": 48.945503,
+      "longitude": 2.145017
+    },
+    {
+      "id": "MAISSE",
+      "name": "Maisse",
+      "latitude": 48.393642,
+      "longitude": 2.393411
+    },
+    {
+      "id": "MALESHERBES",
+      "name": "Malesherbes",
+      "latitude": 48.293592,
+      "longitude": 2.401134
+    },
+    {
+      "id": "MARNE_LA_VALLEE_CHESSY",
+      "name": "Marne-la-Vallée-Chessy",
+      "latitude": 48.86995,
+      "longitude": 2.782227
+    },
+    {
+      "id": "MAROLLES_EN_HUREPOIX",
+      "name": "Marolles-en-Hurepoix",
+      "latitude": 48.565594,
+      "longitude": 2.290924
+    },
+    {
+      "id": "MASSY_PALAISEAU",
+      "name": "Massy-Palaiseau",
+      "latitude": 48.725997,
+      "longitude": 2.258323
+    },
+    {
+      "id": "MASSY_VERRIERES",
+      "name": "Massy-Verrières",
+      "latitude": 48.734888,
+      "longitude": 2.274002
+    },
+    {
+      "id": "MELUN",
+      "name": "Melun",
+      "latitude": 48.527243,
+      "longitude": 2.65499
+    },
+    {
+      "id": "MENNECY",
+      "name": "Mennecy",
+      "latitude": 48.570597,
+      "longitude": 2.432099
+    },
+    {
+      "id": "MEUDON_VAL_FLEURY",
+      "name": "Meudon-Val-Fleury",
+      "latitude": 48.807493,
+      "longitude": 2.240883
+    },
+    {
+      "id": "MITRY_CLAYE",
+      "name": "Mitry-Claye",
+      "latitude": 48.975859,
+      "longitude": 2.642406
+    },
+    {
+      "id": "MONTGERON_CROSNE",
+      "name": "Montgeron-Crosne",
+      "latitude": 48.708238,
+      "longitude": 2.462282
+    },
+    {
+      "id": "MONTIGNY_BEAUCHAMP",
+      "name": "Montigny-Beauchamp",
+      "latitude": 49.007768,
+      "longitude": 2.196503
+    },
+    {
+      "id": "MOULIN_GALANT",
+      "name": "Moulin-Galant",
+      "latitude": 48.587154,
+      "longitude": 2.47349
+    },
+    {
+      "id": "MUSEE_D_ORSAY",
+      "name": "Musée d'Orsay",
+      "latitude": 48.860351,
+      "longitude": 2.32676
+    },
+    {
+      "id": "NANTERRE_LA_FOLIE",
+      "name": "Nanterre - La Folie",
+      "latitude": 48.897587,
+      "longitude": 2.223739
+    },
+    {
+      "id": "NANTERRE_PREFECTURE",
+      "name": "Nanterre-Préfecture",
+      "latitude": 48.895745,
+      "longitude": 2.223213
+    },
+    {
+      "id": "NANTERRE_UNIVERSITE",
+      "name": "Nanterre-Université",
+      "latitude": 48.90101,
+      "longitude": 2.213557
+    },
+    {
+      "id": "NANTERRE_VILLE",
+      "name": "Nanterre-Ville",
+      "latitude": 48.895126,
+      "longitude": 2.195364
+    },
+    {
+      "id": "NATION",
+      "name": "Nation",
+      "latitude": 48.848237,
+      "longitude": 2.395824
+    },
+    {
+      "id": "NEUILLY_PORTE_MAILLOT",
+      "name": "Neuilly Porte Maillot",
+      "latitude": 48.877908,
+      "longitude": 2.284431
+    },
+    {
+      "id": "NEUILLY_PLAISANCE",
+      "name": "Neuilly-Plaisance",
+      "latitude": 48.852907,
+      "longitude": 2.514312
+    },
+    {
+      "id": "NEUVILLE_UNIVERSITE",
+      "name": "Neuville Université",
+      "latitude": 49.014134,
+      "longitude": 2.078307
+    },
+    {
+      "id": "NOGENT_LE_PERREUX",
+      "name": "Nogent-le-Perreux",
+      "latitude": 48.839342,
+      "longitude": 2.494188
+    },
+    {
+      "id": "NOGENT_SUR_MARNE",
+      "name": "Nogent-sur-Marne",
+      "latitude": 48.834289,
+      "longitude": 2.471681
+    },
+    {
+      "id": "NOISIEL",
+      "name": "Noisiel",
+      "latitude": 48.843509,
+      "longitude": 2.616679
+    },
+    {
+      "id": "NOISY_CHAMPS",
+      "name": "Noisy - Champs",
+      "latitude": 48.842885,
+      "longitude": 2.580086
+    },
+    {
+      "id": "NOISY_LE_GRAND_MONT_D_EST",
+      "name": "Noisy-le-Grand-Mont d'Est",
+      "latitude": 48.840844,
+      "longitude": 2.5499
+    },
+    {
+      "id": "NOISY_LE_SEC",
+      "name": "Noisy-le-Sec",
+      "latitude": 48.896652,
+      "longitude": 2.458363
+    },
+    {
+      "id": "ORANGIS_BOIS_DE_L_EPINE",
+      "name": "Orangis-Bois de l'Epine",
+      "latitude": 48.636351,
+      "longitude": 2.407796
+    },
+    {
+      "id": "ORLY_VILLE",
+      "name": "Orly Ville",
+      "latitude": 48.741879,
+      "longitude": 2.402909
+    },
+    {
+      "id": "ORRY_LA_VILLE_COYE_LA_FORET",
+      "name": "Orry-la-Ville-Coye-la-Forêt",
+      "latitude": 49.138286,
+      "longitude": 2.490179
+    },
+    {
+      "id": "ORSAY_VILLE",
+      "name": "Orsay-Ville",
+      "latitude": 48.697506,
+      "longitude": 2.181054
+    },
+    {
+      "id": "OZOIR_LA_FERRIERE",
+      "name": "Ozoir-la-Ferrière",
+      "latitude": 48.770779,
+      "longitude": 2.690253
+    },
+    {
+      "id": "PALAISEAU",
+      "name": "Palaiseau",
+      "latitude": 48.716946,
+      "longitude": 2.245673
+    },
+    {
+      "id": "PALAISEAU_VILLEBON",
+      "name": "Palaiseau-Villebon",
+      "latitude": 48.708141,
+      "longitude": 2.237314
+    },
+    {
+      "id": "PANTIN",
+      "name": "Pantin",
+      "latitude": 48.898112,
+      "longitude": 2.400362
+    },
+    {
+      "id": "PARC_DE_SCEAUX",
+      "name": "Parc de Sceaux",
+      "latitude": 48.769563,
+      "longitude": 2.309905
+    },
+    {
+      "id": "PARC_DES_EXPOSITIONS",
+      "name": "Parc des Expositions",
+      "latitude": 48.973425,
+      "longitude": 2.51436
+    },
+    {
+      "id": "PARIS_AUSTERLITZ",
+      "name": "Paris Austerlitz",
+      "latitude": 48.842528,
+      "longitude": 2.365433
+    },
+    {
+      "id": "PEREIRE_LEVALLOIS",
+      "name": "Pereire-Levallois",
+      "latitude": 48.886041,
+      "longitude": 2.299279
+    },
+    {
+      "id": "PIERREFITTE_STAINS",
+      "name": "Pierrefitte Stains",
+      "latitude": 48.963755,
+      "longitude": 2.372103
+    },
+    {
+      "id": "PIERRELAYE",
+      "name": "Pierrelaye",
+      "latitude": 49.019137,
+      "longitude": 2.154663
+    },
+    {
+      "id": "POISSY",
+      "name": "Poissy",
+      "latitude": 48.933265,
+      "longitude": 2.041072
+    },
+    {
+      "id": "PONT_DE_RUNGIS",
+      "name": "Pont de Rungis",
+      "latitude": 48.74835,
+      "longitude": 2.373112
+    },
+    {
+      "id": "PONT_DE_L_ALMA",
+      "name": "Pont de l'Alma",
+      "latitude": 48.862662,
+      "longitude": 2.30099
+    },
+    {
+      "id": "PONT_DU_GARIGLIANO",
+      "name": "Pont du Garigliano",
+      "latitude": 48.83909,
+      "longitude": 2.270458
+    },
+    {
+      "id": "PONTHIERRY_PRINGY",
+      "name": "Ponthierry-Pringy",
+      "latitude": 48.53514,
+      "longitude": 2.544349
+    },
+    {
+      "id": "PONTOISE",
+      "name": "Pontoise",
+      "latitude": 49.046646,
+      "longitude": 2.095195
+    },
+    {
+      "id": "PORCHEFONTAINE",
+      "name": "Porchefontaine",
+      "latitude": 48.796528,
+      "longitude": 2.152379
+    },
+    {
+      "id": "PORT_ROYAL",
+      "name": "Port Royal",
+      "latitude": 48.840034,
+      "longitude": 2.337096
+    },
+    {
+      "id": "PORTE_MAILLOT",
+      "name": "Porte Maillot",
+      "latitude": 48.877933,
+      "longitude": 2.282976
+    },
+    {
+      "id": "PORTE_DE_CLICHY",
+      "name": "Porte de Clichy",
+      "latitude": 48.894168,
+      "longitude": 2.315599
+    },
+    {
+      "id": "RIS_ORANGIS",
+      "name": "Ris-Orangis",
+      "latitude": 48.658975,
+      "longitude": 2.415207
+    },
+    {
+      "id": "ROBINSON",
+      "name": "Robinson",
+      "latitude": 48.780237,
+      "longitude": 2.281431
+    },
+    {
+      "id": "ROISSY_EN_BRIE",
+      "name": "Roissy-en-Brie",
+      "latitude": 48.795655,
+      "longitude": 2.650388
+    },
+    {
+      "id": "ROSA_PARKS",
+      "name": "Rosa Parks",
+      "latitude": 48.896581,
+      "longitude": 2.373819
+    },
+    {
+      "id": "ROSNY_BOIS_PERRIER",
+      "name": "Rosny-Bois-Perrier",
+      "latitude": 48.882528,
+      "longitude": 2.481213
+    },
+    {
+      "id": "ROSNY_SOUS_BOIS",
+      "name": "Rosny-sous-Bois",
+      "latitude": 48.869912,
+      "longitude": 2.485761
+    },
+    {
+      "id": "RUEIL_MALMAISON",
+      "name": "Rueil-Malmaison",
+      "latitude": 48.887574,
+      "longitude": 2.172579
+    },
+    {
+      "id": "RUNGIS_LA_FRATERNELLE",
+      "name": "Rungis-La Fraternelle",
+      "latitude": 48.740195,
+      "longitude": 2.351633
+    },
+    {
+      "id": "SAINT_CHERON",
+      "name": "Saint-Chéron",
+      "latitude": 48.550927,
+      "longitude": 2.124937
+    },
+    {
+      "id": "SAINT_CYR",
+      "name": "Saint-Cyr",
+      "latitude": 48.798708,
+      "longitude": 2.071847
+    },
+    {
+      "id": "SAINT_DENIS",
+      "name": "Saint-Denis",
+      "latitude": 48.934456,
+      "longitude": 2.345604
+    },
+    {
+      "id": "SAINT_FARGEAU",
+      "name": "Saint-Fargeau",
+      "latitude": 48.565073,
+      "longitude": 2.542609
+    },
+    {
+      "id": "SAINT_GERMAIN_EN_LAYE",
+      "name": "Saint-Germain-en-Laye",
+      "latitude": 48.898076,
+      "longitude": 2.094837
+    },
+    {
+      "id": "SAINT_GRATIEN",
+      "name": "Saint-Gratien",
+      "latitude": 48.96359,
+      "longitude": 2.285931
+    },
+    {
+      "id": "SAINT_MARTIN_D_ETAMPES",
+      "name": "Saint-Martin-d'Étampes",
+      "latitude": 48.427363,
+      "longitude": 2.145247
+    },
+    {
+      "id": "SAINT_MAUR_CRETEIL",
+      "name": "Saint-Maur-Créteil",
+      "latitude": 48.8062,
+      "longitude": 2.47272
+    },
+    {
+      "id": "SAINT_MICHEL",
+      "name": "Saint-Michel",
+      "latitude": 48.853533,
+      "longitude": 2.345288
+    },
+    {
+      "id": "SAINT_MICHEL_SUR_ORGE",
+      "name": "Saint-Michel-sur-Orge",
+      "latitude": 48.635876,
+      "longitude": 2.306833
+    },
+    {
+      "id": "SAINT_OUEN",
+      "name": "Saint-Ouen",
+      "latitude": 48.904566,
+      "longitude": 2.322626
+    },
+    {
+      "id": "SAINT_OUEN_L_AUMONE",
+      "name": "Saint-Ouen-l'Aumône",
+      "latitude": 49.045312,
+      "longitude": 2.105111
+    },
+    {
+      "id": "SAINT_OUEN_L_AUMONE_LIESSE",
+      "name": "Saint-Ouen-l'Aumône-Liesse",
+      "latitude": 49.033988,
+      "longitude": 2.128264
+    },
+    {
+      "id": "SAINT_QUENTIN_EN_YVELINES",
+      "name": "Saint-Quentin-en-Yvelines",
+      "latitude": 48.78739,
+      "longitude": 2.044622
+    },
+    {
+      "id": "SAINT_REMY_LES_CHEVREUSE",
+      "name": "Saint-Rémy-lès-Chevreuse",
+      "latitude": 48.702751,
+      "longitude": 2.071243
+    },
+    {
+      "id": "SAINTE_GENEVIEVE_DES_BOIS",
+      "name": "Sainte-Geneviève-des-Bois",
+      "latitude": 48.652811,
+      "longitude": 2.312736
+    },
+    {
+      "id": "SARTROUVILLE",
+      "name": "Sartrouville",
+      "latitude": 48.937736,
+      "longitude": 2.157086
+    },
+    {
+      "id": "SAVIGNY_LE_TEMPLE_NANDY",
+      "name": "Savigny-le-Temple-Nandy",
+      "latitude": 48.595564,
+      "longitude": 2.583948
+    },
+    {
+      "id": "SAVIGNY_SUR_ORGE",
+      "name": "Savigny-sur-Orge",
+      "latitude": 48.676447,
+      "longitude": 2.352481
+    },
+    {
+      "id": "SCEAUX",
+      "name": "Sceaux",
+      "latitude": 48.781357,
+      "longitude": 2.297648
+    },
+    {
+      "id": "SERMAISE",
+      "name": "Sermaise",
+      "latitude": 48.535807,
+      "longitude": 2.069382
+    },
+    {
+      "id": "SEVRAN_BEAUDOTTES",
+      "name": "Sevran-Beaudottes",
+      "latitude": 48.946894,
+      "longitude": 2.524779
+    },
+    {
+      "id": "SEVRAN_LIVRY",
+      "name": "Sevran-Livry",
+      "latitude": 48.93628,
+      "longitude": 2.534715
+    },
+    {
+      "id": "STADE_DE_FRANCE_SAINT_DENIS",
+      "name": "Stade de France-Saint-Denis",
+      "latitude": 48.917567,
+      "longitude": 2.35039
+    },
+    {
+      "id": "SUCY_BONNEUIL",
+      "name": "Sucy-Bonneuil",
+      "latitude": 48.771708,
+      "longitude": 2.507483
+    },
+    {
+      "id": "SURVILLIERS_FOSSES",
+      "name": "Survilliers-Fosses",
+      "latitude": 49.099587,
+      "longitude": 2.525532
+    },
+    {
+      "id": "TORCY",
+      "name": "Torcy",
+      "latitude": 48.839646,
+      "longitude": 2.65513
+    },
+    {
+      "id": "TOURNAN",
+      "name": "Tournan",
+      "latitude": 48.739487,
+      "longitude": 2.758825
+    },
+    {
+      "id": "VAL_D_EUROPE",
+      "name": "Val d'Europe",
+      "latitude": 48.854825,
+      "longitude": 2.772428
+    },
+    {
+      "id": "VAL_DE_FONTENAY",
+      "name": "Val de Fontenay",
+      "latitude": 48.854269,
+      "longitude": 2.489167
+    },
+    {
+      "id": "VERSAILLES_CHATEAU",
+      "name": "Versailles Château",
+      "latitude": 48.800216,
+      "longitude": 2.129044
+    },
+    {
+      "id": "VERSAILLES_CHANTIERS",
+      "name": "Versailles-Chantiers",
+      "latitude": 48.795138,
+      "longitude": 2.135156
+    },
+    {
+      "id": "VERT_GALANT",
+      "name": "Vert-Galant",
+      "latitude": 48.944181,
+      "longitude": 2.566448
+    },
+    {
+      "id": "VIGNEUX_SUR_SEINE",
+      "name": "Vigneux-sur-Seine",
+      "latitude": 48.708121,
+      "longitude": 2.413871
+    },
+    {
+      "id": "VILLABE",
+      "name": "Villabé",
+      "latitude": 48.592812,
+      "longitude": 2.46155
+    },
+    {
+      "id": "VILLENEUVE_SAINT_GEORGES",
+      "name": "Villeneuve-Saint-Georges",
+      "latitude": 48.730638,
+      "longitude": 2.446226
+    },
+    {
+      "id": "VILLENEUVE_TRIAGE",
+      "name": "Villeneuve-Triage",
+      "latitude": 48.744501,
+      "longitude": 2.438668
+    },
+    {
+      "id": "VILLENEUVE_LE_ROI",
+      "name": "Villeneuve-le-Roi",
+      "latitude": 48.739831,
+      "longitude": 2.4264
+    },
+    {
+      "id": "VILLEPARISIS_MITRY_LE_NEUF",
+      "name": "Villeparisis-Mitry-le-Neuf",
+      "latitude": 48.953148,
+      "longitude": 2.603135
+    },
+    {
+      "id": "VILLEPINTE",
+      "name": "Villepinte",
+      "latitude": 48.96271,
+      "longitude": 2.512645
+    },
+    {
+      "id": "VILLIERS_LE_BEL_GONESSE_ARNOUVILLE",
+      "name": "Villiers-le-Bel-Gonesse-Arnouville",
+      "latitude": 48.993777,
+      "longitude": 2.416187
+    },
+    {
+      "id": "VILLIERS_SUR_MARNE_LE_PLESSIS_TREVISE",
+      "name": "Villiers-sur-Marne - Le Plessis-Trévise",
+      "latitude": 48.823267,
+      "longitude": 2.54268
+    },
+    {
+      "id": "VINCENNES",
+      "name": "Vincennes",
+      "latitude": 48.84734,
+      "longitude": 2.432435
+    },
+    {
+      "id": "VIROFLAY_RIVE_GAUCHE",
+      "name": "Viroflay Rive Gauche",
+      "latitude": 48.800718,
+      "longitude": 2.17139
+    },
+    {
+      "id": "VIRY_CHATILLON",
+      "name": "Viry-Châtillon",
+      "latitude": 48.676092,
+      "longitude": 2.386784
+    },
+    {
+      "id": "VITRY_SUR_SEINE",
+      "name": "Vitry-sur-Seine",
+      "latitude": 48.800209,
+      "longitude": 2.402713
+    },
+    {
+      "id": "VOSVES",
+      "name": "Vosves",
+      "latitude": 48.515151,
+      "longitude": 2.599304
+    },
+    {
+      "id": "YERRES",
+      "name": "Yerres",
+      "latitude": 48.706611,
+      "longitude": 2.484243
+    },
+    {
+      "id": "EGLY",
+      "name": "Égly",
+      "latitude": 48.582725,
+      "longitude": 2.223449
+    },
+    {
+      "id": "EMERAINVILLE_PONTAULT_COMBAULT",
+      "name": "Émerainville-Pontault-Combault",
+      "latitude": 48.805841,
+      "longitude": 2.619194
+    },
+    {
+      "id": "EPINAY_SUR_ORGE",
+      "name": "Épinay-sur-Orge",
+      "latitude": 48.669484,
+      "longitude": 2.332623
+    },
+    {
+      "id": "EPINAY_SUR_SEINE",
+      "name": "Épinay-sur-Seine",
+      "latitude": 48.953495,
+      "longitude": 2.302347
+    },
+    {
+      "id": "ETAMPES",
+      "name": "Étampes",
+      "latitude": 48.436924,
+      "longitude": 2.159531
+    },
+    {
+      "id": "ETRECHY",
+      "name": "Étréchy",
+      "latitude": 48.493645,
+      "longitude": 2.194582
+    },
+    {
+      "id": "EVRY",
+      "name": "Évry",
+      "latitude": 48.634268,
+      "longitude": 2.452573
+    },
+    {
+      "id": "EVRY_COURCOURONNES",
+      "name": "Évry Courcouronnes",
+      "latitude": 48.625901,
+      "longitude": 2.430155
+    }
+  ],
+  "sections": [
+    {
+      "source": "NANTERRE_UNIVERSITE",
+      "target": "NANTERRE_PREFECTURE",
+      "durationSeconds": 95,
+      "distanceMeters": 917
+    },
+    {
+      "source": "NANTERRE_PREFECTURE",
+      "target": "NANTERRE_UNIVERSITE",
+      "durationSeconds": 95,
+      "distanceMeters": 917
+    },
+    {
+      "source": "NANTERRE_UNIVERSITE",
+      "target": "NANTERRE_VILLE",
+      "durationSeconds": 132,
+      "distanceMeters": 1482
+    },
+    {
+      "source": "NANTERRE_VILLE",
+      "target": "NANTERRE_UNIVERSITE",
+      "durationSeconds": 132,
+      "distanceMeters": 1482
+    },
+    {
+      "source": "ACHERES_VILLE",
+      "target": "ACHERES_GRAND_CORMIER",
+      "durationSeconds": 169,
+      "distanceMeters": 2051
+    },
+    {
+      "source": "ACHERES_GRAND_CORMIER",
+      "target": "ACHERES_VILLE",
+      "durationSeconds": 169,
+      "distanceMeters": 2051
+    },
+    {
+      "source": "ACHERES_VILLE",
+      "target": "CONFLANS_FIN_D_OISE",
+      "durationSeconds": 179,
+      "distanceMeters": 2204
+    },
+    {
+      "source": "CONFLANS_FIN_D_OISE",
+      "target": "ACHERES_VILLE",
+      "durationSeconds": 179,
+      "distanceMeters": 2204
+    },
+    {
+      "source": "CHATOU_CROISSY",
+      "target": "RUEIL_MALMAISON",
+      "durationSeconds": 116,
+      "distanceMeters": 1247
+    },
+    {
+      "source": "RUEIL_MALMAISON",
+      "target": "CHATOU_CROISSY",
+      "durationSeconds": 116,
+      "distanceMeters": 1247
+    },
+    {
+      "source": "CHATOU_CROISSY",
+      "target": "LE_VESINET_CENTRE",
+      "durationSeconds": 142,
+      "distanceMeters": 1649
+    },
+    {
+      "source": "LE_VESINET_CENTRE",
+      "target": "CHATOU_CROISSY",
+      "durationSeconds": 142,
+      "distanceMeters": 1649
+    },
+    {
+      "source": "LOGNES",
+      "target": "NOISIEL",
+      "durationSeconds": 120,
+      "distanceMeters": 1300
+    },
+    {
+      "source": "NOISIEL",
+      "target": "LOGNES",
+      "durationSeconds": 120,
+      "distanceMeters": 1300
+    },
+    {
+      "source": "LOGNES",
+      "target": "TORCY",
+      "durationSeconds": 139,
+      "distanceMeters": 1604
+    },
+    {
+      "source": "TORCY",
+      "target": "LOGNES",
+      "durationSeconds": 139,
+      "distanceMeters": 1604
+    },
+    {
+      "source": "NANTERRE_PREFECTURE",
+      "target": "LA_DEFENSE",
+      "durationSeconds": 114,
+      "distanceMeters": 1211
+    },
+    {
+      "source": "LA_DEFENSE",
+      "target": "NANTERRE_PREFECTURE",
+      "durationSeconds": 114,
+      "distanceMeters": 1211
+    },
+    {
+      "source": "NEUVILLE_UNIVERSITE",
+      "target": "CERGY_PREFECTURE",
+      "durationSeconds": 197,
+      "distanceMeters": 2484
+    },
+    {
+      "source": "CERGY_PREFECTURE",
+      "target": "NEUVILLE_UNIVERSITE",
+      "durationSeconds": 197,
+      "distanceMeters": 2484
+    },
+    {
+      "source": "NEUVILLE_UNIVERSITE",
+      "target": "CONFLANS_FIN_D_OISE",
+      "durationSeconds": 209,
+      "distanceMeters": 2665
+    },
+    {
+      "source": "CONFLANS_FIN_D_OISE",
+      "target": "NEUVILLE_UNIVERSITE",
+      "durationSeconds": 209,
+      "distanceMeters": 2665
+    },
+    {
+      "source": "POISSY",
+      "target": "ACHERES_GRAND_CORMIER",
+      "durationSeconds": 333,
+      "distanceMeters": 4553
+    },
+    {
+      "source": "ACHERES_GRAND_CORMIER",
+      "target": "POISSY",
+      "durationSeconds": 333,
+      "distanceMeters": 4553
+    },
+    {
+      "source": "POISSY",
+      "target": "ACHERES_VILLE",
+      "durationSeconds": 358,
+      "distanceMeters": 4945
+    },
+    {
+      "source": "ACHERES_VILLE",
+      "target": "POISSY",
+      "durationSeconds": 358,
+      "distanceMeters": 4945
+    },
+    {
+      "source": "CERGY_LE_HAUT",
+      "target": "CERGY_SAINT_CHRISTOPHE",
+      "durationSeconds": 146,
+      "distanceMeters": 1709
+    },
+    {
+      "source": "CERGY_SAINT_CHRISTOPHE",
+      "target": "CERGY_LE_HAUT",
+      "durationSeconds": 146,
+      "distanceMeters": 1709
+    },
+    {
+      "source": "CERGY_LE_HAUT",
+      "target": "CERGY_PREFECTURE",
+      "durationSeconds": 372,
+      "distanceMeters": 5154
+    },
+    {
+      "source": "CERGY_PREFECTURE",
+      "target": "CERGY_LE_HAUT",
+      "durationSeconds": 372,
+      "distanceMeters": 5154
+    },
+    {
+      "source": "FONTENAY_SOUS_BOIS",
+      "target": "NOGENT_SUR_MARNE",
+      "durationSeconds": 114,
+      "distanceMeters": 1214
+    },
+    {
+      "source": "NOGENT_SUR_MARNE",
+      "target": "FONTENAY_SOUS_BOIS",
+      "durationSeconds": 114,
+      "distanceMeters": 1214
+    },
+    {
+      "source": "FONTENAY_SOUS_BOIS",
+      "target": "VAL_DE_FONTENAY",
+      "durationSeconds": 179,
+      "distanceMeters": 2209
+    },
+    {
+      "source": "VAL_DE_FONTENAY",
+      "target": "FONTENAY_SOUS_BOIS",
+      "durationSeconds": 179,
+      "distanceMeters": 2209
+    },
+    {
+      "source": "JOINVILLE_LE_PONT",
+      "target": "NOGENT_SUR_MARNE",
+      "durationSeconds": 138,
+      "distanceMeters": 1580
+    },
+    {
+      "source": "NOGENT_SUR_MARNE",
+      "target": "JOINVILLE_LE_PONT",
+      "durationSeconds": 138,
+      "distanceMeters": 1580
+    },
+    {
+      "source": "JOINVILLE_LE_PONT",
+      "target": "SAINT_MAUR_CRETEIL",
+      "durationSeconds": 151,
+      "distanceMeters": 1773
+    },
+    {
+      "source": "SAINT_MAUR_CRETEIL",
+      "target": "JOINVILLE_LE_PONT",
+      "durationSeconds": 151,
+      "distanceMeters": 1773
+    },
+    {
+      "source": "LA_VARENNE_CHENNEVIERES",
+      "target": "CHAMPIGNY",
+      "durationSeconds": 120,
+      "distanceMeters": 1310
+    },
+    {
+      "source": "CHAMPIGNY",
+      "target": "LA_VARENNE_CHENNEVIERES",
+      "durationSeconds": 120,
+      "distanceMeters": 1310
+    },
+    {
+      "source": "LA_VARENNE_CHENNEVIERES",
+      "target": "LE_PARC_DE_SAINT_MAUR",
+      "durationSeconds": 183,
+      "distanceMeters": 2273
+    },
+    {
+      "source": "LE_PARC_DE_SAINT_MAUR",
+      "target": "LA_VARENNE_CHENNEVIERES",
+      "durationSeconds": 183,
+      "distanceMeters": 2273
+    },
+    {
+      "source": "NANTERRE_VILLE",
+      "target": "RUEIL_MALMAISON",
+      "durationSeconds": 157,
+      "distanceMeters": 1865
+    },
+    {
+      "source": "RUEIL_MALMAISON",
+      "target": "NANTERRE_VILLE",
+      "durationSeconds": 157,
+      "distanceMeters": 1865
+    },
+    {
+      "source": "SARTROUVILLE",
+      "target": "MAISONS_LAFFITTE",
+      "durationSeconds": 115,
+      "distanceMeters": 1234
+    },
+    {
+      "source": "MAISONS_LAFFITTE",
+      "target": "SARTROUVILLE",
+      "durationSeconds": 115,
+      "distanceMeters": 1234
+    },
+    {
+      "source": "SARTROUVILLE",
+      "target": "HOUILLES_CARRIERES_SUR_SEINE",
+      "durationSeconds": 219,
+      "distanceMeters": 2826
+    },
+    {
+      "source": "HOUILLES_CARRIERES_SUR_SEINE",
+      "target": "SARTROUVILLE",
+      "durationSeconds": 219,
+      "distanceMeters": 2826
+    },
+    {
+      "source": "SUCY_BONNEUIL",
+      "target": "BOISSY_SAINT_LEGER",
+      "durationSeconds": 177,
+      "distanceMeters": 2181
+    },
+    {
+      "source": "BOISSY_SAINT_LEGER",
+      "target": "SUCY_BONNEUIL",
+      "durationSeconds": 177,
+      "distanceMeters": 2181
+    },
+    {
+      "source": "SUCY_BONNEUIL",
+      "target": "LA_VARENNE_CHENNEVIERES",
+      "durationSeconds": 209,
+      "distanceMeters": 2668
+    },
+    {
+      "source": "LA_VARENNE_CHENNEVIERES",
+      "target": "SUCY_BONNEUIL",
+      "durationSeconds": 209,
+      "distanceMeters": 2668
+    },
+    {
+      "source": "TORCY",
+      "target": "NOISIEL",
+      "durationSeconds": 221,
+      "distanceMeters": 2846
+    },
+    {
+      "source": "NOISIEL",
+      "target": "TORCY",
+      "durationSeconds": 221,
+      "distanceMeters": 2846
+    },
+    {
+      "source": "GARE_DE_LYON",
+      "target": "NATION",
+      "durationSeconds": 147,
+      "distanceMeters": 1712
+    },
+    {
+      "source": "NATION",
+      "target": "GARE_DE_LYON",
+      "durationSeconds": 147,
+      "distanceMeters": 1712
+    },
+    {
+      "source": "GARE_DE_LYON",
+      "target": "CHATELET_LES_HALLES",
+      "durationSeconds": 214,
+      "distanceMeters": 2748
+    },
+    {
+      "source": "CHATELET_LES_HALLES",
+      "target": "GARE_DE_LYON",
+      "durationSeconds": 214,
+      "distanceMeters": 2748
+    },
+    {
+      "source": "NOISIEL",
+      "target": "NOISY_CHAMPS",
+      "durationSeconds": 210,
+      "distanceMeters": 2678
+    },
+    {
+      "source": "NOISY_CHAMPS",
+      "target": "NOISIEL",
+      "durationSeconds": 210,
+      "distanceMeters": 2678
+    },
+    {
+      "source": "VINCENNES",
+      "target": "FONTENAY_SOUS_BOIS",
+      "durationSeconds": 186,
+      "distanceMeters": 2307
+    },
+    {
+      "source": "FONTENAY_SOUS_BOIS",
+      "target": "VINCENNES",
+      "durationSeconds": 186,
+      "distanceMeters": 2307
+    },
+    {
+      "source": "VINCENNES",
+      "target": "NATION",
+      "durationSeconds": 210,
+      "distanceMeters": 2680
+    },
+    {
+      "source": "NATION",
+      "target": "VINCENNES",
+      "durationSeconds": 210,
+      "distanceMeters": 2680
+    },
+    {
+      "source": "BRY_SUR_MARNE",
+      "target": "NEUILLY_PLAISANCE",
+      "durationSeconds": 112,
+      "distanceMeters": 1191
+    },
+    {
+      "source": "NEUILLY_PLAISANCE",
+      "target": "BRY_SUR_MARNE",
+      "durationSeconds": 112,
+      "distanceMeters": 1191
+    },
+    {
+      "source": "BRY_SUR_MARNE",
+      "target": "NOISY_LE_GRAND_MONT_D_EST",
+      "durationSeconds": 155,
+      "distanceMeters": 1841
+    },
+    {
+      "source": "NOISY_LE_GRAND_MONT_D_EST",
+      "target": "BRY_SUR_MARNE",
+      "durationSeconds": 155,
+      "distanceMeters": 1841
+    },
+    {
+      "source": "MARNE_LA_VALLEE_CHESSY",
+      "target": "VAL_D_EUROPE",
+      "durationSeconds": 154,
+      "distanceMeters": 1828
+    },
+    {
+      "source": "VAL_D_EUROPE",
+      "target": "MARNE_LA_VALLEE_CHESSY",
+      "durationSeconds": 154,
+      "distanceMeters": 1828
+    },
+    {
+      "source": "MARNE_LA_VALLEE_CHESSY",
+      "target": "BUSSY_SAINT_GEORGES",
+      "durationSeconds": 461,
+      "distanceMeters": 6520
+    },
+    {
+      "source": "BUSSY_SAINT_GEORGES",
+      "target": "MARNE_LA_VALLEE_CHESSY",
+      "durationSeconds": 461,
+      "distanceMeters": 6520
+    },
+    {
+      "source": "SAINT_GERMAIN_EN_LAYE",
+      "target": "LE_VESINET_LE_PECQ",
+      "durationSeconds": 165,
+      "distanceMeters": 1994
+    },
+    {
+      "source": "LE_VESINET_LE_PECQ",
+      "target": "SAINT_GERMAIN_EN_LAYE",
+      "durationSeconds": 165,
+      "distanceMeters": 1994
+    },
+    {
+      "source": "SAINT_GERMAIN_EN_LAYE",
+      "target": "LE_VESINET_CENTRE",
+      "durationSeconds": 233,
+      "distanceMeters": 3039
+    },
+    {
+      "source": "LE_VESINET_CENTRE",
+      "target": "SAINT_GERMAIN_EN_LAYE",
+      "durationSeconds": 233,
+      "distanceMeters": 3039
+    },
+    {
+      "source": "LA_DEFENSE",
+      "target": "NANTERRE_UNIVERSITE",
+      "durationSeconds": 172,
+      "distanceMeters": 2103
+    },
+    {
+      "source": "NANTERRE_UNIVERSITE",
+      "target": "LA_DEFENSE",
+      "durationSeconds": 172,
+      "distanceMeters": 2103
+    },
+    {
+      "source": "NOISY_LE_GRAND_MONT_D_EST",
+      "target": "NOISY_CHAMPS",
+      "durationSeconds": 180,
+      "distanceMeters": 2220
+    },
+    {
+      "source": "NOISY_CHAMPS",
+      "target": "NOISY_LE_GRAND_MONT_D_EST",
+      "durationSeconds": 180,
+      "distanceMeters": 2220
+    },
+    {
+      "source": "ACHERES_GRAND_CORMIER",
+      "target": "MAISONS_LAFFITTE",
+      "durationSeconds": 291,
+      "distanceMeters": 3918
+    },
+    {
+      "source": "MAISONS_LAFFITTE",
+      "target": "ACHERES_GRAND_CORMIER",
+      "durationSeconds": 291,
+      "distanceMeters": 3918
+    },
+    {
+      "source": "CERGY_SAINT_CHRISTOPHE",
+      "target": "CERGY_PREFECTURE",
+      "durationSeconds": 271,
+      "distanceMeters": 3608
+    },
+    {
+      "source": "CERGY_PREFECTURE",
+      "target": "CERGY_SAINT_CHRISTOPHE",
+      "durationSeconds": 271,
+      "distanceMeters": 3608
+    },
+    {
+      "source": "CHATELET_LES_HALLES",
+      "target": "AUBER",
+      "durationSeconds": 146,
+      "distanceMeters": 1697
+    },
+    {
+      "source": "AUBER",
+      "target": "CHATELET_LES_HALLES",
+      "durationSeconds": 146,
+      "distanceMeters": 1697
+    },
+    {
+      "source": "LE_PARC_DE_SAINT_MAUR",
+      "target": "SAINT_MAUR_CRETEIL",
+      "durationSeconds": 100,
+      "distanceMeters": 1002
+    },
+    {
+      "source": "SAINT_MAUR_CRETEIL",
+      "target": "LE_PARC_DE_SAINT_MAUR",
+      "durationSeconds": 100,
+      "distanceMeters": 1002
+    },
+    {
+      "source": "LE_PARC_DE_SAINT_MAUR",
+      "target": "CHAMPIGNY",
+      "durationSeconds": 150,
+      "distanceMeters": 1763
+    },
+    {
+      "source": "CHAMPIGNY",
+      "target": "LE_PARC_DE_SAINT_MAUR",
+      "durationSeconds": 150,
+      "distanceMeters": 1763
+    },
+    {
+      "source": "BUSSY_SAINT_GEORGES",
+      "target": "TORCY",
+      "durationSeconds": 293,
+      "distanceMeters": 3956
+    },
+    {
+      "source": "TORCY",
+      "target": "BUSSY_SAINT_GEORGES",
+      "durationSeconds": 293,
+      "distanceMeters": 3956
+    },
+    {
+      "source": "BUSSY_SAINT_GEORGES",
+      "target": "VAL_D_EUROPE",
+      "durationSeconds": 366,
+      "distanceMeters": 5068
+    },
+    {
+      "source": "VAL_D_EUROPE",
+      "target": "BUSSY_SAINT_GEORGES",
+      "durationSeconds": 366,
+      "distanceMeters": 5068
+    },
+    {
+      "source": "AUBER",
+      "target": "CHARLES_DE_GAULLE_ETOILE",
+      "durationSeconds": 203,
+      "distanceMeters": 2581
+    },
+    {
+      "source": "CHARLES_DE_GAULLE_ETOILE",
+      "target": "AUBER",
+      "durationSeconds": 203,
+      "distanceMeters": 2581
+    },
+    {
+      "source": "HOUILLES_CARRIERES_SUR_SEINE",
+      "target": "NANTERRE_VILLE",
+      "durationSeconds": 224,
+      "distanceMeters": 2901
+    },
+    {
+      "source": "NANTERRE_VILLE",
+      "target": "HOUILLES_CARRIERES_SUR_SEINE",
+      "durationSeconds": 224,
+      "distanceMeters": 2901
+    },
+    {
+      "source": "LE_VESINET_CENTRE",
+      "target": "LE_VESINET_LE_PECQ",
+      "durationSeconds": 117,
+      "distanceMeters": 1265
+    },
+    {
+      "source": "LE_VESINET_LE_PECQ",
+      "target": "LE_VESINET_CENTRE",
+      "durationSeconds": 117,
+      "distanceMeters": 1265
+    },
+    {
+      "source": "NEUILLY_PLAISANCE",
+      "target": "VAL_DE_FONTENAY",
+      "durationSeconds": 155,
+      "distanceMeters": 1845
+    },
+    {
+      "source": "VAL_DE_FONTENAY",
+      "target": "NEUILLY_PLAISANCE",
+      "durationSeconds": 155,
+      "distanceMeters": 1845
+    },
+    {
+      "source": "CHARLES_DE_GAULLE_ETOILE",
+      "target": "CHATELET_LES_HALLES",
+      "durationSeconds": 300,
+      "distanceMeters": 4061
+    },
+    {
+      "source": "CHATELET_LES_HALLES",
+      "target": "CHARLES_DE_GAULLE_ETOILE",
+      "durationSeconds": 300,
+      "distanceMeters": 4061
+    },
+    {
+      "source": "BOISSY_SAINT_LEGER",
+      "target": "LA_VARENNE_CHENNEVIERES",
+      "durationSeconds": 352,
+      "distanceMeters": 4847
+    },
+    {
+      "source": "LA_VARENNE_CHENNEVIERES",
+      "target": "BOISSY_SAINT_LEGER",
+      "durationSeconds": 352,
+      "distanceMeters": 4847
+    },
+    {
+      "source": "DRANCY",
+      "target": "LE_BLANC_MESNIL",
+      "durationSeconds": 134,
+      "distanceMeters": 1527
+    },
+    {
+      "source": "LE_BLANC_MESNIL",
+      "target": "DRANCY",
+      "durationSeconds": 134,
+      "distanceMeters": 1527
+    },
+    {
+      "source": "DRANCY",
+      "target": "LE_BOURGET",
+      "durationSeconds": 174,
+      "distanceMeters": 2127
+    },
+    {
+      "source": "LE_BOURGET",
+      "target": "DRANCY",
+      "durationSeconds": 174,
+      "distanceMeters": 2127
+    },
+    {
+      "source": "CHATELET_LES_HALLES",
+      "target": "SAINT_MICHEL",
+      "durationSeconds": 95,
+      "distanceMeters": 930
+    },
+    {
+      "source": "SAINT_MICHEL",
+      "target": "CHATELET_LES_HALLES",
+      "durationSeconds": 95,
+      "distanceMeters": 930
+    },
+    {
+      "source": "CHATELET_LES_HALLES",
+      "target": "LUXEMBOURG",
+      "durationSeconds": 159,
+      "distanceMeters": 1897
+    },
+    {
+      "source": "LUXEMBOURG",
+      "target": "CHATELET_LES_HALLES",
+      "durationSeconds": 159,
+      "distanceMeters": 1897
+    },
+    {
+      "source": "GENTILLY",
+      "target": "CITE_UNIVERSITAIRE",
+      "durationSeconds": 90,
+      "distanceMeters": 666
+    },
+    {
+      "source": "CITE_UNIVERSITAIRE",
+      "target": "GENTILLY",
+      "durationSeconds": 90,
+      "distanceMeters": 666
+    },
+    {
+      "source": "GENTILLY",
+      "target": "LAPLACE",
+      "durationSeconds": 94,
+      "distanceMeters": 907
+    },
+    {
+      "source": "LAPLACE",
+      "target": "GENTILLY",
+      "durationSeconds": 94,
+      "distanceMeters": 907
+    },
+    {
+      "source": "LE_BOURGET",
+      "target": "LA_COURNEUVE_AUBERVILLIERS",
+      "durationSeconds": 229,
+      "distanceMeters": 2964
+    },
+    {
+      "source": "LA_COURNEUVE_AUBERVILLIERS",
+      "target": "LE_BOURGET",
+      "durationSeconds": 229,
+      "distanceMeters": 2964
+    },
+    {
+      "source": "PARC_DES_EXPOSITIONS",
+      "target": "VILLEPINTE",
+      "durationSeconds": 113,
+      "distanceMeters": 1198
+    },
+    {
+      "source": "VILLEPINTE",
+      "target": "PARC_DES_EXPOSITIONS",
+      "durationSeconds": 113,
+      "distanceMeters": 1198
+    },
+    {
+      "source": "PARC_DES_EXPOSITIONS",
+      "target": "SEVRAN_BEAUDOTTES",
+      "durationSeconds": 234,
+      "distanceMeters": 3046
+    },
+    {
+      "source": "SEVRAN_BEAUDOTTES",
+      "target": "PARC_DES_EXPOSITIONS",
+      "durationSeconds": 234,
+      "distanceMeters": 3046
+    },
+    {
+      "source": "ANTONY",
+      "target": "LA_CROIX_DE_BERNY_FRESNES",
+      "durationSeconds": 90,
+      "distanceMeters": 786
+    },
+    {
+      "source": "LA_CROIX_DE_BERNY_FRESNES",
+      "target": "ANTONY",
+      "durationSeconds": 90,
+      "distanceMeters": 786
+    },
+    {
+      "source": "ANTONY",
+      "target": "FONTAINE_MICHALON",
+      "durationSeconds": 125,
+      "distanceMeters": 1377
+    },
+    {
+      "source": "FONTAINE_MICHALON",
+      "target": "ANTONY",
+      "durationSeconds": 125,
+      "distanceMeters": 1377
+    },
+    {
+      "source": "PARC_DE_SCEAUX",
+      "target": "LA_CROIX_DE_BERNY_FRESNES",
+      "durationSeconds": 98,
+      "distanceMeters": 968
+    },
+    {
+      "source": "LA_CROIX_DE_BERNY_FRESNES",
+      "target": "PARC_DE_SCEAUX",
+      "durationSeconds": 98,
+      "distanceMeters": 968
+    },
+    {
+      "source": "PARC_DE_SCEAUX",
+      "target": "BOURG_LA_REINE",
+      "durationSeconds": 114,
+      "distanceMeters": 1208
+    },
+    {
+      "source": "BOURG_LA_REINE",
+      "target": "PARC_DE_SCEAUX",
+      "durationSeconds": 114,
+      "distanceMeters": 1208
+    },
+    {
+      "source": "LA_PLAINE_STADE_DE_FRANCE",
+      "target": "LA_COURNEUVE_AUBERVILLIERS",
+      "durationSeconds": 158,
+      "distanceMeters": 1884
+    },
+    {
+      "source": "LA_COURNEUVE_AUBERVILLIERS",
+      "target": "LA_PLAINE_STADE_DE_FRANCE",
+      "durationSeconds": 158,
+      "distanceMeters": 1884
+    },
+    {
+      "source": "LA_PLAINE_STADE_DE_FRANCE",
+      "target": "GARE_DU_NORD",
+      "durationSeconds": 299,
+      "distanceMeters": 4046
+    },
+    {
+      "source": "GARE_DU_NORD",
+      "target": "LA_PLAINE_STADE_DE_FRANCE",
+      "durationSeconds": 299,
+      "distanceMeters": 4046
+    },
+    {
+      "source": "MITRY_CLAYE",
+      "target": "VILLEPARISIS_MITRY_LE_NEUF",
+      "durationSeconds": 285,
+      "distanceMeters": 3820
+    },
+    {
+      "source": "VILLEPARISIS_MITRY_LE_NEUF",
+      "target": "MITRY_CLAYE",
+      "durationSeconds": 285,
+      "distanceMeters": 3820
+    },
+    {
+      "source": "MITRY_CLAYE",
+      "target": "AEROPORT_CHARLES_DE_GAULLE_2_TGV",
+      "durationSeconds": 437,
+      "distanceMeters": 6142
+    },
+    {
+      "source": "AEROPORT_CHARLES_DE_GAULLE_2_TGV",
+      "target": "MITRY_CLAYE",
+      "durationSeconds": 437,
+      "distanceMeters": 6142
+    },
+    {
+      "source": "BOURG_LA_REINE",
+      "target": "SCEAUX",
+      "durationSeconds": 105,
+      "distanceMeters": 1080
+    },
+    {
+      "source": "SCEAUX",
+      "target": "BOURG_LA_REINE",
+      "durationSeconds": 105,
+      "distanceMeters": 1080
+    },
+    {
+      "source": "AULNAY_SOUS_BOIS",
+      "target": "LE_BLANC_MESNIL",
+      "durationSeconds": 129,
+      "distanceMeters": 1449
+    },
+    {
+      "source": "LE_BLANC_MESNIL",
+      "target": "AULNAY_SOUS_BOIS",
+      "durationSeconds": 129,
+      "distanceMeters": 1449
+    },
+    {
+      "source": "AULNAY_SOUS_BOIS",
+      "target": "SEVRAN_BEAUDOTTES",
+      "durationSeconds": 211,
+      "distanceMeters": 2690
+    },
+    {
+      "source": "SEVRAN_BEAUDOTTES",
+      "target": "AULNAY_SOUS_BOIS",
+      "durationSeconds": 211,
+      "distanceMeters": 2690
+    },
+    {
+      "source": "BURES_SUR_YVETTE",
+      "target": "LA_HACQUINIERE",
+      "durationSeconds": 96,
+      "distanceMeters": 941
+    },
+    {
+      "source": "LA_HACQUINIERE",
+      "target": "BURES_SUR_YVETTE",
+      "durationSeconds": 96,
+      "distanceMeters": 941
+    },
+    {
+      "source": "BURES_SUR_YVETTE",
+      "target": "ORSAY_VILLE",
+      "durationSeconds": 115,
+      "distanceMeters": 1231
+    },
+    {
+      "source": "ORSAY_VILLE",
+      "target": "BURES_SUR_YVETTE",
+      "durationSeconds": 115,
+      "distanceMeters": 1231
+    },
+    {
+      "source": "LUXEMBOURG",
+      "target": "PORT_ROYAL",
+      "durationSeconds": 90,
+      "distanceMeters": 631
+    },
+    {
+      "source": "PORT_ROYAL",
+      "target": "LUXEMBOURG",
+      "durationSeconds": 90,
+      "distanceMeters": 631
+    },
+    {
+      "source": "LUXEMBOURG",
+      "target": "SAINT_MICHEL",
+      "durationSeconds": 99,
+      "distanceMeters": 987
+    },
+    {
+      "source": "SAINT_MICHEL",
+      "target": "LUXEMBOURG",
+      "durationSeconds": 99,
+      "distanceMeters": 987
+    },
+    {
+      "source": "SCEAUX",
+      "target": "FONTENAY_AUX_ROSES",
+      "durationSeconds": 90,
+      "distanceMeters": 770
+    },
+    {
+      "source": "FONTENAY_AUX_ROSES",
+      "target": "SCEAUX",
+      "durationSeconds": 90,
+      "distanceMeters": 770
+    },
+    {
+      "source": "SEVRAN_LIVRY",
+      "target": "SEVRAN_BEAUDOTTES",
+      "durationSeconds": 125,
+      "distanceMeters": 1385
+    },
+    {
+      "source": "SEVRAN_BEAUDOTTES",
+      "target": "SEVRAN_LIVRY",
+      "durationSeconds": 125,
+      "distanceMeters": 1385
+    },
+    {
+      "source": "SEVRAN_LIVRY",
+      "target": "VERT_GALANT",
+      "durationSeconds": 197,
+      "distanceMeters": 2478
+    },
+    {
+      "source": "VERT_GALANT",
+      "target": "SEVRAN_LIVRY",
+      "durationSeconds": 197,
+      "distanceMeters": 2478
+    },
+    {
+      "source": "VILLEPINTE",
+      "target": "SEVRAN_BEAUDOTTES",
+      "durationSeconds": 163,
+      "distanceMeters": 1969
+    },
+    {
+      "source": "SEVRAN_BEAUDOTTES",
+      "target": "VILLEPINTE",
+      "durationSeconds": 163,
+      "distanceMeters": 1969
+    },
+    {
+      "source": "FONTENAY_AUX_ROSES",
+      "target": "ROBINSON",
+      "durationSeconds": 111,
+      "distanceMeters": 1175
+    },
+    {
+      "source": "ROBINSON",
+      "target": "FONTENAY_AUX_ROSES",
+      "durationSeconds": 111,
+      "distanceMeters": 1175
+    },
+    {
+      "source": "COURCELLE_SUR_YVETTE",
+      "target": "SAINT_REMY_LES_CHEVREUSE",
+      "durationSeconds": 163,
+      "distanceMeters": 1969
+    },
+    {
+      "source": "SAINT_REMY_LES_CHEVREUSE",
+      "target": "COURCELLE_SUR_YVETTE",
+      "durationSeconds": 163,
+      "distanceMeters": 1969
+    },
+    {
+      "source": "COURCELLE_SUR_YVETTE",
+      "target": "GIF_SUR_YVETTE",
+      "durationSeconds": 221,
+      "distanceMeters": 2852
+    },
+    {
+      "source": "GIF_SUR_YVETTE",
+      "target": "COURCELLE_SUR_YVETTE",
+      "durationSeconds": 221,
+      "distanceMeters": 2852
+    },
+    {
+      "source": "GIF_SUR_YVETTE",
+      "target": "LA_HACQUINIERE",
+      "durationSeconds": 110,
+      "distanceMeters": 1153
+    },
+    {
+      "source": "LA_HACQUINIERE",
+      "target": "GIF_SUR_YVETTE",
+      "durationSeconds": 110,
+      "distanceMeters": 1153
+    },
+    {
+      "source": "GIF_SUR_YVETTE",
+      "target": "BURES_SUR_YVETTE",
+      "durationSeconds": 169,
+      "distanceMeters": 2052
+    },
+    {
+      "source": "BURES_SUR_YVETTE",
+      "target": "GIF_SUR_YVETTE",
+      "durationSeconds": 169,
+      "distanceMeters": 2052
+    },
+    {
+      "source": "LE_GUICHET",
+      "target": "ORSAY_VILLE",
+      "durationSeconds": 115,
+      "distanceMeters": 1227
+    },
+    {
+      "source": "ORSAY_VILLE",
+      "target": "LE_GUICHET",
+      "durationSeconds": 115,
+      "distanceMeters": 1227
+    },
+    {
+      "source": "LE_GUICHET",
+      "target": "LOZERE",
+      "durationSeconds": 128,
+      "distanceMeters": 1434
+    },
+    {
+      "source": "LOZERE",
+      "target": "LE_GUICHET",
+      "durationSeconds": 128,
+      "distanceMeters": 1434
+    },
+    {
+      "source": "PALAISEAU",
+      "target": "PALAISEAU_VILLEBON",
+      "durationSeconds": 110,
+      "distanceMeters": 1155
+    },
+    {
+      "source": "PALAISEAU_VILLEBON",
+      "target": "PALAISEAU",
+      "durationSeconds": 110,
+      "distanceMeters": 1155
+    },
+    {
+      "source": "PALAISEAU",
+      "target": "MASSY_PALAISEAU",
+      "durationSeconds": 124,
+      "distanceMeters": 1368
+    },
+    {
+      "source": "MASSY_PALAISEAU",
+      "target": "PALAISEAU",
+      "durationSeconds": 124,
+      "distanceMeters": 1368
+    },
+    {
+      "source": "AEROPORT_CHARLES_DE_GAULLE_2_TGV",
+      "target": "AEROPORT_CHARLES_DE_GAULLE_1",
+      "durationSeconds": 92,
+      "distanceMeters": 885
+    },
+    {
+      "source": "AEROPORT_CHARLES_DE_GAULLE_1",
+      "target": "AEROPORT_CHARLES_DE_GAULLE_2_TGV",
+      "durationSeconds": 92,
+      "distanceMeters": 885
+    },
+    {
+      "source": "AEROPORT_CHARLES_DE_GAULLE_2_TGV",
+      "target": "PARC_DES_EXPOSITIONS",
+      "durationSeconds": 386,
+      "distanceMeters": 5377
+    },
+    {
+      "source": "PARC_DES_EXPOSITIONS",
+      "target": "AEROPORT_CHARLES_DE_GAULLE_2_TGV",
+      "durationSeconds": 386,
+      "distanceMeters": 5377
+    },
+    {
+      "source": "AEROPORT_CHARLES_DE_GAULLE_1",
+      "target": "PARC_DES_EXPOSITIONS",
+      "durationSeconds": 381,
+      "distanceMeters": 5293
+    },
+    {
+      "source": "PARC_DES_EXPOSITIONS",
+      "target": "AEROPORT_CHARLES_DE_GAULLE_1",
+      "durationSeconds": 381,
+      "distanceMeters": 5293
+    },
+    {
+      "source": "LAPLACE",
+      "target": "ARCUEIL_CACHAN",
+      "durationSeconds": 109,
+      "distanceMeters": 1140
+    },
+    {
+      "source": "ARCUEIL_CACHAN",
+      "target": "LAPLACE",
+      "durationSeconds": 109,
+      "distanceMeters": 1140
+    },
+    {
+      "source": "LOZERE",
+      "target": "PALAISEAU_VILLEBON",
+      "durationSeconds": 156,
+      "distanceMeters": 1854
+    },
+    {
+      "source": "PALAISEAU_VILLEBON",
+      "target": "LOZERE",
+      "durationSeconds": 156,
+      "distanceMeters": 1854
+    },
+    {
+      "source": "DENFERT_ROCHEREAU",
+      "target": "PORT_ROYAL",
+      "durationSeconds": 90,
+      "distanceMeters": 824
+    },
+    {
+      "source": "PORT_ROYAL",
+      "target": "DENFERT_ROCHEREAU",
+      "durationSeconds": 90,
+      "distanceMeters": 824
+    },
+    {
+      "source": "DENFERT_ROCHEREAU",
+      "target": "CITE_UNIVERSITAIRE",
+      "durationSeconds": 126,
+      "distanceMeters": 1397
+    },
+    {
+      "source": "CITE_UNIVERSITAIRE",
+      "target": "DENFERT_ROCHEREAU",
+      "durationSeconds": 126,
+      "distanceMeters": 1397
+    },
+    {
+      "source": "FONTAINE_MICHALON",
+      "target": "LES_BACONNETS",
+      "durationSeconds": 90,
+      "distanceMeters": 709
+    },
+    {
+      "source": "LES_BACONNETS",
+      "target": "FONTAINE_MICHALON",
+      "durationSeconds": 90,
+      "distanceMeters": 709
+    },
+    {
+      "source": "LES_BACONNETS",
+      "target": "MASSY_VERRIERES",
+      "durationSeconds": 109,
+      "distanceMeters": 1135
+    },
+    {
+      "source": "MASSY_VERRIERES",
+      "target": "LES_BACONNETS",
+      "durationSeconds": 109,
+      "distanceMeters": 1135
+    },
+    {
+      "source": "SAINT_REMY_LES_CHEVREUSE",
+      "target": "GIF_SUR_YVETTE",
+      "durationSeconds": 350,
+      "distanceMeters": 4820
+    },
+    {
+      "source": "GIF_SUR_YVETTE",
+      "target": "SAINT_REMY_LES_CHEVREUSE",
+      "durationSeconds": 350,
+      "distanceMeters": 4820
+    },
+    {
+      "source": "ROBINSON",
+      "target": "SCEAUX",
+      "durationSeconds": 113,
+      "distanceMeters": 1194
+    },
+    {
+      "source": "SCEAUX",
+      "target": "ROBINSON",
+      "durationSeconds": 113,
+      "distanceMeters": 1194
+    },
+    {
+      "source": "GARE_DU_NORD",
+      "target": "CHATELET_LES_HALLES",
+      "durationSeconds": 188,
+      "distanceMeters": 2347
+    },
+    {
+      "source": "CHATELET_LES_HALLES",
+      "target": "GARE_DU_NORD",
+      "durationSeconds": 188,
+      "distanceMeters": 2347
+    },
+    {
+      "source": "GARE_DU_NORD",
+      "target": "SAINT_MICHEL",
+      "durationSeconds": 248,
+      "distanceMeters": 3264
+    },
+    {
+      "source": "SAINT_MICHEL",
+      "target": "GARE_DU_NORD",
+      "durationSeconds": 248,
+      "distanceMeters": 3264
+    },
+    {
+      "source": "BAGNEUX",
+      "target": "ARCUEIL_CACHAN",
+      "durationSeconds": 90,
+      "distanceMeters": 755
+    },
+    {
+      "source": "ARCUEIL_CACHAN",
+      "target": "BAGNEUX",
+      "durationSeconds": 90,
+      "distanceMeters": 755
+    },
+    {
+      "source": "BAGNEUX",
+      "target": "BOURG_LA_REINE",
+      "durationSeconds": 140,
+      "distanceMeters": 1619
+    },
+    {
+      "source": "BOURG_LA_REINE",
+      "target": "BAGNEUX",
+      "durationSeconds": 140,
+      "distanceMeters": 1619
+    },
+    {
+      "source": "VERT_GALANT",
+      "target": "VILLEPARISIS_MITRY_LE_NEUF",
+      "durationSeconds": 222,
+      "distanceMeters": 2858
+    },
+    {
+      "source": "VILLEPARISIS_MITRY_LE_NEUF",
+      "target": "VERT_GALANT",
+      "durationSeconds": 222,
+      "distanceMeters": 2858
+    },
+    {
+      "source": "MASSY_VERRIERES",
+      "target": "MASSY_PALAISEAU",
+      "durationSeconds": 134,
+      "distanceMeters": 1516
+    },
+    {
+      "source": "MASSY_PALAISEAU",
+      "target": "MASSY_VERRIERES",
+      "durationSeconds": 134,
+      "distanceMeters": 1516
+    },
+    {
+      "source": "PONT_DU_GARIGLIANO",
+      "target": "ISSY_VAL_DE_SEINE",
+      "durationSeconds": 103,
+      "distanceMeters": 1053
+    },
+    {
+      "source": "ISSY_VAL_DE_SEINE",
+      "target": "PONT_DU_GARIGLIANO",
+      "durationSeconds": 103,
+      "distanceMeters": 1053
+    },
+    {
+      "source": "PONT_DU_GARIGLIANO",
+      "target": "JAVEL",
+      "durationSeconds": 103,
+      "distanceMeters": 1054
+    },
+    {
+      "source": "JAVEL",
+      "target": "PONT_DU_GARIGLIANO",
+      "durationSeconds": 103,
+      "distanceMeters": 1054
+    },
+    {
+      "source": "EPINAY_SUR_SEINE",
+      "target": "SAINT_GRATIEN",
+      "durationSeconds": 142,
+      "distanceMeters": 1642
+    },
+    {
+      "source": "SAINT_GRATIEN",
+      "target": "EPINAY_SUR_SEINE",
+      "durationSeconds": 142,
+      "distanceMeters": 1642
+    },
+    {
+      "source": "EPINAY_SUR_SEINE",
+      "target": "GENNEVILLIERS",
+      "durationSeconds": 187,
+      "distanceMeters": 2326
+    },
+    {
+      "source": "GENNEVILLIERS",
+      "target": "EPINAY_SUR_SEINE",
+      "durationSeconds": 187,
+      "distanceMeters": 2326
+    },
+    {
+      "source": "BREUILLET",
+      "target": "BREUILLET_VILLAGE",
+      "durationSeconds": 176,
+      "distanceMeters": 2166
+    },
+    {
+      "source": "BREUILLET_VILLAGE",
+      "target": "BREUILLET",
+      "durationSeconds": 176,
+      "distanceMeters": 2166
+    },
+    {
+      "source": "BREUILLET",
+      "target": "EGLY",
+      "durationSeconds": 190,
+      "distanceMeters": 2380
+    },
+    {
+      "source": "EGLY",
+      "target": "BREUILLET",
+      "durationSeconds": 190,
+      "distanceMeters": 2380
+    },
+    {
+      "source": "CHAVILLE_VELIZY",
+      "target": "VIROFLAY_RIVE_GAUCHE",
+      "durationSeconds": 94,
+      "distanceMeters": 907
+    },
+    {
+      "source": "VIROFLAY_RIVE_GAUCHE",
+      "target": "CHAVILLE_VELIZY",
+      "durationSeconds": 94,
+      "distanceMeters": 907
+    },
+    {
+      "source": "CHAVILLE_VELIZY",
+      "target": "PORCHEFONTAINE",
+      "durationSeconds": 186,
+      "distanceMeters": 2320
+    },
+    {
+      "source": "PORCHEFONTAINE",
+      "target": "CHAVILLE_VELIZY",
+      "durationSeconds": 186,
+      "distanceMeters": 2320
+    },
+    {
+      "source": "FRANCONVILLE_LE_PLESSIS_BOUCHARD",
+      "target": "CERNAY",
+      "durationSeconds": 162,
+      "distanceMeters": 1950
+    },
+    {
+      "source": "CERNAY",
+      "target": "FRANCONVILLE_LE_PLESSIS_BOUCHARD",
+      "durationSeconds": 162,
+      "distanceMeters": 1950
+    },
+    {
+      "source": "FRANCONVILLE_LE_PLESSIS_BOUCHARD",
+      "target": "ERMONT_EAUBONNE",
+      "durationSeconds": 239,
+      "distanceMeters": 3118
+    },
+    {
+      "source": "ERMONT_EAUBONNE",
+      "target": "FRANCONVILLE_LE_PLESSIS_BOUCHARD",
+      "durationSeconds": 239,
+      "distanceMeters": 3118
+    },
+    {
+      "source": "MAROLLES_EN_HUREPOIX",
+      "target": "LA_NORVILLE",
+      "durationSeconds": 255,
+      "distanceMeters": 3370
+    },
+    {
+      "source": "LA_NORVILLE",
+      "target": "MAROLLES_EN_HUREPOIX",
+      "durationSeconds": 255,
+      "distanceMeters": 3370
+    },
+    {
+      "source": "MAROLLES_EN_HUREPOIX",
+      "target": "BOURAY",
+      "durationSeconds": 273,
+      "distanceMeters": 3637
+    },
+    {
+      "source": "BOURAY",
+      "target": "MAROLLES_EN_HUREPOIX",
+      "durationSeconds": 273,
+      "distanceMeters": 3637
+    },
+    {
+      "source": "LES_ARDOINES",
+      "target": "CHOISY_LE_ROI",
+      "durationSeconds": 169,
+      "distanceMeters": 2054
+    },
+    {
+      "source": "CHOISY_LE_ROI",
+      "target": "LES_ARDOINES",
+      "durationSeconds": 169,
+      "distanceMeters": 2054
+    },
+    {
+      "source": "LES_ARDOINES",
+      "target": "VITRY_SUR_SEINE",
+      "durationSeconds": 169,
+      "distanceMeters": 2062
+    },
+    {
+      "source": "VITRY_SUR_SEINE",
+      "target": "LES_ARDOINES",
+      "durationSeconds": 169,
+      "distanceMeters": 2062
+    },
+    {
+      "source": "SAINT_MICHEL_SUR_ORGE",
+      "target": "SAINTE_GENEVIEVE_DES_BOIS",
+      "durationSeconds": 161,
+      "distanceMeters": 1932
+    },
+    {
+      "source": "SAINTE_GENEVIEVE_DES_BOIS",
+      "target": "SAINT_MICHEL_SUR_ORGE",
+      "durationSeconds": 161,
+      "distanceMeters": 1932
+    },
+    {
+      "source": "SAINT_MICHEL_SUR_ORGE",
+      "target": "BRETIGNY",
+      "durationSeconds": 248,
+      "distanceMeters": 3258
+    },
+    {
+      "source": "BRETIGNY",
+      "target": "SAINT_MICHEL_SUR_ORGE",
+      "durationSeconds": 248,
+      "distanceMeters": 3258
+    },
+    {
+      "source": "SAINT_OUEN_L_AUMONE",
+      "target": "PONTOISE",
+      "durationSeconds": 90,
+      "distanceMeters": 737
+    },
+    {
+      "source": "PONTOISE",
+      "target": "SAINT_OUEN_L_AUMONE",
+      "durationSeconds": 90,
+      "distanceMeters": 737
+    },
+    {
+      "source": "SAINT_OUEN_L_AUMONE",
+      "target": "SAINT_OUEN_L_AUMONE_LIESSE",
+      "durationSeconds": 172,
+      "distanceMeters": 2105
+    },
+    {
+      "source": "SAINT_OUEN_L_AUMONE_LIESSE",
+      "target": "SAINT_OUEN_L_AUMONE",
+      "durationSeconds": 172,
+      "distanceMeters": 2105
+    },
+    {
+      "source": "SAVIGNY_SUR_ORGE",
+      "target": "EPINAY_SUR_ORGE",
+      "durationSeconds": 143,
+      "distanceMeters": 1650
+    },
+    {
+      "source": "EPINAY_SUR_ORGE",
+      "target": "SAVIGNY_SUR_ORGE",
+      "durationSeconds": 143,
+      "distanceMeters": 1650
+    },
+    {
+      "source": "SAVIGNY_SUR_ORGE",
+      "target": "JUVISY",
+      "durationSeconds": 210,
+      "distanceMeters": 2676
+    },
+    {
+      "source": "JUVISY",
+      "target": "SAVIGNY_SUR_ORGE",
+      "durationSeconds": 210,
+      "distanceMeters": 2676
+    },
+    {
+      "source": "SAINTE_GENEVIEVE_DES_BOIS",
+      "target": "EPINAY_SUR_ORGE",
+      "durationSeconds": 189,
+      "distanceMeters": 2360
+    },
+    {
+      "source": "EPINAY_SUR_ORGE",
+      "target": "SAINTE_GENEVIEVE_DES_BOIS",
+      "durationSeconds": 189,
+      "distanceMeters": 2360
+    },
+    {
+      "source": "PORTE_DE_CLICHY",
+      "target": "SAINT_OUEN",
+      "durationSeconds": 117,
+      "distanceMeters": 1265
+    },
+    {
+      "source": "SAINT_OUEN",
+      "target": "PORTE_DE_CLICHY",
+      "durationSeconds": 117,
+      "distanceMeters": 1265
+    },
+    {
+      "source": "PORTE_DE_CLICHY",
+      "target": "PEREIRE_LEVALLOIS",
+      "durationSeconds": 132,
+      "distanceMeters": 1496
+    },
+    {
+      "source": "PEREIRE_LEVALLOIS",
+      "target": "PORTE_DE_CLICHY",
+      "durationSeconds": 132,
+      "distanceMeters": 1496
+    },
+    {
+      "source": "BIBLIOTHEQUE_FRANCOIS_MITTERRAND",
+      "target": "PARIS_AUSTERLITZ",
+      "durationSeconds": 150,
+      "distanceMeters": 1763
+    },
+    {
+      "source": "PARIS_AUSTERLITZ",
+      "target": "BIBLIOTHEQUE_FRANCOIS_MITTERRAND",
+      "durationSeconds": 150,
+      "distanceMeters": 1763
+    },
+    {
+      "source": "BIBLIOTHEQUE_FRANCOIS_MITTERRAND",
+      "target": "IVRY_SUR_SEINE",
+      "durationSeconds": 162,
+      "distanceMeters": 1947
+    },
+    {
+      "source": "IVRY_SUR_SEINE",
+      "target": "BIBLIOTHEQUE_FRANCOIS_MITTERRAND",
+      "durationSeconds": 162,
+      "distanceMeters": 1947
+    },
+    {
+      "source": "CERNAY",
+      "target": "ERMONT_EAUBONNE",
+      "durationSeconds": 111,
+      "distanceMeters": 1171
+    },
+    {
+      "source": "ERMONT_EAUBONNE",
+      "target": "CERNAY",
+      "durationSeconds": 111,
+      "distanceMeters": 1171
+    },
+    {
+      "source": "SAINT_CHERON",
+      "target": "BREUILLET_VILLAGE",
+      "durationSeconds": 274,
+      "distanceMeters": 3661
+    },
+    {
+      "source": "BREUILLET_VILLAGE",
+      "target": "SAINT_CHERON",
+      "durationSeconds": 274,
+      "distanceMeters": 3661
+    },
+    {
+      "source": "SAINT_CHERON",
+      "target": "SERMAISE",
+      "durationSeconds": 324,
+      "distanceMeters": 4421
+    },
+    {
+      "source": "SERMAISE",
+      "target": "SAINT_CHERON",
+      "durationSeconds": 324,
+      "distanceMeters": 4421
+    },
+    {
+      "source": "EGLY",
+      "target": "ARPAJON",
+      "durationSeconds": 123,
+      "distanceMeters": 1346
+    },
+    {
+      "source": "ARPAJON",
+      "target": "EGLY",
+      "durationSeconds": 123,
+      "distanceMeters": 1346
+    },
+    {
+      "source": "SAINT_MARTIN_D_ETAMPES",
+      "target": "ETAMPES",
+      "durationSeconds": 132,
+      "distanceMeters": 1496
+    },
+    {
+      "source": "ETAMPES",
+      "target": "SAINT_MARTIN_D_ETAMPES",
+      "durationSeconds": 132,
+      "distanceMeters": 1496
+    },
+    {
+      "source": "SAINT_MARTIN_D_ETAMPES",
+      "target": "ETRECHY",
+      "durationSeconds": 572,
+      "distanceMeters": 8219
+    },
+    {
+      "source": "ETRECHY",
+      "target": "SAINT_MARTIN_D_ETAMPES",
+      "durationSeconds": 572,
+      "distanceMeters": 8219
+    },
+    {
+      "source": "DOURDAN",
+      "target": "DOURDAN_LA_FORET",
+      "durationSeconds": 98,
+      "distanceMeters": 970
+    },
+    {
+      "source": "DOURDAN_LA_FORET",
+      "target": "DOURDAN",
+      "durationSeconds": 98,
+      "distanceMeters": 970
+    },
+    {
+      "source": "DOURDAN",
+      "target": "SERMAISE",
+      "durationSeconds": 327,
+      "distanceMeters": 4468
+    },
+    {
+      "source": "SERMAISE",
+      "target": "DOURDAN",
+      "durationSeconds": 327,
+      "distanceMeters": 4468
+    },
+    {
+      "source": "ERMONT_EAUBONNE",
+      "target": "SAINT_GRATIEN",
+      "durationSeconds": 175,
+      "distanceMeters": 2149
+    },
+    {
+      "source": "SAINT_GRATIEN",
+      "target": "ERMONT_EAUBONNE",
+      "durationSeconds": 175,
+      "distanceMeters": 2149
+    },
+    {
+      "source": "ETRECHY",
+      "target": "CHAMARANDE",
+      "durationSeconds": 215,
+      "distanceMeters": 2761
+    },
+    {
+      "source": "CHAMARANDE",
+      "target": "ETRECHY",
+      "durationSeconds": 215,
+      "distanceMeters": 2761
+    },
+    {
+      "source": "ETRECHY",
+      "target": "LARDY",
+      "durationSeconds": 384,
+      "distanceMeters": 5338
+    },
+    {
+      "source": "LARDY",
+      "target": "ETRECHY",
+      "durationSeconds": 384,
+      "distanceMeters": 5338
+    },
+    {
+      "source": "LARDY",
+      "target": "BOURAY",
+      "durationSeconds": 228,
+      "distanceMeters": 2949
+    },
+    {
+      "source": "BOURAY",
+      "target": "LARDY",
+      "durationSeconds": 228,
+      "distanceMeters": 2949
+    },
+    {
+      "source": "LARDY",
+      "target": "CHAMARANDE",
+      "durationSeconds": 229,
+      "distanceMeters": 2968
+    },
+    {
+      "source": "CHAMARANDE",
+      "target": "LARDY",
+      "durationSeconds": 229,
+      "distanceMeters": 2968
+    },
+    {
+      "source": "LES_GRESILLONS",
+      "target": "GENNEVILLIERS",
+      "durationSeconds": 126,
+      "distanceMeters": 1404
+    },
+    {
+      "source": "GENNEVILLIERS",
+      "target": "LES_GRESILLONS",
+      "durationSeconds": 126,
+      "distanceMeters": 1404
+    },
+    {
+      "source": "LES_GRESILLONS",
+      "target": "SAINT_OUEN",
+      "durationSeconds": 160,
+      "distanceMeters": 1923
+    },
+    {
+      "source": "SAINT_OUEN",
+      "target": "LES_GRESILLONS",
+      "durationSeconds": 160,
+      "distanceMeters": 1923
+    },
+    {
+      "source": "INVALIDES",
+      "target": "PONT_DE_L_ALMA",
+      "durationSeconds": 90,
+      "distanceMeters": 843
+    },
+    {
+      "source": "PONT_DE_L_ALMA",
+      "target": "INVALIDES",
+      "durationSeconds": 90,
+      "distanceMeters": 843
+    },
+    {
+      "source": "INVALIDES",
+      "target": "MUSEE_D_ORSAY",
+      "durationSeconds": 105,
+      "distanceMeters": 1079
+    },
+    {
+      "source": "MUSEE_D_ORSAY",
+      "target": "INVALIDES",
+      "durationSeconds": 105,
+      "distanceMeters": 1079
+    },
+    {
+      "source": "MUSEE_D_ORSAY",
+      "target": "SAINT_MICHEL",
+      "durationSeconds": 136,
+      "distanceMeters": 1553
+    },
+    {
+      "source": "SAINT_MICHEL",
+      "target": "MUSEE_D_ORSAY",
+      "durationSeconds": 136,
+      "distanceMeters": 1553
+    },
+    {
+      "source": "JAVEL",
+      "target": "AVENUE_DU_PRESIDENT_KENNEDY",
+      "durationSeconds": 90,
+      "distanceMeters": 729
+    },
+    {
+      "source": "AVENUE_DU_PRESIDENT_KENNEDY",
+      "target": "JAVEL",
+      "durationSeconds": 90,
+      "distanceMeters": 729
+    },
+    {
+      "source": "DOURDAN_LA_FORET",
+      "target": "SERMAISE",
+      "durationSeconds": 389,
+      "distanceMeters": 5410
+    },
+    {
+      "source": "SERMAISE",
+      "target": "DOURDAN_LA_FORET",
+      "durationSeconds": 389,
+      "distanceMeters": 5410
+    },
+    {
+      "source": "SAINT_QUENTIN_EN_YVELINES",
+      "target": "SAINT_CYR",
+      "durationSeconds": 189,
+      "distanceMeters": 2358
+    },
+    {
+      "source": "SAINT_CYR",
+      "target": "SAINT_QUENTIN_EN_YVELINES",
+      "durationSeconds": 189,
+      "distanceMeters": 2358
+    },
+    {
+      "source": "SAINT_QUENTIN_EN_YVELINES",
+      "target": "VERSAILLES_CHATEAU",
+      "durationSeconds": 450,
+      "distanceMeters": 6346
+    },
+    {
+      "source": "VERSAILLES_CHATEAU",
+      "target": "SAINT_QUENTIN_EN_YVELINES",
+      "durationSeconds": 450,
+      "distanceMeters": 6346
+    },
+    {
+      "source": "VERSAILLES_CHATEAU",
+      "target": "VERSAILLES_CHANTIERS",
+      "durationSeconds": 90,
+      "distanceMeters": 720
+    },
+    {
+      "source": "VERSAILLES_CHANTIERS",
+      "target": "VERSAILLES_CHATEAU",
+      "durationSeconds": 90,
+      "distanceMeters": 720
+    },
+    {
+      "source": "VERSAILLES_CHATEAU",
+      "target": "PORCHEFONTAINE",
+      "durationSeconds": 150,
+      "distanceMeters": 1757
+    },
+    {
+      "source": "PORCHEFONTAINE",
+      "target": "VERSAILLES_CHATEAU",
+      "durationSeconds": 150,
+      "distanceMeters": 1757
+    },
+    {
+      "source": "JUVISY",
+      "target": "ATHIS_MONS",
+      "durationSeconds": 229,
+      "distanceMeters": 2964
+    },
+    {
+      "source": "ATHIS_MONS",
+      "target": "JUVISY",
+      "durationSeconds": 229,
+      "distanceMeters": 2964
+    },
+    {
+      "source": "MASSY_PALAISEAU",
+      "target": "CHEMIN_D_ANTONY",
+      "durationSeconds": 341,
+      "distanceMeters": 4675
+    },
+    {
+      "source": "CHEMIN_D_ANTONY",
+      "target": "MASSY_PALAISEAU",
+      "durationSeconds": 341,
+      "distanceMeters": 4675
+    },
+    {
+      "source": "PIERRELAYE",
+      "target": "SAINT_OUEN_L_AUMONE_LIESSE",
+      "durationSeconds": 200,
+      "distanceMeters": 2536
+    },
+    {
+      "source": "SAINT_OUEN_L_AUMONE_LIESSE",
+      "target": "PIERRELAYE",
+      "durationSeconds": 200,
+      "distanceMeters": 2536
+    },
+    {
+      "source": "PIERRELAYE",
+      "target": "MONTIGNY_BEAUCHAMP",
+      "durationSeconds": 251,
+      "distanceMeters": 3302
+    },
+    {
+      "source": "MONTIGNY_BEAUCHAMP",
+      "target": "PIERRELAYE",
+      "durationSeconds": 251,
+      "distanceMeters": 3302
+    },
+    {
+      "source": "ORLY_VILLE",
+      "target": "LES_SAULES",
+      "durationSeconds": 108,
+      "distanceMeters": 1128
+    },
+    {
+      "source": "LES_SAULES",
+      "target": "ORLY_VILLE",
+      "durationSeconds": 108,
+      "distanceMeters": 1128
+    },
+    {
+      "source": "ORLY_VILLE",
+      "target": "VILLENEUVE_LE_ROI",
+      "durationSeconds": 148,
+      "distanceMeters": 1737
+    },
+    {
+      "source": "VILLENEUVE_LE_ROI",
+      "target": "ORLY_VILLE",
+      "durationSeconds": 148,
+      "distanceMeters": 1737
+    },
+    {
+      "source": "PONT_DE_L_ALMA",
+      "target": "CHAMP_DE_MARS",
+      "durationSeconds": 105,
+      "distanceMeters": 1070
+    },
+    {
+      "source": "CHAMP_DE_MARS",
+      "target": "PONT_DE_L_ALMA",
+      "durationSeconds": 105,
+      "distanceMeters": 1070
+    },
+    {
+      "source": "SAINT_CYR",
+      "target": "VERSAILLES_CHATEAU",
+      "durationSeconds": 309,
+      "distanceMeters": 4192
+    },
+    {
+      "source": "VERSAILLES_CHATEAU",
+      "target": "SAINT_CYR",
+      "durationSeconds": 309,
+      "distanceMeters": 4192
+    },
+    {
+      "source": "VITRY_SUR_SEINE",
+      "target": "IVRY_SUR_SEINE",
+      "durationSeconds": 148,
+      "distanceMeters": 1732
+    },
+    {
+      "source": "IVRY_SUR_SEINE",
+      "target": "VITRY_SUR_SEINE",
+      "durationSeconds": 148,
+      "distanceMeters": 1732
+    },
+    {
+      "source": "MONTIGNY_BEAUCHAMP",
+      "target": "FRANCONVILLE_LE_PLESSIS_BOUCHARD",
+      "durationSeconds": 242,
+      "distanceMeters": 3167
+    },
+    {
+      "source": "FRANCONVILLE_LE_PLESSIS_BOUCHARD",
+      "target": "MONTIGNY_BEAUCHAMP",
+      "durationSeconds": 242,
+      "distanceMeters": 3167
+    },
+    {
+      "source": "AVENUE_FOCH",
+      "target": "AVENUE_HENRI_MARTIN",
+      "durationSeconds": 90,
+      "distanceMeters": 522
+    },
+    {
+      "source": "AVENUE_HENRI_MARTIN",
+      "target": "AVENUE_FOCH",
+      "durationSeconds": 90,
+      "distanceMeters": 522
+    },
+    {
+      "source": "AVENUE_FOCH",
+      "target": "NEUILLY_PORTE_MAILLOT",
+      "durationSeconds": 109,
+      "distanceMeters": 1141
+    },
+    {
+      "source": "NEUILLY_PORTE_MAILLOT",
+      "target": "AVENUE_FOCH",
+      "durationSeconds": 109,
+      "distanceMeters": 1141
+    },
+    {
+      "source": "CHAMP_DE_MARS",
+      "target": "AVENUE_DU_PRESIDENT_KENNEDY",
+      "durationSeconds": 90,
+      "distanceMeters": 816
+    },
+    {
+      "source": "AVENUE_DU_PRESIDENT_KENNEDY",
+      "target": "CHAMP_DE_MARS",
+      "durationSeconds": 90,
+      "distanceMeters": 816
+    },
+    {
+      "source": "LA_NORVILLE",
+      "target": "ARPAJON",
+      "durationSeconds": 161,
+      "distanceMeters": 1934
+    },
+    {
+      "source": "ARPAJON",
+      "target": "LA_NORVILLE",
+      "durationSeconds": 161,
+      "distanceMeters": 1934
+    },
+    {
+      "source": "LA_NORVILLE",
+      "target": "BRETIGNY",
+      "durationSeconds": 241,
+      "distanceMeters": 3157
+    },
+    {
+      "source": "BRETIGNY",
+      "target": "LA_NORVILLE",
+      "durationSeconds": 241,
+      "distanceMeters": 3157
+    },
+    {
+      "source": "PONTOISE",
+      "target": "SAINT_OUEN_L_AUMONE_LIESSE",
+      "durationSeconds": 217,
+      "distanceMeters": 2791
+    },
+    {
+      "source": "SAINT_OUEN_L_AUMONE_LIESSE",
+      "target": "PONTOISE",
+      "durationSeconds": 217,
+      "distanceMeters": 2791
+    },
+    {
+      "source": "SAINT_MICHEL",
+      "target": "PARIS_AUSTERLITZ",
+      "durationSeconds": 160,
+      "distanceMeters": 1915
+    },
+    {
+      "source": "PARIS_AUSTERLITZ",
+      "target": "SAINT_MICHEL",
+      "durationSeconds": 160,
+      "distanceMeters": 1915
+    },
+    {
+      "source": "VERSAILLES_CHANTIERS",
+      "target": "PORCHEFONTAINE",
+      "durationSeconds": 118,
+      "distanceMeters": 1271
+    },
+    {
+      "source": "PORCHEFONTAINE",
+      "target": "VERSAILLES_CHANTIERS",
+      "durationSeconds": 118,
+      "distanceMeters": 1271
+    },
+    {
+      "source": "CHOISY_LE_ROI",
+      "target": "LES_SAULES",
+      "durationSeconds": 174,
+      "distanceMeters": 2129
+    },
+    {
+      "source": "LES_SAULES",
+      "target": "CHOISY_LE_ROI",
+      "durationSeconds": 174,
+      "distanceMeters": 2129
+    },
+    {
+      "source": "ETAMPES",
+      "target": "ETRECHY",
+      "durationSeconds": 481,
+      "distanceMeters": 6816
+    },
+    {
+      "source": "ETRECHY",
+      "target": "ETAMPES",
+      "durationSeconds": 481,
+      "distanceMeters": 6816
+    },
+    {
+      "source": "PONT_DE_RUNGIS",
+      "target": "RUNGIS_LA_FRATERNELLE",
+      "durationSeconds": 153,
+      "distanceMeters": 1817
+    },
+    {
+      "source": "RUNGIS_LA_FRATERNELLE",
+      "target": "PONT_DE_RUNGIS",
+      "durationSeconds": 153,
+      "distanceMeters": 1817
+    },
+    {
+      "source": "PONT_DE_RUNGIS",
+      "target": "ORLY_VILLE",
+      "durationSeconds": 185,
+      "distanceMeters": 2300
+    },
+    {
+      "source": "ORLY_VILLE",
+      "target": "PONT_DE_RUNGIS",
+      "durationSeconds": 185,
+      "distanceMeters": 2300
+    },
+    {
+      "source": "VIROFLAY_RIVE_GAUCHE",
+      "target": "PORCHEFONTAINE",
+      "durationSeconds": 131,
+      "distanceMeters": 1468
+    },
+    {
+      "source": "PORCHEFONTAINE",
+      "target": "VIROFLAY_RIVE_GAUCHE",
+      "durationSeconds": 131,
+      "distanceMeters": 1468
+    },
+    {
+      "source": "PEREIRE_LEVALLOIS",
+      "target": "NEUILLY_PORTE_MAILLOT",
+      "durationSeconds": 127,
+      "distanceMeters": 1413
+    },
+    {
+      "source": "NEUILLY_PORTE_MAILLOT",
+      "target": "PEREIRE_LEVALLOIS",
+      "durationSeconds": 127,
+      "distanceMeters": 1413
+    },
+    {
+      "source": "BOULAINVILLIERS",
+      "target": "AVENUE_DU_PRESIDENT_KENNEDY",
+      "durationSeconds": 90,
+      "distanceMeters": 504
+    },
+    {
+      "source": "AVENUE_DU_PRESIDENT_KENNEDY",
+      "target": "BOULAINVILLIERS",
+      "durationSeconds": 90,
+      "distanceMeters": 504
+    },
+    {
+      "source": "BOULAINVILLIERS",
+      "target": "AVENUE_HENRI_MARTIN",
+      "durationSeconds": 98,
+      "distanceMeters": 963
+    },
+    {
+      "source": "AVENUE_HENRI_MARTIN",
+      "target": "BOULAINVILLIERS",
+      "durationSeconds": 98,
+      "distanceMeters": 963
+    },
+    {
+      "source": "ISSY",
+      "target": "ISSY_VAL_DE_SEINE",
+      "durationSeconds": 122,
+      "distanceMeters": 1330
+    },
+    {
+      "source": "ISSY_VAL_DE_SEINE",
+      "target": "ISSY",
+      "durationSeconds": 122,
+      "distanceMeters": 1330
+    },
+    {
+      "source": "ISSY",
+      "target": "MEUDON_VAL_FLEURY",
+      "durationSeconds": 153,
+      "distanceMeters": 1813
+    },
+    {
+      "source": "MEUDON_VAL_FLEURY",
+      "target": "ISSY",
+      "durationSeconds": 153,
+      "distanceMeters": 1813
+    },
+    {
+      "source": "MASSY_VERRIERES",
+      "target": "CHEMIN_D_ANTONY",
+      "durationSeconds": 243,
+      "distanceMeters": 3188
+    },
+    {
+      "source": "CHEMIN_D_ANTONY",
+      "target": "MASSY_VERRIERES",
+      "durationSeconds": 243,
+      "distanceMeters": 3188
+    },
+    {
+      "source": "ABLON",
+      "target": "VILLENEUVE_LE_ROI",
+      "durationSeconds": 144,
+      "distanceMeters": 1666
+    },
+    {
+      "source": "VILLENEUVE_LE_ROI",
+      "target": "ABLON",
+      "durationSeconds": 144,
+      "distanceMeters": 1666
+    },
+    {
+      "source": "ABLON",
+      "target": "ATHIS_MONS",
+      "durationSeconds": 156,
+      "distanceMeters": 1850
+    },
+    {
+      "source": "ATHIS_MONS",
+      "target": "ABLON",
+      "durationSeconds": 156,
+      "distanceMeters": 1850
+    },
+    {
+      "source": "CHEMIN_D_ANTONY",
+      "target": "RUNGIS_LA_FRATERNELLE",
+      "durationSeconds": 230,
+      "distanceMeters": 2981
+    },
+    {
+      "source": "RUNGIS_LA_FRATERNELLE",
+      "target": "CHEMIN_D_ANTONY",
+      "durationSeconds": 230,
+      "distanceMeters": 2981
+    },
+    {
+      "source": "MEUDON_VAL_FLEURY",
+      "target": "ISSY_VAL_DE_SEINE",
+      "durationSeconds": 236,
+      "distanceMeters": 3079
+    },
+    {
+      "source": "ISSY_VAL_DE_SEINE",
+      "target": "MEUDON_VAL_FLEURY",
+      "durationSeconds": 236,
+      "distanceMeters": 3079
+    },
+    {
+      "source": "LES_SAULES",
+      "target": "VILLENEUVE_LE_ROI",
+      "durationSeconds": 92,
+      "distanceMeters": 873
+    },
+    {
+      "source": "VILLENEUVE_LE_ROI",
+      "target": "LES_SAULES",
+      "durationSeconds": 92,
+      "distanceMeters": 873
+    },
+    {
+      "source": "PIERREFITTE_STAINS",
+      "target": "GARGES_SARCELLES",
+      "durationSeconds": 164,
+      "distanceMeters": 1977
+    },
+    {
+      "source": "GARGES_SARCELLES",
+      "target": "PIERREFITTE_STAINS",
+      "durationSeconds": 164,
+      "distanceMeters": 1977
+    },
+    {
+      "source": "PIERREFITTE_STAINS",
+      "target": "SAINT_DENIS",
+      "durationSeconds": 283,
+      "distanceMeters": 3789
+    },
+    {
+      "source": "SAINT_DENIS",
+      "target": "PIERREFITTE_STAINS",
+      "durationSeconds": 283,
+      "distanceMeters": 3789
+    },
+    {
+      "source": "BOUSSY_SAINT_ANTOINE",
+      "target": "COMBS_LA_VILLE_QUINCY",
+      "durationSeconds": 152,
+      "distanceMeters": 1802
+    },
+    {
+      "source": "COMBS_LA_VILLE_QUINCY",
+      "target": "BOUSSY_SAINT_ANTOINE",
+      "durationSeconds": 152,
+      "distanceMeters": 1802
+    },
+    {
+      "source": "BOUSSY_SAINT_ANTOINE",
+      "target": "BRUNOY",
+      "durationSeconds": 217,
+      "distanceMeters": 2795
+    },
+    {
+      "source": "BRUNOY",
+      "target": "BOUSSY_SAINT_ANTOINE",
+      "durationSeconds": 217,
+      "distanceMeters": 2795
+    },
+    {
+      "source": "ESSONNES_ROBINSON",
+      "target": "CORBEIL_ESSONNES",
+      "durationSeconds": 111,
+      "distanceMeters": 1166
+    },
+    {
+      "source": "CORBEIL_ESSONNES",
+      "target": "ESSONNES_ROBINSON",
+      "durationSeconds": 111,
+      "distanceMeters": 1166
+    },
+    {
+      "source": "ESSONNES_ROBINSON",
+      "target": "VILLABE",
+      "durationSeconds": 127,
+      "distanceMeters": 1418
+    },
+    {
+      "source": "VILLABE",
+      "target": "ESSONNES_ROBINSON",
+      "durationSeconds": 127,
+      "distanceMeters": 1418
+    },
+    {
+      "source": "EVRY",
+      "target": "LE_BRAS_DE_FER",
+      "durationSeconds": 114,
+      "distanceMeters": 1219
+    },
+    {
+      "source": "LE_BRAS_DE_FER",
+      "target": "EVRY",
+      "durationSeconds": 114,
+      "distanceMeters": 1219
+    },
+    {
+      "source": "EVRY",
+      "target": "EVRY_COURCOURONNES",
+      "durationSeconds": 158,
+      "distanceMeters": 1892
+    },
+    {
+      "source": "EVRY_COURCOURONNES",
+      "target": "EVRY",
+      "durationSeconds": 158,
+      "distanceMeters": 1892
+    },
+    {
+      "source": "MAISSE",
+      "target": "BUNO_GIRONVILLE",
+      "durationSeconds": 199,
+      "distanceMeters": 2517
+    },
+    {
+      "source": "BUNO_GIRONVILLE",
+      "target": "MAISSE",
+      "durationSeconds": 199,
+      "distanceMeters": 2517
+    },
+    {
+      "source": "MAISSE",
+      "target": "BOUTIGNY",
+      "durationSeconds": 343,
+      "distanceMeters": 4707
+    },
+    {
+      "source": "BOUTIGNY",
+      "target": "MAISSE",
+      "durationSeconds": 343,
+      "distanceMeters": 4707
+    },
+    {
+      "source": "LOUVRES",
+      "target": "LES_NOUES",
+      "durationSeconds": 198,
+      "distanceMeters": 2492
+    },
+    {
+      "source": "LES_NOUES",
+      "target": "LOUVRES",
+      "durationSeconds": 198,
+      "distanceMeters": 2492
+    },
+    {
+      "source": "LOUVRES",
+      "target": "GOUSSAINVILLE",
+      "durationSeconds": 303,
+      "distanceMeters": 4097
+    },
+    {
+      "source": "GOUSSAINVILLE",
+      "target": "LOUVRES",
+      "durationSeconds": 303,
+      "distanceMeters": 4097
+    },
+    {
+      "source": "MAISONS_ALFORT_ALFORTVILLE",
+      "target": "LE_VERT_DE_MAISONS",
+      "durationSeconds": 137,
+      "distanceMeters": 1568
+    },
+    {
+      "source": "LE_VERT_DE_MAISONS",
+      "target": "MAISONS_ALFORT_ALFORTVILLE",
+      "durationSeconds": 137,
+      "distanceMeters": 1568
+    },
+    {
+      "source": "MAISONS_ALFORT_ALFORTVILLE",
+      "target": "CRETEIL_POMPADOUR",
+      "durationSeconds": 262,
+      "distanceMeters": 3483
+    },
+    {
+      "source": "CRETEIL_POMPADOUR",
+      "target": "MAISONS_ALFORT_ALFORTVILLE",
+      "durationSeconds": 262,
+      "distanceMeters": 3483
+    },
+    {
+      "source": "ORRY_LA_VILLE_COYE_LA_FORET",
+      "target": "LA_BORNE_BLANCHE",
+      "durationSeconds": 153,
+      "distanceMeters": 1817
+    },
+    {
+      "source": "LA_BORNE_BLANCHE",
+      "target": "ORRY_LA_VILLE_COYE_LA_FORET",
+      "durationSeconds": 153,
+      "distanceMeters": 1817
+    },
+    {
+      "source": "ORRY_LA_VILLE_COYE_LA_FORET",
+      "target": "SURVILLIERS_FOSSES",
+      "durationSeconds": 363,
+      "distanceMeters": 5013
+    },
+    {
+      "source": "SURVILLIERS_FOSSES",
+      "target": "ORRY_LA_VILLE_COYE_LA_FORET",
+      "durationSeconds": 363,
+      "distanceMeters": 5013
+    },
+    {
+      "source": "STADE_DE_FRANCE_SAINT_DENIS",
+      "target": "SAINT_DENIS",
+      "durationSeconds": 160,
+      "distanceMeters": 1910
+    },
+    {
+      "source": "SAINT_DENIS",
+      "target": "STADE_DE_FRANCE_SAINT_DENIS",
+      "durationSeconds": 160,
+      "distanceMeters": 1910
+    },
+    {
+      "source": "STADE_DE_FRANCE_SAINT_DENIS",
+      "target": "GARE_DU_NORD",
+      "durationSeconds": 297,
+      "distanceMeters": 4016
+    },
+    {
+      "source": "GARE_DU_NORD",
+      "target": "STADE_DE_FRANCE_SAINT_DENIS",
+      "durationSeconds": 297,
+      "distanceMeters": 4016
+    },
+    {
+      "source": "SURVILLIERS_FOSSES",
+      "target": "LA_BORNE_BLANCHE",
+      "durationSeconds": 247,
+      "distanceMeters": 3252
+    },
+    {
+      "source": "LA_BORNE_BLANCHE",
+      "target": "SURVILLIERS_FOSSES",
+      "durationSeconds": 247,
+      "distanceMeters": 3252
+    },
+    {
+      "source": "VILLABE",
+      "target": "MOULIN_GALANT",
+      "durationSeconds": 105,
+      "distanceMeters": 1080
+    },
+    {
+      "source": "MOULIN_GALANT",
+      "target": "VILLABE",
+      "durationSeconds": 105,
+      "distanceMeters": 1080
+    },
+    {
+      "source": "VILLENEUVE_SAINT_GEORGES",
+      "target": "VILLENEUVE_TRIAGE",
+      "durationSeconds": 142,
+      "distanceMeters": 1638
+    },
+    {
+      "source": "VILLENEUVE_TRIAGE",
+      "target": "VILLENEUVE_SAINT_GEORGES",
+      "durationSeconds": 142,
+      "distanceMeters": 1638
+    },
+    {
+      "source": "VILLENEUVE_SAINT_GEORGES",
+      "target": "MONTGERON_CROSNE",
+      "durationSeconds": 215,
+      "distanceMeters": 2755
+    },
+    {
+      "source": "MONTGERON_CROSNE",
+      "target": "VILLENEUVE_SAINT_GEORGES",
+      "durationSeconds": 215,
+      "distanceMeters": 2755
+    },
+    {
+      "source": "VILLIERS_LE_BEL_GONESSE_ARNOUVILLE",
+      "target": "GARGES_SARCELLES",
+      "durationSeconds": 209,
+      "distanceMeters": 2659
+    },
+    {
+      "source": "GARGES_SARCELLES",
+      "target": "VILLIERS_LE_BEL_GONESSE_ARNOUVILLE",
+      "durationSeconds": 209,
+      "distanceMeters": 2659
+    },
+    {
+      "source": "VILLIERS_LE_BEL_GONESSE_ARNOUVILLE",
+      "target": "PIERREFITTE_STAINS",
+      "durationSeconds": 338,
+      "distanceMeters": 4636
+    },
+    {
+      "source": "PIERREFITTE_STAINS",
+      "target": "VILLIERS_LE_BEL_GONESSE_ARNOUVILLE",
+      "durationSeconds": 338,
+      "distanceMeters": 4636
+    },
+    {
+      "source": "MONTGERON_CROSNE",
+      "target": "YERRES",
+      "durationSeconds": 141,
+      "distanceMeters": 1621
+    },
+    {
+      "source": "YERRES",
+      "target": "MONTGERON_CROSNE",
+      "durationSeconds": 141,
+      "distanceMeters": 1621
+    },
+    {
+      "source": "CHANTILLY_GOUVIEUX",
+      "target": "ORRY_LA_VILLE_COYE_LA_FORET",
+      "durationSeconds": 418,
+      "distanceMeters": 5865
+    },
+    {
+      "source": "ORRY_LA_VILLE_COYE_LA_FORET",
+      "target": "CHANTILLY_GOUVIEUX",
+      "durationSeconds": 418,
+      "distanceMeters": 5865
+    },
+    {
+      "source": "CHANTILLY_GOUVIEUX",
+      "target": "LA_BORNE_BLANCHE",
+      "durationSeconds": 532,
+      "distanceMeters": 7598
+    },
+    {
+      "source": "LA_BORNE_BLANCHE",
+      "target": "CHANTILLY_GOUVIEUX",
+      "durationSeconds": 532,
+      "distanceMeters": 7598
+    },
+    {
+      "source": "BOUTIGNY",
+      "target": "LA_FERTE_ALAIS",
+      "durationSeconds": 424,
+      "distanceMeters": 5953
+    },
+    {
+      "source": "LA_FERTE_ALAIS",
+      "target": "BOUTIGNY",
+      "durationSeconds": 424,
+      "distanceMeters": 5953
+    },
+    {
+      "source": "LE_COUDRAY_MONTCEAUX",
+      "target": "LE_PLESSIS_CHENET",
+      "durationSeconds": 119,
+      "distanceMeters": 1296
+    },
+    {
+      "source": "LE_PLESSIS_CHENET",
+      "target": "LE_COUDRAY_MONTCEAUX",
+      "durationSeconds": 119,
+      "distanceMeters": 1296
+    },
+    {
+      "source": "LE_COUDRAY_MONTCEAUX",
+      "target": "MOULIN_GALANT",
+      "durationSeconds": 213,
+      "distanceMeters": 2733
+    },
+    {
+      "source": "MOULIN_GALANT",
+      "target": "LE_COUDRAY_MONTCEAUX",
+      "durationSeconds": 213,
+      "distanceMeters": 2733
+    },
+    {
+      "source": "BUNO_GIRONVILLE",
+      "target": "BOIGNEVILLE",
+      "durationSeconds": 255,
+      "distanceMeters": 3362
+    },
+    {
+      "source": "BOIGNEVILLE",
+      "target": "BUNO_GIRONVILLE",
+      "durationSeconds": 255,
+      "distanceMeters": 3362
+    },
+    {
+      "source": "GOUSSAINVILLE",
+      "target": "LES_NOUES",
+      "durationSeconds": 140,
+      "distanceMeters": 1606
+    },
+    {
+      "source": "LES_NOUES",
+      "target": "GOUSSAINVILLE",
+      "durationSeconds": 140,
+      "distanceMeters": 1606
+    },
+    {
+      "source": "MENNECY",
+      "target": "VILLABE",
+      "durationSeconds": 250,
+      "distanceMeters": 3285
+    },
+    {
+      "source": "VILLABE",
+      "target": "MENNECY",
+      "durationSeconds": 250,
+      "distanceMeters": 3285
+    },
+    {
+      "source": "MENNECY",
+      "target": "LE_PLESSIS_CHENET",
+      "durationSeconds": 264,
+      "distanceMeters": 3503
+    },
+    {
+      "source": "LE_PLESSIS_CHENET",
+      "target": "MENNECY",
+      "durationSeconds": 264,
+      "distanceMeters": 3503
+    },
+    {
+      "source": "VOSVES",
+      "target": "BOISSISE_LE_ROI",
+      "durationSeconds": 203,
+      "distanceMeters": 2579
+    },
+    {
+      "source": "BOISSISE_LE_ROI",
+      "target": "VOSVES",
+      "durationSeconds": 203,
+      "distanceMeters": 2579
+    },
+    {
+      "source": "VOSVES",
+      "target": "LE_MEE",
+      "durationSeconds": 248,
+      "distanceMeters": 3260
+    },
+    {
+      "source": "LE_MEE",
+      "target": "VOSVES",
+      "durationSeconds": 248,
+      "distanceMeters": 3260
+    },
+    {
+      "source": "LIEUSAINT_MOISSY",
+      "target": "SAVIGNY_LE_TEMPLE_NANDY",
+      "durationSeconds": 283,
+      "distanceMeters": 3798
+    },
+    {
+      "source": "SAVIGNY_LE_TEMPLE_NANDY",
+      "target": "LIEUSAINT_MOISSY",
+      "durationSeconds": 283,
+      "distanceMeters": 3798
+    },
+    {
+      "source": "LIEUSAINT_MOISSY",
+      "target": "COMBS_LA_VILLE_QUINCY",
+      "durationSeconds": 341,
+      "distanceMeters": 4683
+    },
+    {
+      "source": "COMBS_LA_VILLE_QUINCY",
+      "target": "LIEUSAINT_MOISSY",
+      "durationSeconds": 341,
+      "distanceMeters": 4683
+    },
+    {
+      "source": "MOULIN_GALANT",
+      "target": "LE_PLESSIS_CHENET",
+      "durationSeconds": 136,
+      "distanceMeters": 1547
+    },
+    {
+      "source": "LE_PLESSIS_CHENET",
+      "target": "MOULIN_GALANT",
+      "durationSeconds": 136,
+      "distanceMeters": 1547
+    },
+    {
+      "source": "ORANGIS_BOIS_DE_L_EPINE",
+      "target": "EVRY_COURCOURONNES",
+      "durationSeconds": 166,
+      "distanceMeters": 2012
+    },
+    {
+      "source": "EVRY_COURCOURONNES",
+      "target": "ORANGIS_BOIS_DE_L_EPINE",
+      "durationSeconds": 166,
+      "distanceMeters": 2012
+    },
+    {
+      "source": "ORANGIS_BOIS_DE_L_EPINE",
+      "target": "GRIGNY_CENTRE",
+      "durationSeconds": 179,
+      "distanceMeters": 2210
+    },
+    {
+      "source": "GRIGNY_CENTRE",
+      "target": "ORANGIS_BOIS_DE_L_EPINE",
+      "durationSeconds": 179,
+      "distanceMeters": 2210
+    },
+    {
+      "source": "VILLENEUVE_TRIAGE",
+      "target": "CRETEIL_POMPADOUR",
+      "durationSeconds": 230,
+      "distanceMeters": 2986
+    },
+    {
+      "source": "CRETEIL_POMPADOUR",
+      "target": "VILLENEUVE_TRIAGE",
+      "durationSeconds": 230,
+      "distanceMeters": 2986
+    },
+    {
+      "source": "GRIGNY_CENTRE",
+      "target": "RIS_ORANGIS",
+      "durationSeconds": 128,
+      "distanceMeters": 1428
+    },
+    {
+      "source": "RIS_ORANGIS",
+      "target": "GRIGNY_CENTRE",
+      "durationSeconds": 128,
+      "distanceMeters": 1428
+    },
+    {
+      "source": "EVRY_COURCOURONNES",
+      "target": "LE_BRAS_DE_FER",
+      "durationSeconds": 138,
+      "distanceMeters": 1588
+    },
+    {
+      "source": "LE_BRAS_DE_FER",
+      "target": "EVRY_COURCOURONNES",
+      "durationSeconds": 138,
+      "distanceMeters": 1588
+    },
+    {
+      "source": "VIRY_CHATILLON",
+      "target": "JUVISY",
+      "durationSeconds": 136,
+      "distanceMeters": 1547
+    },
+    {
+      "source": "JUVISY",
+      "target": "VIRY_CHATILLON",
+      "durationSeconds": 136,
+      "distanceMeters": 1547
+    },
+    {
+      "source": "VIRY_CHATILLON",
+      "target": "GRIGNY_CENTRE",
+      "durationSeconds": 196,
+      "distanceMeters": 2473
+    },
+    {
+      "source": "GRIGNY_CENTRE",
+      "target": "VIRY_CHATILLON",
+      "durationSeconds": 196,
+      "distanceMeters": 2473
+    },
+    {
+      "source": "SAINT_FARGEAU",
+      "target": "PONTHIERRY_PRINGY",
+      "durationSeconds": 252,
+      "distanceMeters": 3330
+    },
+    {
+      "source": "PONTHIERRY_PRINGY",
+      "target": "SAINT_FARGEAU",
+      "durationSeconds": 252,
+      "distanceMeters": 3330
+    },
+    {
+      "source": "SAINT_FARGEAU",
+      "target": "LE_COUDRAY_MONTCEAUX",
+      "durationSeconds": 275,
+      "distanceMeters": 3673
+    },
+    {
+      "source": "LE_COUDRAY_MONTCEAUX",
+      "target": "SAINT_FARGEAU",
+      "durationSeconds": 275,
+      "distanceMeters": 3673
+    },
+    {
+      "source": "CRETEIL_POMPADOUR",
+      "target": "LE_VERT_DE_MAISONS",
+      "durationSeconds": 161,
+      "distanceMeters": 1925
+    },
+    {
+      "source": "LE_VERT_DE_MAISONS",
+      "target": "CRETEIL_POMPADOUR",
+      "durationSeconds": 161,
+      "distanceMeters": 1925
+    },
+    {
+      "source": "BRUNOY",
+      "target": "YERRES",
+      "durationSeconds": 155,
+      "distanceMeters": 1845
+    },
+    {
+      "source": "YERRES",
+      "target": "BRUNOY",
+      "durationSeconds": 155,
+      "distanceMeters": 1845
+    },
+    {
+      "source": "LA_FERTE_ALAIS",
+      "target": "BALLANCOURT",
+      "durationSeconds": 381,
+      "distanceMeters": 5288
+    },
+    {
+      "source": "BALLANCOURT",
+      "target": "LA_FERTE_ALAIS",
+      "durationSeconds": 381,
+      "distanceMeters": 5288
+    },
+    {
+      "source": "MELUN",
+      "target": "LE_MEE",
+      "durationSeconds": 199,
+      "distanceMeters": 2520
+    },
+    {
+      "source": "LE_MEE",
+      "target": "MELUN",
+      "durationSeconds": 199,
+      "distanceMeters": 2520
+    },
+    {
+      "source": "MELUN",
+      "target": "VOSVES",
+      "durationSeconds": 317,
+      "distanceMeters": 4316
+    },
+    {
+      "source": "VOSVES",
+      "target": "MELUN",
+      "durationSeconds": 317,
+      "distanceMeters": 4316
+    },
+    {
+      "source": "JUVISY",
+      "target": "VIGNEUX_SUR_SEINE",
+      "durationSeconds": 235,
+      "distanceMeters": 3057
+    },
+    {
+      "source": "VIGNEUX_SUR_SEINE",
+      "target": "JUVISY",
+      "durationSeconds": 235,
+      "distanceMeters": 3057
+    },
+    {
+      "source": "BOISSISE_LE_ROI",
+      "target": "PONTHIERRY_PRINGY",
+      "durationSeconds": 174,
+      "distanceMeters": 2127
+    },
+    {
+      "source": "PONTHIERRY_PRINGY",
+      "target": "BOISSISE_LE_ROI",
+      "durationSeconds": 174,
+      "distanceMeters": 2127
+    },
+    {
+      "source": "CESSON",
+      "target": "SAVIGNY_LE_TEMPLE_NANDY",
+      "durationSeconds": 263,
+      "distanceMeters": 3492
+    },
+    {
+      "source": "SAVIGNY_LE_TEMPLE_NANDY",
+      "target": "CESSON",
+      "durationSeconds": 263,
+      "distanceMeters": 3492
+    },
+    {
+      "source": "CESSON",
+      "target": "LE_MEE",
+      "durationSeconds": 276,
+      "distanceMeters": 3696
+    },
+    {
+      "source": "LE_MEE",
+      "target": "CESSON",
+      "durationSeconds": 276,
+      "distanceMeters": 3696
+    },
+    {
+      "source": "COMBS_LA_VILLE_QUINCY",
+      "target": "BRUNOY",
+      "durationSeconds": 335,
+      "distanceMeters": 4587
+    },
+    {
+      "source": "BRUNOY",
+      "target": "COMBS_LA_VILLE_QUINCY",
+      "durationSeconds": 335,
+      "distanceMeters": 4587
+    },
+    {
+      "source": "VIGNEUX_SUR_SEINE",
+      "target": "VILLENEUVE_SAINT_GEORGES",
+      "durationSeconds": 260,
+      "distanceMeters": 3450
+    },
+    {
+      "source": "VILLENEUVE_SAINT_GEORGES",
+      "target": "VIGNEUX_SUR_SEINE",
+      "durationSeconds": 260,
+      "distanceMeters": 3450
+    },
+    {
+      "source": "CORBEIL_ESSONNES",
+      "target": "LE_BRAS_DE_FER",
+      "durationSeconds": 161,
+      "distanceMeters": 1927
+    },
+    {
+      "source": "LE_BRAS_DE_FER",
+      "target": "CORBEIL_ESSONNES",
+      "durationSeconds": 161,
+      "distanceMeters": 1927
+    },
+    {
+      "source": "RIS_ORANGIS",
+      "target": "GRAND_BOURG",
+      "durationSeconds": 158,
+      "distanceMeters": 1882
+    },
+    {
+      "source": "GRAND_BOURG",
+      "target": "RIS_ORANGIS",
+      "durationSeconds": 158,
+      "distanceMeters": 1882
+    },
+    {
+      "source": "BOIGNEVILLE",
+      "target": "MALESHERBES",
+      "durationSeconds": 401,
+      "distanceMeters": 5594
+    },
+    {
+      "source": "MALESHERBES",
+      "target": "BOIGNEVILLE",
+      "durationSeconds": 401,
+      "distanceMeters": 5594
+    },
+    {
+      "source": "BALLANCOURT",
+      "target": "MENNECY",
+      "durationSeconds": 446,
+      "distanceMeters": 6280
+    },
+    {
+      "source": "MENNECY",
+      "target": "BALLANCOURT",
+      "durationSeconds": 446,
+      "distanceMeters": 6280
+    },
+    {
+      "source": "GRAND_BOURG",
+      "target": "EVRY",
+      "durationSeconds": 167,
+      "distanceMeters": 2026
+    },
+    {
+      "source": "EVRY",
+      "target": "GRAND_BOURG",
+      "durationSeconds": 167,
+      "distanceMeters": 2026
+    },
+    {
+      "source": "GARE_DE_LYON",
+      "target": "GARE_DU_NORD",
+      "durationSeconds": 318,
+      "distanceMeters": 4337
+    },
+    {
+      "source": "GARE_DU_NORD",
+      "target": "GARE_DE_LYON",
+      "durationSeconds": 318,
+      "distanceMeters": 4337
+    },
+    {
+      "source": "OZOIR_LA_FERRIERE",
+      "target": "GRETZ_ARMAINVILLIERS",
+      "durationSeconds": 285,
+      "distanceMeters": 3829
+    },
+    {
+      "source": "GRETZ_ARMAINVILLIERS",
+      "target": "OZOIR_LA_FERRIERE",
+      "durationSeconds": 285,
+      "distanceMeters": 3829
+    },
+    {
+      "source": "OZOIR_LA_FERRIERE",
+      "target": "ROISSY_EN_BRIE",
+      "durationSeconds": 298,
+      "distanceMeters": 4022
+    },
+    {
+      "source": "ROISSY_EN_BRIE",
+      "target": "OZOIR_LA_FERRIERE",
+      "durationSeconds": 298,
+      "distanceMeters": 4022
+    },
+    {
+      "source": "ROISSY_EN_BRIE",
+      "target": "EMERAINVILLE_PONTAULT_COMBAULT",
+      "durationSeconds": 201,
+      "distanceMeters": 2550
+    },
+    {
+      "source": "EMERAINVILLE_PONTAULT_COMBAULT",
+      "target": "ROISSY_EN_BRIE",
+      "durationSeconds": 201,
+      "distanceMeters": 2550
+    },
+    {
+      "source": "HAUSSMANN_SAINT_LAZARE",
+      "target": "MAGENTA",
+      "durationSeconds": 193,
+      "distanceMeters": 2426
+    },
+    {
+      "source": "MAGENTA",
+      "target": "HAUSSMANN_SAINT_LAZARE",
+      "durationSeconds": 193,
+      "distanceMeters": 2426
+    },
+    {
+      "source": "HAUSSMANN_SAINT_LAZARE",
+      "target": "PORTE_MAILLOT",
+      "durationSeconds": 245,
+      "distanceMeters": 3215
+    },
+    {
+      "source": "PORTE_MAILLOT",
+      "target": "HAUSSMANN_SAINT_LAZARE",
+      "durationSeconds": 245,
+      "distanceMeters": 3215
+    },
+    {
+      "source": "ROSA_PARKS",
+      "target": "PANTIN",
+      "durationSeconds": 162,
+      "distanceMeters": 1947
+    },
+    {
+      "source": "PANTIN",
+      "target": "ROSA_PARKS",
+      "durationSeconds": 162,
+      "distanceMeters": 1947
+    },
+    {
+      "source": "ROSA_PARKS",
+      "target": "MAGENTA",
+      "durationSeconds": 170,
+      "distanceMeters": 2074
+    },
+    {
+      "source": "MAGENTA",
+      "target": "ROSA_PARKS",
+      "durationSeconds": 170,
+      "distanceMeters": 2074
+    },
+    {
+      "source": "EMERAINVILLE_PONTAULT_COMBAULT",
+      "target": "LES_YVRIS_NOISY_LE_GRAND",
+      "durationSeconds": 261,
+      "distanceMeters": 3465
+    },
+    {
+      "source": "LES_YVRIS_NOISY_LE_GRAND",
+      "target": "EMERAINVILLE_PONTAULT_COMBAULT",
+      "durationSeconds": 261,
+      "distanceMeters": 3465
+    },
+    {
+      "source": "LE_RAINCY_VILLEMOMBLE_MONTFERMEIL",
+      "target": "GAGNY",
+      "durationSeconds": 104,
+      "distanceMeters": 1063
+    },
+    {
+      "source": "GAGNY",
+      "target": "LE_RAINCY_VILLEMOMBLE_MONTFERMEIL",
+      "durationSeconds": 104,
+      "distanceMeters": 1063
+    },
+    {
+      "source": "LE_RAINCY_VILLEMOMBLE_MONTFERMEIL",
+      "target": "ROSNY_BOIS_PERRIER",
+      "durationSeconds": 194,
+      "distanceMeters": 2439
+    },
+    {
+      "source": "ROSNY_BOIS_PERRIER",
+      "target": "LE_RAINCY_VILLEMOMBLE_MONTFERMEIL",
+      "durationSeconds": 194,
+      "distanceMeters": 2439
+    },
+    {
+      "source": "LES_BOULLEREAUX_CHAMPIGNY",
+      "target": "NOGENT_LE_PERREUX",
+      "durationSeconds": 170,
+      "distanceMeters": 2066
+    },
+    {
+      "source": "NOGENT_LE_PERREUX",
+      "target": "LES_BOULLEREAUX_CHAMPIGNY",
+      "durationSeconds": 170,
+      "distanceMeters": 2066
+    },
+    {
+      "source": "LES_BOULLEREAUX_CHAMPIGNY",
+      "target": "VILLIERS_SUR_MARNE_LE_PLESSIS_TREVISE",
+      "durationSeconds": 183,
+      "distanceMeters": 2263
+    },
+    {
+      "source": "VILLIERS_SUR_MARNE_LE_PLESSIS_TREVISE",
+      "target": "LES_BOULLEREAUX_CHAMPIGNY",
+      "durationSeconds": 183,
+      "distanceMeters": 2263
+    },
+    {
+      "source": "NOGENT_LE_PERREUX",
+      "target": "VAL_DE_FONTENAY",
+      "durationSeconds": 146,
+      "distanceMeters": 1699
+    },
+    {
+      "source": "VAL_DE_FONTENAY",
+      "target": "NOGENT_LE_PERREUX",
+      "durationSeconds": 146,
+      "distanceMeters": 1699
+    },
+    {
+      "source": "ROSNY_BOIS_PERRIER",
+      "target": "BONDY",
+      "durationSeconds": 118,
+      "distanceMeters": 1272
+    },
+    {
+      "source": "BONDY",
+      "target": "ROSNY_BOIS_PERRIER",
+      "durationSeconds": 118,
+      "distanceMeters": 1272
+    },
+    {
+      "source": "ROSNY_BOIS_PERRIER",
+      "target": "ROSNY_SOUS_BOIS",
+      "durationSeconds": 129,
+      "distanceMeters": 1441
+    },
+    {
+      "source": "ROSNY_SOUS_BOIS",
+      "target": "ROSNY_BOIS_PERRIER",
+      "durationSeconds": 129,
+      "distanceMeters": 1441
+    },
+    {
+      "source": "VILLIERS_SUR_MARNE_LE_PLESSIS_TREVISE",
+      "target": "LES_YVRIS_NOISY_LE_GRAND",
+      "durationSeconds": 213,
+      "distanceMeters": 2720
+    },
+    {
+      "source": "LES_YVRIS_NOISY_LE_GRAND",
+      "target": "VILLIERS_SUR_MARNE_LE_PLESSIS_TREVISE",
+      "durationSeconds": 213,
+      "distanceMeters": 2720
+    },
+    {
+      "source": "BONDY",
+      "target": "NOISY_LE_SEC",
+      "durationSeconds": 141,
+      "distanceMeters": 1624
+    },
+    {
+      "source": "NOISY_LE_SEC",
+      "target": "BONDY",
+      "durationSeconds": 141,
+      "distanceMeters": 1624
+    },
+    {
+      "source": "CHELLES_GOURNAY",
+      "target": "LE_CHENAY_GAGNY",
+      "durationSeconds": 182,
+      "distanceMeters": 2251
+    },
+    {
+      "source": "LE_CHENAY_GAGNY",
+      "target": "CHELLES_GOURNAY",
+      "durationSeconds": 182,
+      "distanceMeters": 2251
+    },
+    {
+      "source": "CHELLES_GOURNAY",
+      "target": "GAGNY",
+      "durationSeconds": 320,
+      "distanceMeters": 4366
+    },
+    {
+      "source": "GAGNY",
+      "target": "CHELLES_GOURNAY",
+      "durationSeconds": 320,
+      "distanceMeters": 4366
+    },
+    {
+      "source": "LE_CHENAY_GAGNY",
+      "target": "GAGNY",
+      "durationSeconds": 174,
+      "distanceMeters": 2136
+    },
+    {
+      "source": "GAGNY",
+      "target": "LE_CHENAY_GAGNY",
+      "durationSeconds": 174,
+      "distanceMeters": 2136
+    },
+    {
+      "source": "ROSNY_SOUS_BOIS",
+      "target": "VAL_DE_FONTENAY",
+      "durationSeconds": 150,
+      "distanceMeters": 1757
+    },
+    {
+      "source": "VAL_DE_FONTENAY",
+      "target": "ROSNY_SOUS_BOIS",
+      "durationSeconds": 150,
+      "distanceMeters": 1757
+    },
+    {
+      "source": "PORTE_MAILLOT",
+      "target": "LA_DEFENSE",
+      "durationSeconds": 269,
+      "distanceMeters": 3587
+    },
+    {
+      "source": "LA_DEFENSE",
+      "target": "PORTE_MAILLOT",
+      "durationSeconds": 269,
+      "distanceMeters": 3587
+    },
+    {
+      "source": "NOISY_LE_SEC",
+      "target": "ROSNY_BOIS_PERRIER",
+      "durationSeconds": 185,
+      "distanceMeters": 2292
+    },
+    {
+      "source": "ROSNY_BOIS_PERRIER",
+      "target": "NOISY_LE_SEC",
+      "durationSeconds": 185,
+      "distanceMeters": 2292
+    },
+    {
+      "source": "PANTIN",
+      "target": "MAGENTA",
+      "durationSeconds": 270,
+      "distanceMeters": 3602
+    },
+    {
+      "source": "MAGENTA",
+      "target": "PANTIN",
+      "durationSeconds": 270,
+      "distanceMeters": 3602
+    },
+    {
+      "source": "NANTERRE_LA_FOLIE",
+      "target": "LA_DEFENSE",
+      "durationSeconds": 117,
+      "distanceMeters": 1268
+    },
+    {
+      "source": "LA_DEFENSE",
+      "target": "NANTERRE_LA_FOLIE",
+      "durationSeconds": 117,
+      "distanceMeters": 1268
+    },
+    {
+      "source": "NANTERRE_LA_FOLIE",
+      "target": "PORTE_MAILLOT",
+      "durationSeconds": 352,
+      "distanceMeters": 4851
+    },
+    {
+      "source": "PORTE_MAILLOT",
+      "target": "NANTERRE_LA_FOLIE",
+      "durationSeconds": 352,
+      "distanceMeters": 4851
+    },
+    {
+      "source": "GRETZ_ARMAINVILLIERS",
+      "target": "TOURNAN",
+      "durationSeconds": 194,
+      "distanceMeters": 2442
+    },
+    {
+      "source": "TOURNAN",
+      "target": "GRETZ_ARMAINVILLIERS",
+      "durationSeconds": 194,
+      "distanceMeters": 2442
+    },
+    {
+      "source": "TOURNAN",
+      "target": "OZOIR_LA_FERRIERE",
+      "durationSeconds": 435,
+      "distanceMeters": 6113
+    },
+    {
+      "source": "OZOIR_LA_FERRIERE",
+      "target": "TOURNAN",
+      "durationSeconds": 435,
+      "distanceMeters": 6113
+    },
+    {
+      "source": "MAGENTA",
+      "target": "GARE_DU_NORD",
+      "durationSeconds": 240,
+      "distanceMeters": 300
+    },
+    {
+      "source": "GARE_DU_NORD",
+      "target": "MAGENTA",
+      "durationSeconds": 240,
+      "distanceMeters": 300
+    },
+    {
+      "source": "HAUSSMANN_SAINT_LAZARE",
+      "target": "AUBER",
+      "durationSeconds": 300,
+      "distanceMeters": 400
+    },
+    {
+      "source": "AUBER",
+      "target": "HAUSSMANN_SAINT_LAZARE",
+      "durationSeconds": 300,
+      "distanceMeters": 400
+    },
+    {
+      "source": "NEUILLY_PORTE_MAILLOT",
+      "target": "PORTE_MAILLOT",
+      "durationSeconds": 180,
+      "distanceMeters": 200
+    },
+    {
+      "source": "PORTE_MAILLOT",
+      "target": "NEUILLY_PORTE_MAILLOT",
+      "durationSeconds": 180,
+      "distanceMeters": 200
+    },
+    {
+      "source": "NANTERRE_LA_FOLIE",
+      "target": "NANTERRE_PREFECTURE",
+      "durationSeconds": 240,
+      "distanceMeters": 300
+    },
+    {
+      "source": "NANTERRE_PREFECTURE",
+      "target": "NANTERRE_LA_FOLIE",
+      "durationSeconds": 240,
+      "distanceMeters": 300
+    }
+  ]
+}

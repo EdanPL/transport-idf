@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Transport IDF">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="icons/logo.png?v=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/logo.png?v=1">
+    <link rel="stylesheet" href="css/mobile-glass.css?v=1">
+    <title>Point de Rencontre Équitable — Transport IDF</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sprint2.css?v=1">
+</head>
+<body>
+
+<header class="glass-header">
+    <div class="header-inner">
+        <a href="index.html" class="brand">
+            <span class="brand-dot" aria-hidden="true"></span>
+            <span class="brand-name">Transport IDF</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+            <a href="index.html" class="nav-link">Carte & Direct</a>
+            <a href="trajet.html" class="nav-link">Trajet Sur-Mesure</a>
+            <a href="escale.html" class="nav-link">Escale</a>
+            <a href="rencontre.html" class="nav-link active">Rencontre</a>
+            <a href="radar.html" class="nav-link">Radar</a>
+            <a href="bouclier.html" class="nav-link">Bouclier</a>
+        </nav>
+
+        <div class="realtime-status-pill" title="Synchronisé sur l'état temps réel du réseau">
+            <span class="live-pulse"></span>
+            Temps Réel IDFM
+        </div>
+    </div>
+</header>
+
+<main class="section-container s2-main">
+    <section class="s2-hero">
+        <div class="hero-eyebrow">
+            <span class="pill-indicator"></span>
+            Mode 3 • Point de Rencontre Équitable (2 à 4 personnes)
+        </div>
+        <h1 class="hero-title">
+            Le point de rendez-vous<br>
+            <span class="text-green">juste pour tout le monde</span>.
+        </h1>
+        <p class="hero-subtitle">
+            Indiquez la gare de départ de chaque participant. Le moteur résout un Dijkstra multi-sources
+            pour trouver le pôle qui équilibre les temps de trajet en temps réel.
+        </p>
+    </section>
+
+    <!-- Critère d'équité en bulles Liquid Glass -->
+    <section class="s2-pill-bar" id="meeting-strategy-bar" aria-label="Stratégie d'équité">
+        <button type="button" class="s2-pill active" data-strategy="MIN_MAX">
+            <span class="s2-dot green"></span>
+            Équité maximale (Min-Max)
+        </button>
+        <button type="button" class="s2-pill" data-strategy="MIN_SUM">
+            <span class="s2-dot orange"></span>
+            Temps cumulé minimal (Min-Sum)
+        </button>
+    </section>
+
+    <!-- Panel des participants -->
+    <section class="panel s2-search-panel">
+        <div id="participants-container" class="participants-grid"></div>
+
+        <div class="rencontre-actions">
+            <button type="button" id="btn-add-participant" class="btn-outline">+ Ajouter un participant (max 4)</button>
+            <button type="button" id="btn-meeting-go" class="btn-primary">Trouver le point de rencontre</button>
+        </div>
+    </section>
+
+    <!-- Invite vide -->
+    <div id="meeting-empty-prompt" class="s2-empty-prompt" role="status">
+        Sélectionnez au moins 2 gares de départ différentes ci-dessus pour calculer le point de rencontre le plus équitable.
+    </div>
+
+    <!-- Résultats -->
+    <section id="meeting-results" class="s2-results hidden" aria-live="polite">
+        <div class="s2-kpi-grid">
+            <div class="bi-tile kpi-tile accent-green">
+                <span class="bi-tile-label">Meilleur point de RDV</span>
+                <strong id="meet-kpi-station" class="bi-kpi-value text-green">—</strong>
+                <span id="meet-kpi-tag" class="bi-tile-sub">—</span>
+            </div>
+
+            <div class="bi-tile kpi-tile">
+                <span class="bi-tile-label">Temps max du groupe</span>
+                <strong id="meet-kpi-max" class="bi-kpi-value">—</strong>
+                <span class="bi-tile-sub">Trajet le plus long</span>
+            </div>
+
+            <div class="bi-tile kpi-tile accent-orange">
+                <span class="bi-tile-label">Écart d'équité</span>
+                <strong id="meet-kpi-spread" class="bi-kpi-value text-orange">—</strong>
+                <span id="meet-kpi-score" class="bi-tile-sub">—</span>
+            </div>
+
+            <div class="bi-tile kpi-tile">
+                <span class="bi-tile-label">Temps moyen</span>
+                <strong id="meet-kpi-avg" class="bi-kpi-value">—</strong>
+                <span id="meet-kpi-sum" class="bi-tile-sub">—</span>
+            </div>
+        </div>
+
+        <div class="s2-workspace">
+            <div class="bi-tile">
+                <div class="bi-tile-head">
+                    <span class="bi-tile-label">Top des gares de rendez-vous</span>
+                    <span class="bi-tile-sub">Cliquez sur un pôle pour comparer les trajets convergents</span>
+                </div>
+                <div id="meeting-candidates-list" class="candidate-list"></div>
+            </div>
+
+            <div class="bi-tile s2-map-card">
+                <div class="s2-map-header">
+                    <div>
+                        <span class="bi-tile-label" id="meet-selected-title">Convergence sur le réseau</span>
+                        <span class="bi-tile-sub" id="meet-selected-sub">Sélectionnez un point de rencontre</span>
+                    </div>
+                </div>
+                <div id="meeting-map" class="s2-map-canvas"></div>
+                <div id="meeting-detail-box" class="s2-detail-box"></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="section-container">
+        <div class="footer-bottom">
+            <span>Transport IDF — Mode 3 : Point de Rencontre Équitable</span>
+            <span>Optimisation Dijkstra multi-sources temps réel</span>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script type="module" src="js/rencontre.js?v=1"></script>
+<script src="js/mobile-glass.js?v=1" defer></script>
+</body>
+</html>

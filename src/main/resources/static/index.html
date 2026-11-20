@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Transport IDF">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="icons/logo.png?v=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/logo.png?v=1">
+    <link rel="stylesheet" href="css/mobile-glass.css?v=1">
+    <title>Transport IDF — Mobilité Temps Réel Île-de-France</title>
+
+    <!-- Typographie professionnelle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Leaflet.js -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Navigation Liquid Glass -->
+<header class="glass-header">
+    <div class="header-inner">
+        <a href="index.html" class="brand">
+            <span class="brand-dot" aria-hidden="true"></span>
+            <span class="brand-name">Transport IDF</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+            <a href="index.html" class="nav-link active">Carte & Direct</a>
+            <a href="trajet.html" class="nav-link">Trajet Sur-Mesure</a>
+            <a href="escale.html" class="nav-link">Escale</a>
+            <a href="rencontre.html" class="nav-link">Rencontre</a>
+            <a href="radar.html" class="nav-link">Radar</a>
+            <a href="bouclier.html" class="nav-link">Bouclier</a>
+        </nav>
+
+        <!-- Bulle Liquid Glass tout à droite -->
+        <div class="traffic-mode-bubble" role="group" aria-label="Source des données trafic">
+            <button id="btn-mode-realtime" class="bubble-btn active" data-mode="REALTIME" type="button">
+                <span class="live-pulse"></span>
+                Temps Réel
+            </button>
+            <button id="btn-mode-simulation" class="bubble-btn" data-mode="SIMULATION" type="button">
+                Simulation
+            </button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Vitrine -->
+    <section class="hero section-container">
+        <div class="hero-eyebrow">
+            <span class="pill-indicator"></span>
+            Réseau RER Île-de-France • Supervision & Routage
+        </div>
+        <h1 class="hero-title">
+            Le réseau francilien,<br>
+            <span class="text-orange">calculé</span> en <span class="text-green">temps réel</span>.
+        </h1>
+        <p class="hero-subtitle">
+            Explorez les 242 gares du réseau RER, visualisez instantanément l'impact des perturbations officielles
+            Île-de-France Mobilités et recalculez vos itinéraires à la milliseconde.
+        </p>
+
+        <!-- Bulletins IDFM (visible uniquement si perturbations actives) -->
+        <div id="idfm-bulletins-banner" class="bulletins-panel hidden" aria-live="polite">
+            <div class="bulletins-header">
+                <span class="bulletins-title">Bulletins officiels Île-de-France Mobilités</span>
+                <span id="bulletins-count" class="count-circle">0</span>
+            </div>
+            <ul id="idfm-bulletins-list" class="bulletins-list"></ul>
+        </div>
+    </section>
+
+    <!-- Carte Interactive Leaflet en premier plan -->
+    <section class="map-section section-container">
+        <div class="section-header-bar">
+            <div>
+                <h2 class="section-title">Carte interactive du réseau</h2>
+                <p class="section-desc">Cliquez sur une gare pour la définir comme départ ou arrivée, puis visualisez le tracé optimal.</p>
+            </div>
+            <div class="map-legend">
+                <span class="legend-item"><span class="legend-circle orange"></span>Gare RER</span>
+                <span class="legend-item"><span class="legend-circle green"></span>Itinéraire calculé</span>
+            </div>
+        </div>
+
+        <div class="map-frame">
+            <div id="idf-map" aria-label="Carte interactive des gares RER d'Île-de-France"></div>
+        </div>
+    </section>
+
+    <!-- Vitrine éditoriale avec apparition en fondu vers le haut au scroll -->
+    <section class="editorial-section section-container">
+        <div class="editorial-grid">
+            <article class="editorial-card reveal-up">
+                <div class="editorial-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=80"
+                         alt="Mobilité urbaine à Paris" loading="lazy">
+                </div>
+                <div class="editorial-body">
+                    <span class="editorial-tag">Connectivité totale</span>
+                    <h3>Correspondances multimodales unifiées</h3>
+                    <p>Les 5 lignes de RER et leurs grands pôles piétons reliés dans un graphe continu en mémoire vive.</p>
+                </div>
+            </article>
+
+            <article class="editorial-card reveal-up reveal-delay-1">
+                <div class="editorial-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1000&q=80"
+                         alt="Train express régional en circulation" loading="lazy">
+                </div>
+                <div class="editorial-body">
+                    <span class="editorial-tag green">Flux IDFM PRIM</span>
+                    <h3>Réactivité instantanée aux incidents</h3>
+                    <p>Synchronisation filtrée avec l'API officielle et mise en cache Redis à expiration automatique.</p>
+                </div>
+            </article>
+
+            <article class="editorial-card reveal-up reveal-delay-2">
+                <div class="editorial-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1000&q=80"
+                         alt="Architecture métropolitaine moderne" loading="lazy">
+                </div>
+                <div class="editorial-body">
+                    <span class="editorial-tag">Simulation & Contrôle</span>
+                    <h3>Testez la résilience du réseau</h3>
+                    <p>Basculez en mode Simulation pour bloquer un tronçon et observer le contournement immédiat.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- En second lieu : Calcul d'itinéraire + Simulateur d'incident + Inspecteur de tronçon -->
+    <section class="workspace-section section-container" id="outils">
+        <div class="section-header-bar">
+            <div>
+                <h2 class="section-title">Calculateur & Supervision</h2>
+                <p class="section-desc">Calculez un trajet dynamique, inspectez l'état d'un tronçon précis ou simulez un incident.</p>
+            </div>
+        </div>
+
+        <div class="workspace-grid">
+            <!-- Calculateur d'itinéraire -->
+            <section class="panel" aria-labelledby="route-heading">
+                <h3 id="route-heading" class="panel-title">Calcul d'itinéraire</h3>
+
+                <div class="form-group">
+                    <label for="from">Gare de départ</label>
+                    <select id="from">
+                        <option value="" selected disabled>Sélectionner une gare de départ…</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="to">Gare d'arrivée</label>
+                    <select id="to">
+                        <option value="" selected disabled>Sélectionner une gare d'arrivée…</option>
+                    </select>
+                </div>
+
+                <button id="btn-calculate" type="button" class="btn-primary">
+                    Calculer l'itinéraire optimal
+                </button>
+
+                <div id="routeResult" class="route-output is-empty" role="status" aria-live="polite">
+                    Sélectionnez une gare de départ et une gare d'arrivée pour calculer votre itinéraire.
+                </div>
+            </section>
+
+            <!-- Simulateur d'incident & Inspecteur de tronçon -->
+            <section class="panel" aria-labelledby="sim-heading">
+                <h3 id="sim-heading" class="panel-title">Inspecteur & Simulateur de tronçon</h3>
+
+                <div class="form-group">
+                    <label for="sectionSelect">Sélectionner un tronçon du réseau</label>
+                    <select id="sectionSelect">
+                        <option value="" selected disabled>Sélectionner un tronçon du réseau…</option>
+                    </select>
+                </div>
+
+                <!-- Fiche dynamique du tronçon sélectionné -->
+                <div id="sectionInspector" class="inspector-box" aria-live="polite">
+                    <span class="muted-text">Sélectionnez un tronçon ci-dessus pour consulter son poids temps réel ou simuler un incident.</span>
+                </div>
+
+                <div class="form-row-2">
+                    <div class="form-group">
+                        <label for="delayInput">Retard ajouté (sec)</label>
+                        <input type="number" id="delayInput" value="300" min="0" step="60">
+                    </div>
+                    <div class="form-group">
+                        <label for="blockedSelect">État de la voie</label>
+                        <select id="blockedSelect">
+                            <option value="false">Circule avec retard</option>
+                            <option value="true">Voie totalement bloquée</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="btn-row">
+                    <button id="btn-disrupt" type="button" class="btn-secondary">Appliquer l'incident</button>
+                    <button id="btn-reset" type="button" class="btn-outline">Réinitialiser le réseau</button>
+                </div>
+
+                <div class="redis-section">
+                    <span class="sub-label">Clés actives dans Redis (TTL 45s)</span>
+                    <div id="redisCache" class="redis-list" aria-live="polite">Chargement...</div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Résumé compact uniquement des tronçons actuellement perturbés -->
+        <!-- Tableau de bord analytique PostgreSQL (Style Power BI + Liquid Glass) -->
+        <section class="bi-dashboard" aria-labelledby="bi-heading">
+            <div class="section-header-bar">
+                <div>
+                    <h2 id="bi-heading" class="section-title">Analytique PostgreSQL & Santé du Réseau</h2>
+                    <p class="section-desc">Indicateurs calculés en direct sur l'ensemble des tronçons stockés en base et le cache Redis.</p>
+                </div>
+                <span class="bi-live-pill">
+                    <span class="pill-indicator"></span>
+                    Données PostgreSQL + Redis
+                </span>
+            </div>
+
+            <!-- Rangée 1 : 5 Tuiles KPI -->
+            <div class="bi-kpi-grid">
+                <div class="bi-tile kpi-tile">
+                    <span class="bi-tile-label">Tronçons en base</span>
+                    <strong id="kpi-total-sections" class="bi-kpi-value">—</strong>
+                    <span class="bi-tile-sub">Table network_sections</span>
+                </div>
+
+                <div class="bi-tile kpi-tile">
+                    <span class="bi-tile-label">Gares actives</span>
+                    <strong id="kpi-total-stations" class="bi-kpi-value">—</strong>
+                    <span id="kpi-avg-degree" class="bi-tile-sub">—</span>
+                </div>
+
+                <div class="bi-tile kpi-tile accent-green">
+                    <span class="bi-tile-label">Fluidité réseau</span>
+                    <strong id="kpi-fluidity-pct" class="bi-kpi-value text-green">—</strong>
+                    <span class="bi-tile-sub">Tronçons à temps nominal</span>
+                </div>
+
+                <div class="bi-tile kpi-tile">
+                    <span class="bi-tile-label">Temps moyen inter-gares</span>
+                    <strong id="kpi-avg-duration" class="bi-kpi-value">—</strong>
+                    <span class="bi-tile-sub">Moyenne nominale SQL</span>
+                </div>
+
+                <div class="bi-tile kpi-tile accent-orange">
+                    <span class="bi-tile-label">Taux de perturbation</span>
+                    <strong id="kpi-disrupted-pct" class="bi-kpi-value text-orange">—</strong>
+                    <span id="kpi-disrupted-sub" class="bi-tile-sub">—</span>
+                </div>
+            </div>
+
+            <!-- Rangée 2 : Jauge + Camembert + Histogramme -->
+            <div class="bi-charts-row-top">
+                <div class="bi-tile chart-tile">
+                    <div class="bi-tile-head">
+                        <span class="bi-tile-label">Indice de fluidité temps réel</span>
+                        <span class="bi-tile-sub">Part des tronçons opérationnels</span>
+                    </div>
+                    <div class="gauge-wrap">
+                        <canvas id="chart-gauge-fluidity"></canvas>
+                        <div class="gauge-overlay">
+                            <strong id="gauge-center-value">—</strong>
+                            <span id="gauge-center-sub">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bi-tile chart-tile">
+                    <div class="bi-tile-head">
+                        <span class="bi-tile-label">Structure des trajets PostgreSQL (%)</span>
+                        <span class="bi-tile-sub">Répartition par tranche de durée nominale</span>
+                    </div>
+                    <div class="chart-box">
+                        <canvas id="chart-pie-structure"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rangée 3 : Histogramme vertical + Top Hubs horizontal -->
+            <div class="bi-charts-row-bottom">
+                <div class="bi-tile chart-tile">
+                    <div class="bi-tile-head">
+                        <span class="bi-tile-label">Distribution des durées nominales</span>
+                        <span class="bi-tile-sub">Nombre de tronçons par palier de temps</span>
+                    </div>
+                    <div class="chart-box tall">
+                        <canvas id="chart-bar-durations"></canvas>
+                    </div>
+                </div>
+
+                <div class="bi-tile chart-tile">
+                    <div class="bi-tile-head">
+                        <span class="bi-tile-label">Top 8 des pôles les plus connectés</span>
+                        <span class="bi-tile-sub">Degré du graphe (connexions sortantes)</span>
+                    </div>
+                    <div class="chart-box tall">
+                        <canvas id="chart-hbar-hubs"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rangée 4 : Tronçons actuellement impactés -->
+            <div class="bi-tile disrupted-tile">
+                <div class="disrupted-header">
+                    <div>
+                        <span class="bi-tile-label">Détail des tronçons actuellement perturbés</span>
+                        <span class="bi-tile-sub">Synchronisation automatique toutes les 5 secondes</span>
+                    </div>
+
+                    <div class="disrupted-controls">
+                        <!-- Filtres bulles par ligne RER -->
+                        <div id="rerFilterGroup" class="rer-filter-pills" role="group" aria-label="Filtrer par ligne RER">
+                            <button type="button" class="rer-pill active" data-rer="ALL">Toutes</button>
+                            <button type="button" class="rer-pill" data-rer="A">RER A</button>
+                            <button type="button" class="rer-pill" data-rer="B">RER B</button>
+                            <button type="button" class="rer-pill" data-rer="C">RER C</button>
+                            <button type="button" class="rer-pill" data-rer="D">RER D</button>
+                            <button type="button" class="rer-pill" data-rer="E">RER E</button>
+                        </div>
+
+                        <!-- Tri alphabétique des gares (Rectangle strict) -->
+                        <select id="disruptedSortSelect" class="disrupted-sort-select" aria-label="Trier les gares">
+                            <option value="ASC">Gares : A → Z</option>
+                            <option value="DESC">Gares : Z → A</option>
+                        </select>
+
+                        <span id="disruptedCount" class="count-circle">0</span>
+                    </div>
+                </div>
+                <div id="disruptedSectionsList" class="disrupted-grid">
+                    <p class="muted-text">Trafic nominal sur l'ensemble des tronçons.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+</main>
+
+<!-- Pied de page avec la stack technique en bas -->
+<footer class="site-footer">
+    <div class="section-container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <span class="brand-dot"></span>
+                <span class="brand-name">Transport IDF</span>
+                <p class="footer-tagline">Moteur temps réel de calcul d'itinéraire et de supervision du réseau RER francilien.</p>
+            </div>
+
+            <div class="stack-block">
+                <span class="sub-label">Architecture & Stack Technique</span>
+                <div class="stack-pills">
+                    <span class="stack-pill">Java 21</span>
+                    <span class="stack-pill">Spring Boot 3</span>
+                    <span class="stack-pill">Dijkstra en RAM</span>
+                    <span class="stack-pill">PostgreSQL</span>
+                    <span class="stack-pill">Redis Live</span>
+                    <span class="stack-pill">API IDFM PRIM</span>
+                    <span class="stack-pill">Leaflet.js</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>Transport IDF — Projet d'ingénierie transport</span>
+            <span>Données temps réel via Île-de-France Mobilités</span>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script type="module" src="js/app.js"></script>
+<script src="js/mobile-glass.js?v=1" defer></script>
+</body>
+</html>

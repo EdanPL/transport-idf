@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Transport IDF">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="icons/logo.png?v=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/logo.png?v=1">
+    <link rel="stylesheet" href="css/mobile-glass.css?v=1">
+    <title>Bouclier Anti-Galère — Transport IDF</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sprint2.css?v=1">
+    <link rel="stylesheet" href="css/sprint3.css?v=3">
+</head>
+<body>
+
+<header class="glass-header">
+    <div class="header-inner">
+        <a href="index.html" class="brand">
+            <span class="brand-dot" aria-hidden="true"></span>
+            <span class="brand-name">Transport IDF</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+            <a href="index.html" class="nav-link">Carte & Direct</a>
+            <a href="trajet.html" class="nav-link">Trajet Sur-Mesure</a>
+            <a href="escale.html" class="nav-link">Escale</a>
+            <a href="rencontre.html" class="nav-link">Rencontre</a>
+            <a href="radar.html" class="nav-link">Radar</a>
+            <a href="bouclier.html" class="nav-link active">Bouclier</a>
+        </nav>
+
+        <div class="realtime-status-pill" title="Surveillance active en temps réel">
+            <span class="live-pulse"></span>
+            Temps Réel IDFM
+        </div>
+    </div>
+</header>
+
+<main class="section-container s3-main">
+    <section class="s3-hero">
+        <div class="hero-eyebrow">
+            <span class="pill-indicator"></span>
+            Mode 5 • Bouclier Anti-Galère & Plans de Repli
+        </div>
+        <h1 class="hero-title">
+            Votre trajet quotidien,<br>
+            <span class="text-green">protégé par un Plan B</span>.
+        </h1>
+        <p class="hero-subtitle">
+            Surveillez votre trajet habituel en direct, pré-calculez des itinéraires de contournement
+            indépendants et identifiez les goulots d'étranglement avant même de monter en gare.
+        </p>
+    </section>
+
+    <!-- Formulaire + Favoris -->
+    <section class="panel s2-search-panel">
+        <div class="shield-form-grid">
+            <div class="form-group">
+                <label for="shield-from">Gare de départ</label>
+                <select id="shield-from">
+                    <option value="" selected disabled>Sélectionner une gare de départ…</option>
+                </select>
+            </div>
+
+            <button type="button" id="btn-shield-swap" class="btn-swap" title="Inverser départ et arrivée" aria-label="Inverser départ et arrivée">
+                ⇄
+            </button>
+
+            <div class="form-group">
+                <label for="shield-to">Gare d'arrivée</label>
+                <select id="shield-to">
+                    <option value="" selected disabled>Sélectionner une gare d'arrivée…</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>&nbsp;</label>
+                <button type="button" id="btn-shield-go" class="btn-primary">Activer le Bouclier</button>
+            </div>
+
+            <div class="form-group">
+                <label>&nbsp;</label>
+                <button type="button" id="btn-shield-save" class="btn-save-fav">+ Enregistrer favori</button>
+            </div>
+        </div>
+
+        <div id="shield-favorites-strip" class="favorites-strip">
+            <span class="favorites-label">Trajets favoris :</span>
+            <span class="muted-text" style="font-size:0.82rem;">Aucun trajet enregistré (cliquez sur « + Enregistrer favori »).</span>
+        </div>
+    </section>
+
+    <!-- Invite initiale grise -->
+    <div id="shield-empty-prompt" class="s2-empty-prompt" role="status">
+        Sélectionnez votre gare de départ et votre gare d'arrivée (ou cliquez sur un trajet favori) pour activer la surveillance Bouclier et calculer vos plans de repli.
+    </div>
+
+    <!-- Zone de résultats Bouclier -->
+    <section id="shield-results" class="s2-results hidden" aria-live="polite">
+        <!-- Bannière de diagnostic -->
+        <div id="shield-status-banner" class="shield-status-banner">
+            <div>
+                <div id="shield-banner-title" class="shield-banner-title">—</div>
+                <div id="shield-banner-sub" class="shield-banner-sub">—</div>
+            </div>
+            <div class="shield-banner-actions">
+                <button type="button" id="btn-open-certificate" class="btn-certificate">
+                    Justificatif de retard (PDF)
+                </button>
+                <button type="button" id="btn-shield-watch" class="shield-watch-toggle active">
+                    <span class="live-pulse"></span>
+                    Veille auto : ACTIVE (10s)
+                </button>
+            </div>
+        </div>
+
+        <!-- 4 KPI Résilience -->
+        <div class="s3-kpi-grid">
+            <div class="bi-tile kpi-tile accent-green">
+                <span class="bi-tile-label">Score de résilience</span>
+                <strong id="shield-kpi-score" class="bi-kpi-value text-green">—</strong>
+                <span class="bi-tile-sub">Indice de solidité du trajet</span>
+            </div>
+
+            <div class="bi-tile kpi-tile">
+                <span class="bi-tile-label">Durée Plan A</span>
+                <strong id="shield-kpi-primary" class="bi-kpi-value">—</strong>
+                <span id="shield-kpi-delay" class="bi-tile-sub">—</span>
+            </div>
+
+            <div class="bi-tile kpi-tile accent-orange">
+                <span class="bi-tile-label">Plans de repli prêts</span>
+                <strong id="shield-kpi-alts" class="bi-kpi-value text-orange">—</strong>
+                <span id="shield-kpi-alt-sub" class="bi-tile-sub">—</span>
+            </div>
+
+            <div class="bi-tile kpi-tile">
+                <span class="bi-tile-label">Segments contournables</span>
+                <strong id="shield-kpi-bypass" class="bi-kpi-value">—</strong>
+                <span id="shield-kpi-spof" class="bi-tile-sub">—</span>
+            </div>
+        </div>
+
+        <!-- Plans A / B / C + Carte comparée -->
+        <div class="shield-workspace">
+            <div class="bi-tile">
+                <div class="bi-tile-head">
+                    <span class="bi-tile-label">Comparateur Plan A vs Plans de Repli</span>
+                    <span class="bi-tile-sub">Cliquez sur un plan pour le mettre en évidence sur la carte</span>
+                </div>
+                <div id="shield-plans-list"></div>
+            </div>
+
+            <div class="bi-tile s2-map-card">
+                <div class="s2-map-header">
+                    <div>
+                        <span class="bi-tile-label">Tracé comparatif sur le réseau</span>
+                        <span class="bi-tile-sub" id="shield-map-sub">Superposition Plan A et contournement</span>
+                    </div>
+                    <div class="s2-legend">
+                        <span class="s2-legend-item"><span class="s2-dot green"></span>Plan A (Principal)</span>
+                        <span class="s2-legend-item"><span class="s2-dot orange"></span>Plan de repli</span>
+                    </div>
+                </div>
+                <div id="shield-map" class="s2-map-canvas"></div>
+            </div>
+        </div>
+
+        <!-- Stress-Test : Analyse des goulots d'étranglement -->
+        <div class="bi-tile">
+            <div class="bi-tile-head">
+                <span class="bi-tile-label">Stress-Test : Et si un tronçon tombait en panne ?</span>
+                <span class="bi-tile-sub">Simulation non destructive de coupure sur chaque maillon clé de votre trajet</span>
+            </div>
+            <div id="shield-bottlenecks-grid" class="bottleneck-grid"></div>
+        </div>
+    </section>
+    <!-- Modale Générateur de Justificatif de Retard -->
+    <div id="certificate-modal" class="cert-modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+        <div class="cert-modal-shell">
+            <!-- Barre de personnalisation (masquée à l'impression) -->
+            <div class="cert-toolbar no-print">
+                <div class="cert-toolbar-fields">
+                    <div class="form-group">
+                        <label for="cert-input-name">Nom & Prénom du voyageur (optionnel)</label>
+                        <input type="text" id="cert-input-name" placeholder="Ex. Camille Dupont">
+                    </div>
+                    <div class="form-group">
+                        <label for="cert-input-org">Destinataire (Entreprise / École)</label>
+                        <input type="text" id="cert-input-org" placeholder="Ex. Service RH / Scolarité IUT">
+                    </div>
+                    <button type="button" id="btn-cert-refresh" class="btn-save-fav">Mettre à jour</button>
+                </div>
+                <button type="button" id="btn-cert-close" class="btn-cert-close" aria-label="Fermer">×</button>
+            </div>
+
+            <!-- Feuille d'attestation officielle imprimable A4 -->
+            <article id="certificate-sheet" class="cert-sheet">
+                <header class="cert-sheet-header">
+                    <div>
+                        <div class="cert-brand-row">
+                            <span class="brand-dot" aria-hidden="true"></span>
+                            <span class="cert-brand-title">Transport IDF</span>
+                            <span class="cert-source-pill">Flux Temps Réel API PRIM — Île-de-France Mobilités</span>
+                        </div>
+                        <h2 id="cert-modal-title" class="cert-doc-title">Relevé de Perturbation & Justificatif de Retard</h2>
+                        <p class="cert-doc-subtitle">Document horodaté généré à partir des données de circulation en direct du réseau RER d'Île-de-France.</p>
+                    </div>
+                    <div class="cert-ref-box">
+                        <span class="cert-meta-label">Référence unique</span>
+                        <strong id="cert-ref-code">—</strong>
+                        <span id="cert-issued-at" class="cert-meta-date">—</span>
+                    </div>
+                </header>
+
+                <div class="cert-info-grid">
+                    <div class="cert-info-cell">
+                        <span class="cert-meta-label">Voyageur</span>
+                        <strong id="cert-passenger">—</strong>
+                    </div>
+                    <div class="cert-info-cell">
+                        <span class="cert-meta-label">Destinataire</span>
+                        <strong id="cert-org">—</strong>
+                    </div>
+                    <div class="cert-info-cell">
+                        <span class="cert-meta-label">Parcours concerné</span>
+                        <strong id="cert-route">—</strong>
+                    </div>
+                    <div class="cert-info-cell">
+                        <span class="cert-meta-label">Ligne(s) empruntée(s)</span>
+                        <strong id="cert-lines">—</strong>
+                    </div>
+                </div>
+
+                <div id="cert-verdict-box" class="cert-verdict-box">
+                    <div>
+                        <span class="cert-meta-label">Constat de circulation</span>
+                        <strong id="cert-status-label">—</strong>
+                    </div>
+                    <div class="cert-metrics-row">
+                        <div>
+                            <span class="cert-meta-label">Temps nominal</span>
+                            <strong id="cert-nominal">—</strong>
+                        </div>
+                        <div>
+                            <span class="cert-meta-label">Temps constaté</span>
+                            <strong id="cert-real">—</strong>
+                        </div>
+                        <div>
+                            <span class="cert-meta-label">Retard cumulé</span>
+                            <strong id="cert-delay" class="text-orange">—</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-section">
+                    <h3 class="cert-section-title">Détail des tronçons perturbés relevés sur l'axe</h3>
+                    <div id="cert-incidents-list" class="cert-incidents-list"></div>
+                </div>
+
+                <div id="cert-fallback-section" class="cert-section hidden">
+                    <h3 class="cert-section-title">Alternative identifiée au moment du relevé</h3>
+                    <p id="cert-fallback-text" class="cert-fallback-text"></p>
+                </div>
+
+                <footer class="cert-sheet-footer">
+                    <div>
+                        <strong>Source des données :</strong> <span id="cert-data-source">—</span><br>
+                        <span>Ce relevé atteste l'état du trafic enregistré en temps réel sur l'API officielle Île-de-France Mobilités (PRIM) à l'horodatage indiqué. Si votre organisme exige un bulletin de retard émis directement par l'opérateur ferroviaire, joignez le bulletin disponible sur <em>transilien.com</em> ou <em>ratp.fr</em>.</span>
+                    </div>
+                    <div class="cert-stamp">
+                        <span>HORODATAGE</span>
+                        <strong id="cert-stamp-code">—</strong>
+                    </div>
+                </footer>
+            </article>
+
+            <!-- Actions d'export (masquées à l'impression) -->
+            <div class="cert-actions-bar no-print">
+                <button type="button" id="btn-cert-copy" class="btn-outline">Copier le texte pour email (RH / Scolarité)</button>
+                <button type="button" id="btn-cert-print" class="btn-primary">Imprimer / Enregistrer en PDF</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="section-container">
+        <div class="footer-bottom">
+            <span>Transport IDF — Mode 5 : Bouclier Anti-Galère</span>
+            <span>Calcul d'itinéraires alternatifs et stress-test temps réel</span>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script type="module" src="js/bouclier.js?v=4"></script>
+<script src="js/mobile-glass.js?v=1" defer></script>
+</body>
+</html>

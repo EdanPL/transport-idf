@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Transport IDF">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="icons/logo.png?v=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/logo.png?v=1">
+    <link rel="stylesheet" href="css/mobile-glass.css?v=1">
+    <title>Trajet Sur-Mesure — Transport IDF</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/trajet.css?v=2">
+</head>
+<body>
+
+<header class="glass-header">
+    <div class="header-inner">
+        <a href="index.html" class="brand">
+            <span class="brand-dot" aria-hidden="true"></span>
+            <span class="brand-name">Transport IDF</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+            <a href="index.html" class="nav-link">Carte & Direct</a>
+            <a href="trajet.html" class="nav-link active">Trajet Sur-Mesure</a>
+            <a href="escale.html" class="nav-link">Escale</a>
+            <a href="rencontre.html" class="nav-link">Rencontre</a>
+            <a href="radar.html" class="nav-link">Radar</a>
+            <a href="bouclier.html" class="nav-link">Bouclier</a>
+        </nav>
+
+        <div class="realtime-status-pill" title="Synchronisé sur l'état temps réel du réseau">
+            <span class="live-pulse"></span>
+            Temps Réel IDFM
+        </div>
+    </div>
+</header>
+
+<main class="section-container trajet-main">
+    <section class="trajet-hero">
+        <div class="hero-eyebrow">
+            <span class="pill-indicator"></span>
+            Mode 1 • Routage Multi-Profils & Guide d'Embarquement
+        </div>
+        <h1 class="hero-title">
+            Votre trajet,<br>
+            adapté à <span class="text-orange">votre rythme</span>.
+        </h1>
+        <p class="hero-subtitle">
+            Choisissez votre objectif de voyage : vitesse maximale, sieste continue sans correspondance,
+            feuille de route hors-ligne batterie critique ou rebond place assise.
+        </p>
+    </section>
+
+    <!-- Sélecteur de profil sous forme de bulles Liquid Glass -->
+    <section class="profile-selector-bar" aria-label="Profils de calcul d'itinéraire">
+        <button type="button" class="profile-bubble active" data-profile="FASTEST">
+            <span class="profile-dot green"></span>
+            Rapide
+        </button>
+        <button type="button" class="profile-bubble" data-profile="NAP_FOCUS">
+            <span class="profile-dot orange"></span>
+            Sieste / Révision
+        </button>
+        <button type="button" class="profile-bubble" data-profile="LOW_BATTERY">
+            <span class="profile-dot dark"></span>
+            Batterie Critique (OLED)
+        </button>
+        <button type="button" class="profile-bubble" data-profile="SEAT_COMFORT">
+            <span class="profile-dot green"></span>
+            Place Assise & Rebond
+        </button>
+    </section>
+
+    <!-- Bandeau d'alerte Batterie Critique -->
+    <div id="battery-banner" class="battery-notice hidden" role="status">
+        <strong>Mode Batterie Critique activé :</strong> Interface OLED noir pur, zéro rafraîchissement réseau en arrière-plan et décompte exact des arrêts avant descente.
+    </div>
+
+    <!-- Formulaire de recherche rectangulaire -->
+    <section class="panel trajet-search-panel">
+        <div class="trajet-form-grid">
+            <div class="form-group">
+                <label for="trajet-from">Gare de départ</label>
+                <select id="trajet-from">
+                    <option value="" selected disabled>Sélectionner une gare de départ…</option>
+                </select>
+            </div>
+
+            <button type="button" id="btn-swap-stations" class="btn-swap" title="Inverser départ et arrivée" aria-label="Inverser départ et arrivée">
+                ⇄
+            </button>
+
+            <div class="form-group">
+                <label for="trajet-to">Gare d'arrivée</label>
+                <select id="trajet-to">
+                    <option value="" selected disabled>Sélectionner une gare d'arrivée…</option>
+                </select>
+            </div>
+
+            <div class="form-group trajet-submit-wrap">
+                <label>&nbsp;</label>
+                <button type="button" id="btn-trajet-go" class="btn-primary">Calculer le trajet</button>
+            </div>
+        </div>
+        <p id="profile-description" class="profile-desc-text">
+            Minimise le temps de trajet total en tenant compte des retards temps réel.
+        </p>
+    </section>
+
+    <!-- État initial vide : invite discrète en gris -->
+    <div id="trajet-empty-prompt" class="trajet-empty-prompt" role="status">
+        Sélectionnez une gare de départ et une gare d'arrivée ci-dessus pour calculer votre itinéraire sur-mesure.
+    </div>
+
+    <!-- Zone de résultats (masquée tant qu'aucun trajet n'est calculé) -->
+    <section id="trajet-results-area" class="trajet-results hidden" aria-live="polite">
+        <div class="trajet-kpi-grid">
+            <div class="bi-tile kpi-tile accent-green">
+                <span class="bi-tile-label">Durée totale estimée</span>
+                <strong id="res-duration" class="bi-kpi-value text-green">—</strong>
+                <span id="res-delay-info" class="bi-tile-sub">—</span>
+            </div>
+
+            <div class="bi-tile kpi-tile">
+                <span class="bi-tile-label">Arrêts à compter</span>
+                <strong id="res-stops" class="bi-kpi-value">—</strong>
+                <span class="bi-tile-sub">Stations traversées</span>
+            </div>
+
+            <div class="bi-tile kpi-tile accent-orange">
+                <span class="bi-tile-label">Correspondances</span>
+                <strong id="res-transfers" class="bi-kpi-value text-orange">—</strong>
+                <span class="bi-tile-sub">Changements de ligne</span>
+            </div>
+
+            <div class="bi-tile kpi-tile">
+                <span class="bi-tile-label">Segment continu max</span>
+                <strong id="res-continuous" class="bi-kpi-value">—</strong>
+                <span class="bi-tile-sub">Temps d'un seul trait</span>
+            </div>
+        </div>
+
+        <div class="trajet-detail-grid">
+            <div class="bi-tile">
+                <div class="bi-tile-head">
+                    <span class="bi-tile-label">Feuille de route détaillée</span>
+                    <span id="res-route-subtitle" class="bi-tile-sub">—</span>
+                </div>
+                <ol id="res-steps-list" class="roadmap-list"></ol>
+            </div>
+
+            <aside class="bi-tile boarding-card">
+                <div class="bi-tile-head">
+                    <span class="bi-tile-label">Guide d'Embarquement Intelligent</span>
+                    <span class="bi-tile-sub">Placement rame & stratégie place assise</span>
+                </div>
+
+                <div class="advice-block">
+                    <span class="advice-tag">Placement recommandé</span>
+                    <strong id="advice-car">—</strong>
+                    <p id="advice-exit">—</p>
+                </div>
+
+                <div class="advice-block">
+                    <span class="advice-tag green">Opportunité Place Assise</span>
+                    <strong id="advice-comfort">—</strong>
+                    <p id="advice-rebound">—</p>
+                </div>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="section-container">
+        <div class="footer-bottom">
+            <span>Transport IDF — Mode 1 : Trajet Sur-Mesure</span>
+            <span>Données temps réel via Île-de-France Mobilités</span>
+        </div>
+    </div>
+</footer>
+
+<script type="module" src="js/trajet.js?v=2"></script>
+<script src="js/mobile-glass.js?v=1" defer></script>
+</body>
+</html>

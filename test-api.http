@@ -1,0 +1,9 @@
+POST http://localhost:8080/api/disruptions
+Content-Type: application/json
+
+{
+  "sectionId": 1,
+  "delaySeconds": 0,
+  "blocked": true,
+  "cause": "Colis suspect à Châtelet - Les Halles"
+}

@@ -1,0 +1,405 @@
+/* ==========================================================================
+   TRANSPORT IDF — Sprint 2 : Escale & Détour Calibré + Point de Rencontre
+   ========================================================================== */
+
+.realtime-status-pill {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 16px;
+    border-radius: 9999px;
+    background: var(--green-soft);
+    color: var(--green);
+    border: 1px solid rgba(0, 168, 89, 0.25);
+    font-size: 0.8rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.s2-main {
+    padding-bottom: 96px;
+}
+
+.s2-hero {
+    padding-top: 56px;
+    padding-bottom: 32px;
+}
+
+/* Barre de sélection en bulles Liquid Glass */
+.s2-pill-bar {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 6px;
+    border-radius: 9999px;
+    background: var(--glass-bubble);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--border-hairline);
+    box-shadow: var(--glass-shadow);
+    margin-bottom: 24px;
+}
+
+.s2-pill {
+    border: none;
+    background: transparent;
+    color: var(--ink-secondary);
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 9px 18px;
+    border-radius: 9999px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.s2-pill:hover {
+    color: var(--ink-primary);
+    background: rgba(20, 20, 19, 0.05);
+}
+
+.s2-pill.active {
+    background: var(--ink-primary);
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(20, 20, 19, 0.2);
+}
+
+.s2-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.s2-dot.green { background: var(--green); }
+.s2-dot.orange { background: var(--orange); }
+.s2-dot.ink { background: var(--ink-primary); }
+.s2-dot.slate { background: #4b5563; }
+
+/* Formulaire Escale */
+.s2-search-panel {
+    margin-bottom: 28px;
+}
+
+.escale-form-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr 190px 200px;
+    gap: 14px;
+    align-items: end;
+}
+
+.escale-form-grid .form-group {
+    margin-bottom: 0;
+}
+
+.btn-swap {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid var(--border-strong);
+    background: var(--bg-white);
+    color: var(--ink-primary);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-swap:hover {
+    border-color: var(--orange);
+    color: var(--orange);
+    transform: rotate(180deg);
+}
+
+/* Formulaire Rencontre (participants dynamiques) */
+.participants-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.participant-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border: 1px solid var(--border-hairline);
+    background: var(--bg-subtle);
+}
+
+.participant-badge {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.participant-row select {
+    flex: 1;
+    margin: 0;
+}
+
+.btn-remove-participant {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--border-strong);
+    background: var(--bg-white);
+    color: var(--ink-secondary);
+    cursor: pointer;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.btn-remove-participant:hover {
+    border-color: var(--orange);
+    color: var(--orange);
+}
+
+.rencontre-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.rencontre-actions .btn-primary {
+    width: auto;
+    min-width: 240px;
+}
+
+.rencontre-actions .btn-outline {
+    width: auto;
+    padding: 12px 20px;
+}
+
+/* Invite vide grise */
+.s2-empty-prompt {
+    padding: 36px 24px;
+    border: 1px dashed var(--border-strong);
+    border-radius: 0;
+    background: var(--bg-subtle);
+    color: var(--ink-muted);
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.s2-empty-prompt.hidden,
+.s2-results.hidden {
+    display: none;
+}
+
+/* KPI & Grille Résultats + Carte */
+.s2-kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.s2-kpi-grid.cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.s2-workspace {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 20px;
+    align-items: start;
+}
+
+/* Liste de cartes candidates cliquables */
+.candidate-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 620px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.candidate-card {
+    text-align: left;
+    width: 100%;
+    padding: 16px 18px;
+    border: 1px solid var(--border-hairline);
+    border-left: 3px solid var(--border-strong);
+    border-radius: 0;
+    background: var(--bg-white);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.candidate-card:hover {
+    border-color: var(--border-strong);
+    border-left-color: var(--orange);
+    background: var(--bg-subtle);
+}
+
+.candidate-card.active {
+    border-color: var(--ink-primary);
+    border-left: 4px solid var(--green);
+    background: rgba(0, 168, 89, 0.04);
+}
+
+.candidate-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.candidate-title {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink-primary);
+}
+
+.detour-pill {
+    padding: 3px 10px;
+    border-radius: 9999px;
+    font-family: var(--font-display);
+    font-size: 0.74rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.detour-pill.green {
+    background: var(--green-soft);
+    color: var(--green);
+}
+
+.detour-pill.orange {
+    background: var(--orange-soft);
+    color: var(--orange);
+}
+
+.candidate-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 0.82rem;
+    color: var(--ink-secondary);
+}
+
+/* Carte Leaflet + Panneau détail */
+.s2-map-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.s2-map-header {
+    padding: 18px 22px;
+    border-bottom: 1px solid var(--border-hairline);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.s2-map-canvas {
+    width: 100%;
+    height: 360px;
+    background: var(--bg-subtle);
+}
+
+.s2-legend {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 0.78rem;
+    color: var(--ink-secondary);
+}
+
+.s2-legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.s2-detail-box {
+    padding: 20px 22px;
+    border-top: 1px solid var(--border-hairline);
+}
+
+/* Breakdown par tronçon ou par participant */
+.leg-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.leg-item {
+    padding: 14px 16px;
+    border: 1px solid var(--border-hairline);
+    background: var(--bg-subtle);
+}
+
+.leg-item-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.leg-path-text {
+    font-size: 0.82rem;
+    color: var(--ink-secondary);
+    line-height: 1.5;
+}
+
+.equity-bar-track {
+    height: 6px;
+    width: 100%;
+    background: rgba(20, 20, 19, 0.08);
+    margin: 8px 0 6px;
+}
+
+.equity-bar-fill {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 1060px) {
+    .escale-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-swap {
+        justify-self: center;
+    }
+
+    .s2-workspace {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 760px) {
+    .participants-grid,
+    .s2-kpi-grid,
+    .s2-kpi-grid.cols-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .s2-pill-bar {
+        border-radius: 0;
+        width: 100%;
+    }
+}

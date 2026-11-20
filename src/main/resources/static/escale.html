@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Transport IDF">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="icons/logo.png?v=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/logo.png?v=1">
+    <link rel="stylesheet" href="css/mobile-glass.css?v=1">
+    <title>Escale & Détour Calibré — Transport IDF</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sprint2.css?v=1">
+</head>
+<body>
+
+<header class="glass-header">
+    <div class="header-inner">
+        <a href="index.html" class="brand">
+            <span class="brand-dot" aria-hidden="true"></span>
+            <span class="brand-name">Transport IDF</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+            <a href="index.html" class="nav-link">Carte & Direct</a>
+            <a href="trajet.html" class="nav-link">Trajet Sur-Mesure</a>
+            <a href="escale.html" class="nav-link active">Escale</a>
+            <a href="rencontre.html" class="nav-link">Rencontre</a>
+            <a href="radar.html" class="nav-link">Radar</a>
+            <a href="bouclier.html" class="nav-link">Bouclier</a>
+        </nav>
+
+        <div class="realtime-status-pill" title="Synchronisé sur l'état temps réel du réseau">
+            <span class="live-pulse"></span>
+            Temps Réel IDFM
+        </div>
+    </div>
+</header>
+
+<main class="section-container s2-main">
+    <section class="s2-hero">
+        <div class="hero-eyebrow">
+            <span class="pill-indicator"></span>
+            Mode 2 • Escale & Détour Calibré
+        </div>
+        <h1 class="hero-title">
+            Faites une halte sans<br>
+            <span class="text-orange">exploser votre timing</span>.
+        </h1>
+        <p class="hero-subtitle">
+            Fixez votre budget de détour maximal : le moteur compare en direct tous les détours
+            possibles (Départ → Escale → Arrivée) et sélectionne les meilleures gares d'escale sur votre axe.
+        </p>
+    </section>
+
+    <!-- Filtre de typologie d'escale en bulles Liquid Glass -->
+    <section class="s2-pill-bar" id="escale-category-bar" aria-label="Objectif d'escale">
+        <button type="button" class="s2-pill active" data-category="ALL">
+            <span class="s2-dot green"></span>
+            Toutes les gares
+        </button>
+        <button type="button" class="s2-pill" data-category="COMMERCE">
+            <span class="s2-dot orange"></span>
+            Pôles Commerces & Cafés
+        </button>
+        <button type="button" class="s2-pill" data-category="HUB">
+            <span class="s2-dot ink"></span>
+            Grands Hubs Correspondances
+        </button>
+        <button type="button" class="s2-pill" data-category="CALM">
+            <span class="s2-dot slate"></span>
+            Gares Calmes
+        </button>
+    </section>
+
+    <!-- Formulaire de recherche -->
+    <section class="panel s2-search-panel">
+        <div class="escale-form-grid">
+            <div class="form-group">
+                <label for="escale-from">Gare de départ</label>
+                <select id="escale-from">
+                    <option value="" selected disabled>Sélectionner une gare de départ…</option>
+                </select>
+            </div>
+
+            <button type="button" id="btn-escale-swap" class="btn-swap" title="Inverser départ et arrivée" aria-label="Inverser départ et arrivée">
+                ⇄
+            </button>
+
+            <div class="form-group">
+                <label for="escale-to">Gare d'arrivée</label>
+                <select id="escale-to">
+                    <option value="" selected disabled>Sélectionner une gare d'arrivée…</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="escale-budget">Détour max autorisé</label>
+                <select id="escale-budget">
+                    <option value="0">+0 min (sur la route)</option>
+                    <option value="5">+5 min max</option>
+                    <option value="10">+10 min max</option>
+                    <option value="15" selected>+15 min max</option>
+                    <option value="20">+20 min max</option>
+                    <option value="30">+30 min max</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>&nbsp;</label>
+                <button type="button" id="btn-escale-go" class="btn-primary">Trouver des escales</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- État initial vide -->
+    <div id="escale-empty-prompt" class="s2-empty-prompt" role="status">
+        Sélectionnez une gare de départ, une gare d'arrivée et votre marge de détour pour découvrir les meilleures escales possibles.
+    </div>
+
+    <!-- Résultats -->
+    <section id="escale-results" class="s2-results hidden" aria-live="polite">
+        <div class="s2-kpi-grid cols-3">
+            <div class="bi-tile kpi-tile">
+                <span class="bi-tile-label">Trajet direct de référence</span>
+                <strong id="escale-kpi-direct" class="bi-kpi-value">—</strong>
+                <span id="escale-kpi-direct-sub" class="bi-tile-sub">—</span>
+            </div>
+
+            <div class="bi-tile kpi-tile accent-green">
+                <span class="bi-tile-label">Escales dans votre budget</span>
+                <strong id="escale-kpi-count" class="bi-kpi-value text-green">—</strong>
+                <span id="escale-kpi-budget-sub" class="bi-tile-sub">—</span>
+            </div>
+
+            <div class="bi-tile kpi-tile accent-orange">
+                <span class="bi-tile-label">Meilleur détour trouvé</span>
+                <strong id="escale-kpi-best" class="bi-kpi-value text-orange">—</strong>
+                <span id="escale-kpi-best-sub" class="bi-tile-sub">—</span>
+            </div>
+        </div>
+
+        <div class="s2-workspace">
+            <!-- Colonne gauche : Escales classées -->
+            <div class="bi-tile">
+                <div class="bi-tile-head">
+                    <span class="bi-tile-label">Escales recommandées</span>
+                    <span class="bi-tile-sub">Cliquez sur une gare pour visualiser les deux tronçons sur la carte</span>
+                </div>
+                <div id="escale-candidates-list" class="candidate-list"></div>
+            </div>
+
+            <!-- Colonne droite : Carte Leaflet + Détail des 2 tronçons -->
+            <div class="bi-tile s2-map-card">
+                <div class="s2-map-header">
+                    <div>
+                        <span class="bi-tile-label" id="escale-selected-title">Aperçu cartographique</span>
+                        <span class="bi-tile-sub" id="escale-selected-sub">Sélectionnez une escale dans la liste</span>
+                    </div>
+                    <div class="s2-legend">
+                        <span class="s2-legend-item"><span class="s2-dot orange"></span>Tronçon 1 (Avant escale)</span>
+                        <span class="s2-legend-item"><span class="s2-dot green"></span>Tronçon 2 (Après escale)</span>
+                    </div>
+                </div>
+                <div id="escale-map" class="s2-map-canvas"></div>
+                <div id="escale-detail-box" class="s2-detail-box"></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="section-container">
+        <div class="footer-bottom">
+            <span>Transport IDF — Mode 2 : Escale & Détour Calibré</span>
+            <span>Calcul bi-directionnel Dijkstra temps réel</span>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script type="module" src="js/escale.js?v=1"></script>
+<script src="js/mobile-glass.js?v=1" defer></script>
+</body>
+</html>

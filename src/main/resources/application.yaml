@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: transit-flow-engine
+
+  # Connexion à PostgreSQL (Local Docker par défaut, surchargé en cloud)
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/transit_db}
+    username: ${DB_USERNAME:transit_user}
+    password: ${DB_PASSWORD:transit_password}
+    driver-class-name: org.postgresql.Driver
+
+  # Configuration JPA / Hibernate
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: ${SHOW_SQL:false}
+    properties:
+      hibernate:
+        format_sql: true
+
+  # Connexion à Redis (Supporte redis:// en local et rediss:// avec mot de passe sur Upstash)
+  data:
+    redis:
+      url: ${REDIS_URL:redis://localhost:6379}
+      timeout: 2000ms
+
+server:
+  port: ${PORT:8080}
+
+logging:
+  level:
+    com.transit.engine: DEBUG
+
+transit:
+  traffic:
+    mode: ${TRAFFIC_MODE:REALTIME} # REALTIME ou SIMULATION
+    idfm:
+      api-key: ${IDFM_API_KEY:}
+      base-url: https://prim.iledefrance-mobilites.fr/marketplace/v2/navitia
